@@ -25,6 +25,6 @@
 [Jenkins](http://114.67.233.226:6080)
 [Tomcat](http://page.s-o.cc)
 
-##  [Favorite]
+##  [Favorite](https://oubk.com)
 [480](http://480kan.com)
 [欧泊颗](https://oubk.com)
