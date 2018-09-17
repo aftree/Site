@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+## [Site](http://s-o.cc)
 
-You can use the [editor on GitHub](https://github.com/aftree/Site/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[Github](https://github.com/aftree/)
+[Site](https://github.com/aftree/Site)  
+[Song](https://jimmysong.io)
+[GoDaddy](https://sg.godaddy.com/zh/)
+[文档](https://docs.qq.com/index.html)
+[图](http://tu.s-o.cc?_blank)  
+[散尽浮华](https://www.cnblogs.com/kevingrace/)
+[惨绿](https://www.cnblogs.com/clsn/)
+[王-虚拟化](http://blog.51cto.com/wangchunhai)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## [Book](http://legacy.gitbook.com/@aftree) 
 
-### Markdown
+[Linux](http:/linux.s-o.cc)
+[Storage](http://storage.s-o.cc)
+[MySQL](http://mysql.s-o.cc)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## [Practice](www.cnblogs.com/aftree/)
 
-```markdown
-Syntax highlighted code block
+[Rancher](http://page.s-o.cc)  
+[ELK](http://page.s-o.cc)
+[Zabbix](http://page.s-o.cc)  
+[Nexus](http://page.s-o.cc)  
+[Gitlab](http://114.67.233.226:7080)
+[Gogs](http://114.67.233.226:10080/)
+[Jenkins](http://114.67.233.226:6080)
+[Tomcat](http://page.s-o.cc)
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/aftree/Site/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## [Favorite](http://www.baidu.com)
+[480](http://480kan.com)
+[欧泊颗](https://oubk.com)
