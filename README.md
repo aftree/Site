@@ -5,6 +5,8 @@
 [Linux](http:/linux.s-o.cc)
 [Storage](http://s.s-o.cc)
 [MySQL](http://mysql.s-o.cc)
+[Docker](http://docker.s-o.cc)
+[Kubernetes](http://kubernetes.s-o.cc)
 
 ## [Practice](http://www.cnblogs.com/aftree/)
 
@@ -24,6 +26,7 @@
 [Jenkins](http://114.67.233.226:6080)
 [Tomcat](http://page.s-o.cc)
 
-##  [Baidu](http://www.baidu.com)  [Google](http://www.baidu.com)
+##  [Favorite](https://oubk.com)
 
-[欧泊颗](https://oubk.com)
+[Baidu](http://www.baidu.com)
+[Google](http://www.baidu.com)
