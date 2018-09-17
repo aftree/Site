@@ -1,6 +1,4 @@
-## Site
-[Github](https://github.com/aftree/)
-[Site](https://github.com/aftree/Site)  
+##  [s-o.cc](https://sg.godaddy.com/zh/)
 [Song](https://jimmysong.io)
 [GoDaddy](https://sg.godaddy.com/zh/)
 [文档](https://docs.qq.com/index.html)
@@ -26,6 +24,6 @@
 [Jenkins](http://114.67.233.226:6080)
 [Tomcat](http://page.s-o.cc)
 
-## [Favorite](http://www.baidu.com)
+## [百度](http://www.baidu.com）  [谷歌](http://www.baidu.com)
 [480](http://480kan.com)
 [欧泊颗](https://oubk.com)
