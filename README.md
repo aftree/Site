@@ -1,11 +1,5 @@
 ##  [s-o.cc](https://sg.godaddy.com/zh/)
-[Song](https://jimmysong.io)
-[GoDaddy](https://sg.godaddy.com/zh/)
-[文档](https://docs.qq.com/index.html)
-[图](http://tu.s-o.cc?_blank)  
-[散尽浮华](https://www.cnblogs.com/kevingrace/)
-[惨绿](https://www.cnblogs.com/clsn/)
-[王-虚拟化](http://blog.51cto.com/wangchunhai)
+
 
 ## [Book](http://legacy.gitbook.com/@aftree) 
 
@@ -15,6 +9,14 @@
 
 ## [Practice](www.cnblogs.com/aftree/)
 
+[Song](https://jimmysong.io)
+[文档](https://docs.qq.com/index.html)
+[图](http://tu.s-o.cc?_blank)  
+[散尽浮华](https://www.cnblogs.com/kevingrace/)
+[惨绿](https://www.cnblogs.com/clsn/)
+[王-虚拟化](http://blog.51cto.com/wangchunhai)
+
+---
 [Rancher](http://page.s-o.cc)  
 [ELK](http://page.s-o.cc)
 [Zabbix](http://page.s-o.cc)  
