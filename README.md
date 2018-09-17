@@ -1,4 +1,4 @@
-##  ## [Baidu](http://www.baidu.com)  [Google](http://www.baidu.com)
+##  [Baidu](http://www.baidu.com)  [Google](http://www.baidu.com)
 [s-o.cc](https://sg.godaddy.com/zh/)
 
 ## [Book](http://legacy.gitbook.com/@aftree) 
