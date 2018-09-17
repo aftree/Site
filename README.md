@@ -3,14 +3,14 @@
 ## [Book](http://legacy.gitbook.com/@aftree) 
 
 [Linux](http:/linux.s-o.cc)
-[Storage](http://storage.s-o.cc)
+[Storage](http://s.s-o.cc)
 [MySQL](http://mysql.s-o.cc)
 
-## [Practice](www.cnblogs.com/aftree/)
+## [Practice](http://www.cnblogs.com/aftree/)
 
 [Song](https://jimmysong.io)
 [文档](https://docs.qq.com/index.html)
-[图](http://tu.s-o.cc?_blank)  
+[图](https://www.processon.com)  
 [散尽浮华](https://www.cnblogs.com/kevingrace/)
 [惨绿](https://www.cnblogs.com/clsn/)
 [王-虚拟化](http://blog.51cto.com/wangchunhai)
@@ -26,5 +26,4 @@
 
 ##  [Baidu](http://www.baidu.com)  [Google](http://www.baidu.com)
 
-[480](http://480kan.com)
 [欧泊颗](https://oubk.com)
