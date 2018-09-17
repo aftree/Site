@@ -1,4 +1,3 @@
-##  [Baidu](http://www.baidu.com)  [Google](http://www.baidu.com)
 [s-o.cc](https://sg.godaddy.com/zh/)
 
 ## [Book](http://legacy.gitbook.com/@aftree) 
@@ -25,6 +24,7 @@
 [Jenkins](http://114.67.233.226:6080)
 [Tomcat](http://page.s-o.cc)
 
-##  [Favorite](https://oubk.com)
+##  [Baidu](http://www.baidu.com)  [Google](http://www.baidu.com)
+
 [480](http://480kan.com)
 [欧泊颗](https://oubk.com)
