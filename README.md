@@ -1,5 +1,3 @@
-# [Site](http://s-o.cc)
-
 [Github](https://github.com/aftree/)
 [Site](https://github.com/aftree/Site)  
 [Song](https://jimmysong.io)
