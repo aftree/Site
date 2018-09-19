@@ -5,6 +5,7 @@
 [Linux](http:/linux.s-o.cc)
 [Storage](http://s.s-o.cc)
 [MySQL](http://mysql.s-o.cc)
+[NoSQL](http://nosql.s-o.cc)
 [Docker](http://docker.s-o.cc)
 [Kubernetes](http://k8s.s-o.cc)
 
