@@ -1,6 +1,6 @@
 [s-o.cc](https://sg.godaddy.com/zh/)
 
-## [Book](http://legacy.gitbook.com/@aftree)  [棋](http://qi.s-o.cc)
+## [GitBook](http://legacy.gitbook.com/@aftree)  [棋](http://qi.s-o.cc)
 
 [Linux](http:/linux.s-o.cc)
 [Storage](http://s.s-o.cc)
