@@ -12,6 +12,7 @@
 
 ## [Practice](http://www.cnblogs.com/aftree/)
 
+[技能图谱](https://github.com/TeamStuQ/skill-map) 
 [Song](https://jimmysong.io)
 [文档](https://docs.qq.com/index.html)
 [图](https://www.processon.com)  
