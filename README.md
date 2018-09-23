@@ -4,6 +4,7 @@
 ## [GitBook](http://legacy.gitbook.com/@aftree)  [棋](http://qi.s-o.cc)
 
 [Linux](http:/linux.s-o.cc)
+[Web](http:/web.s-o.cc)
 [Storage](http://s.s-o.cc)
 [MySQL](http://mysql.s-o.cc)
 [Redis](http://redis.s-o.cc)
