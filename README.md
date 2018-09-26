@@ -1,17 +1,15 @@
 [DNS](https://sg.godaddy.com/zh/)
 [imgur](https://sg.godaddy.com/zh/)
 
-## [GitBook](http://legacy.gitbook.com/@aftree)  [棋](http://qi.s-o.cc)
+## [GitBook](http://legacy.gitbook.com/@aftree)
 
 [Linux](http:/linux.s-o.cc)
-[Web](http:/web.s-o.cc)
 [Storage](http://s.s-o.cc)
 [MySQL](http://mysql.s-o.cc)
 [Redis](http://redis.s-o.cc)
 [ELK](http://elk.s-o.cc)
 [Docker](http://docker.s-o.cc)
 [Kubernetes](http://k8s.s-o.cc)
-[Blockchain](http://bc.s-o.cc)
 
 ## [Practice](http://www.cnblogs.com/aftree/)
 
