@@ -1,5 +1,4 @@
 [DNS](https://sg.godaddy.com/zh/)
-[imgur](https://sg.godaddy.com/zh/)
 
 ## [GitBook](http://legacy.gitbook.com/@aftree)
 
