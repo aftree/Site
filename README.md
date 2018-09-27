@@ -7,8 +7,6 @@
 [MySQL](http://mysql.s-o.cc)
 [NoSQL](http://nosql.s-o.cc)
 [ELK](http://elk.s-o.cc)
-[Docker](http://docker.s-o.cc)
-[Kubernetes](http://k8s.s-o.cc)
 
 ## [Practice](http://www.cnblogs.com/aftree/)
 
