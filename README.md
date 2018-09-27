@@ -1,6 +1,6 @@
 [DNS](https://sg.godaddy.com/zh/)
 
-## [GitBook](http://legacy.gitbook.com/@aftree)
+## [Book](http://legacy.gitbook.com/@aftree)
 
 [Linux](http:/linux.s-o.cc)
 [Storage](http://s.s-o.cc)
