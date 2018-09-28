@@ -2,8 +2,7 @@
 
 ## [Book](http://legacy.gitbook.com/@aftree)
 
-[Linux](http:/linux.s-o.cc)
-[Storage](http://s.s-o.cc)
+[Linux](http:/a.s-o.cc)
 [MySQL](http://mysql.s-o.cc)
 [NoSQL](http://nosql.s-o.cc)
 [ELK](http://elk.s-o.cc)
