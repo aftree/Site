@@ -1,11 +1,7 @@
 [DNS](https://sg.godaddy.com/zh/)
+[GitBook](https://legacy.gitbook.com/@aftree)
 
-## [Book](http://legacy.gitbook.com/@aftree)
-
-[Linux](http:/a.s-o.cc)
-[MySQL](http://mysql.s-o.cc)
-[NoSQL](http://nosql.s-o.cc)
-[ELK](http://elk.s-o.cc)
+## [Book](http:/a.s-o.cc)
 
 ## [Practice](http://www.cnblogs.com/aftree/)
 
@@ -31,4 +27,3 @@
 
 [Baidu](http://www.baidu.com)
 [Google](http://www.baidu.com)
-[Porn](https://aftree.github.io/Porn/)
