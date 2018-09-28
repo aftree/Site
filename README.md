@@ -1,7 +1,6 @@
 [DNS](https://sg.godaddy.com/zh/)
 [GitBook](https://legacy.gitbook.com/@aftree)
-
-## [Book](http:/a.s-o.cc)
+[A](http:/a.s-o.cc)
 
 ## [Practice](http://www.cnblogs.com/aftree/)
 
