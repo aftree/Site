@@ -1,4 +1,4 @@
-[DNS](https://sg.godaddy.com/zh/)
+[Dns](https://sg.godaddy.com/zh/)
 [GitBook](https://legacy.gitbook.com/@aftree)
 [A](http:/a.s-o.cc)
 
