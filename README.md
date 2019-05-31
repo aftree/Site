@@ -18,16 +18,19 @@
 [Baidu](http://www.baidu.com)
 [Google](http://www.baidu.com)
 
+---
+
 # Database
 
-  * MySQL
-  * Oracle
-  * SqlServer
-  * PQ
+## 关系型数据库
+
+MySQL Oracle SqlServer PQ
 
 ## NoSQL
 * 键值：Redis
 * 文档：MongoDB
+
+---
 
 # Cloud Native
 
