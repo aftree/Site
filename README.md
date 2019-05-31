@@ -18,9 +18,10 @@
 [Baidu](http://www.baidu.com)
 [Google](http://www.baidu.com)                                     |
 
-## Cloud Native
+# Cloud Native
 
-## DEVOPS
+## Continuous Delivery
+## DevOps
 
 |  |  |
 | :-: | :- |
@@ -49,10 +50,12 @@
 |  |[https://xebialabs.com](https://xebialabs.com/) <https://about.gitlab.com/devops-tools/> |
 | 包管理 | |
 
+
+## Microservices
+## Containers
+
 ## NetWork
 ## BlockChain
 ## Storages
-## Microservices
-## Containers
 
 
