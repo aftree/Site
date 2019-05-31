@@ -18,6 +18,17 @@
 [Baidu](http://www.baidu.com)
 [Google](http://www.baidu.com)
 
+# Database
+
+* MySQL
+* Oracle
+* SqlServer
+* PQ
+
+## NoSQL
+* 键值：Redis
+* 文档：MongoDB
+
 # Cloud Native
 
 ## Continuous Delivery
@@ -69,6 +80,12 @@ EOS
 
 ## Storages
 
-# 棋
+# 依忆伊意壹懿
+
+弈
+
+# 壹棵开花的树
+
+精简精致
 
 
