@@ -20,7 +20,7 @@
 
 ## Cloud Native
 
-## DevOps
+## DEVOPS
 
 |  |  |
 | :-: | :- |
