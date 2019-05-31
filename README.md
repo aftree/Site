@@ -69,4 +69,6 @@ EOS
 
 ## Storages
 
+# 棋
+
 
