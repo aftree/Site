@@ -56,7 +56,6 @@ MySQL Oracle SqlServer PQ
 | 容器|Docker、LXC、第三方厂商如AWS                           |
 | 编排|Kubernetes、Core、Apache Mesos、DC/OS                  |
 | 服务注册与发现|Zookeeper、etcd、Consul                      |
-| 脚本语言|python、ruby、shell                                |
 | 日志管理|ELK、Logentries                                    |
 | 系统监控|Datadog、Graphite、Icinga、Nagios、Cacti、zabbix   |
 | 性能监控|AppDynamics、New Relic、Splunk                     |
@@ -66,9 +65,7 @@ MySQL Oracle SqlServer PQ
 | 消息总线|ActiveMQ、SQS                                      |
 | 应用服务器|Tomcat、JBoss                                    |
 | Web服务器|Apache、Nginx、IIS                                |
-| 数据库|MySQL、Oracle、PostgreSQL等关系型数据库；cassandra、mongoDB、redis等NoSQL数据库 |
 | 项目管理 |Jira、Asana、Taiga、Trello、Basecamp、Pivotal Tracker |
-| 程序语言 |Java、Python、Go、Shell、 |
 | 在线实验 |<https://www.katacoda.com/> <https://www.ctl.io/developers/blog/post/60-best-open-source-tools-to-do-devops/> |
 |  |[https://xebialabs.com](https://xebialabs.com/) <https://about.gitlab.com/devops-tools/> |
 | 包管理 | |
@@ -99,6 +96,12 @@ EOS
 
 ---
 
+# 编程语言
+
+Shell CMD PowerShell Java Python Go Ruby Perl JavaScript 
+
+---
+
 # 依忆伊意壹懿
 
 弈
@@ -106,10 +109,3 @@ EOS
 # 壹棵开花的树
 
 精简精致
-
-# aftree
-# Aftree
-# yi
-# Yi
-
-
