@@ -112,3 +112,13 @@ Shell CMD PowerShell Java Python Go Ruby Perl JavaScript
 ---
 
 # 自媒体
+
+微博
+百家号
+头条号
+企鹅号
+一点号
+大鱼号
+微信公众号
+
+# 依忆伊意壹懿狗
