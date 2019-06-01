@@ -39,11 +39,11 @@ MySQL Oracle SqlServer PQ
 
 ---
 
-# Cloud Native
+## Cloud Native
 
-## Continuous Delivery
+### Continuous Delivery
 
-## DevOps
+### DevOps
 
 | DevOps | Tool Chain |
 | :-: | :- |
@@ -101,17 +101,17 @@ Shell CMD PowerShell Java Python Go Ruby Perl JavaScript
 
 ---
 
-# 依忆伊意壹懿
+## 依忆伊意壹懿
 
 弈
 
-# 壹棵开花的树
+## 壹棵开花的树
 
 精简精致
 
 ---
 
-# 自媒体
+## 自媒体
 
 微博
 百家号
@@ -120,5 +120,3 @@ Shell CMD PowerShell Java Python Go Ruby Perl JavaScript
 一点号
 大鱼号
 微信公众号
-
-# 依忆伊意壹懿狗
