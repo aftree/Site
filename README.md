@@ -1,3 +1,5 @@
+[Baidu](http://www.baidu.com)
+[Google](http://www.baidu.com) 
 [Dns](https://sg.godaddy.com/zh/)
 [GitBook](https://legacy.gitbook.com/@aftree)
 [A](http:/a.s-o.cc)
@@ -14,9 +16,6 @@
 [知行合一](https://blog.csdn.net/liumiaocn)
 
 ##  [Favorite](https://oubk.com)
-
-[Baidu](http://www.baidu.com)
-[Google](http://www.baidu.com)
 
 ---
 
