@@ -19,21 +19,21 @@
 
 ---
 
-# IT Infrastructure
+## IT Infrastructure
 
 ---
 
-# 虚拟化、云计算
+## 虚拟化、云计算
 
 ---
 
-# Database
+## Database
 
-## 关系型数据库
+### 关系型数据库
 
 MySQL Oracle SqlServer PQ
 
-## NoSQL
+### NoSQL
 * 键值：Redis
 * 文档：MongoDB
 
@@ -69,12 +69,12 @@ MySQL Oracle SqlServer PQ
 |  |[https://xebialabs.com](https://xebialabs.com/) <https://about.gitlab.com/devops-tools/> |
 | 包管理 | |
 
-## Microservices
+### Microservices
 
 Dubbo
 Spring Cloud
 
-## Containers
+### Containers
 
 Docker Kubernetes Rancher
 
@@ -91,11 +91,11 @@ EOS
 
 ---
 
-# BigData
+## BigData
 
 ---
 
-# 编程语言
+## 编程语言
 
 Shell CMD PowerShell Java Python Go Ruby Perl JavaScript 
 
