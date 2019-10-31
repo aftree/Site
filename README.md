@@ -1,14 +1,11 @@
 [Baidu](http://www.baidu.com)
-[Google](http://www.baidu.com) 
-[Dns](https://sg.godaddy.com/zh/)
-[GitBook](https://legacy.gitbook.com/@aftree)
+[Google](http://www.google.com) 
 [A](http:/a.s-o.cc)
 
 ## [Practice](http://www.cnblogs.com/aftree/)
 
 [技能图谱](https://github.com/TeamStuQ/skill-map) 
 [Song](https://jimmysong.io)
-[文档](https://docs.qq.com/index.html)
 [图](https://www.processon.com)  
 [散尽浮华](https://www.cnblogs.com/kevingrace/)
 [惨绿](https://www.cnblogs.com/clsn/)
@@ -93,6 +90,11 @@ EOS
 
 ## BigData
 
+Hadoop
+
+## BI
+## DT
+
 ---
 
 ## 编程语言
@@ -110,6 +112,8 @@ Shell CMD PowerShell Java Python Go Ruby Perl JavaScript
 精简精致
 
 ---
+
+# 航拍
 
 ## 自媒体
 
