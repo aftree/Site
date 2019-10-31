@@ -1,6 +1,5 @@
 [Baidu](http://www.baidu.com)
 [Google](http://www.google.com) 
-[A](http:/a.s-o.cc)
 
 ## [Practice](http://www.cnblogs.com/aftree/)
 
@@ -12,11 +11,11 @@
 [王-虚拟化](http://blog.51cto.com/wangchunhai)
 [知行合一](https://blog.csdn.net/liumiaocn)
 
-##  [Favorite](https://oubk.com)
-
 ---
 
-## IT Infrastructure
+# Information Technology
+
+## Infrastructure
 
 ---
 
@@ -103,9 +102,11 @@ Shell CMD PowerShell Java Python Go Ruby Perl JavaScript
 
 ---
 
+#  [Favorite](https://oubk.com)
+
 ## 依忆伊意壹懿
 
-弈
+* 弈
 
 ## 壹棵开花的树
 
@@ -113,7 +114,7 @@ Shell CMD PowerShell Java Python Go Ruby Perl JavaScript
 
 ---
 
-# 航拍
+## 航拍
 
 ## 自媒体
 
