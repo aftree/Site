@@ -13,9 +13,9 @@
 
 ---
 
+# IT
 
-> Information Technology
-
+---
 
 ## Infrastructure
 
@@ -37,11 +37,7 @@ MySQL Oracle SqlServer PQ
 
 ---
 
-## Cloud Native
-
-### Continuous Delivery
-
-### DevOps
+## DevOps
 
 | DevOps | Tool Chain |
 | :-: | :- |
@@ -67,12 +63,12 @@ MySQL Oracle SqlServer PQ
 |  |[https://xebialabs.com](https://xebialabs.com/) <https://about.gitlab.com/devops-tools/> |
 | 包管理 | |
 
-### Microservices
+## Microservices
 
 Dubbo
 Spring Cloud
 
-### Containers
+## Containers
 
 Docker Kubernetes Rancher
 
