@@ -13,7 +13,7 @@
 
 ---
 
-# Information Technology
+> Information Technology
 
 ## Infrastructure
 
