@@ -13,10 +13,6 @@
 
 ---
 
-> IT
-
----
-
 ## Infrastructure
 
 ---
@@ -75,6 +71,9 @@ Docker Kubernetes Rancher
 ---
 
 ## NetWork
+
+---
+
 ## BlockChain
 
 比特币
@@ -89,7 +88,12 @@ EOS
 
 Hadoop
 
+---
+
 ## BI
+
+---
+
 ## DT
 
 ---
@@ -100,26 +104,4 @@ Shell CMD PowerShell Java Python Go Ruby Perl JavaScript
 
 ---
 
-#  [Favorite](https://oubk.com)
-
-## 依忆伊意壹懿
-
-* 弈
-
-## 壹棵开花的树
-
-精简精致
-
----
-
-## 航拍
-
-## 自媒体
-
-微博
-百家号
-头条号
-企鹅号
-一点号
-大鱼号
-微信公众号
+##  [Favorite](https://oubk.com)
