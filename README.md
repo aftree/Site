@@ -1,6 +1,8 @@
 [Baidu](http://www.baidu.com)
 [Google](http://www.google.com) 
 
+---
+
 ## [Practice](http://www.cnblogs.com/aftree/)
 
 [技能图谱](https://github.com/TeamStuQ/skill-map) 
@@ -13,15 +15,15 @@
 
 ---
 
-## Infrastructure
+## [NetWork](https://network.lijun.in)  
 
 ---
 
-## 虚拟化、云计算
+## [虚拟化](https://v.lijun.in)  
 
 ---
 
-## Database
+## Database[DataBase](https://db.lijun.in)  
 
 ### 关系型数据库
 
@@ -33,7 +35,9 @@ MySQL Oracle SqlServer PQ
 
 ---
 
-## DevOps
+## [Cloud Native](https://cloudnative.lijun.in)  
+
+### DevOps
 
 | DevOps | Tool Chain |
 | :-: | :- |
@@ -59,49 +63,35 @@ MySQL Oracle SqlServer PQ
 |  |[https://xebialabs.com](https://xebialabs.com/) <https://about.gitlab.com/devops-tools/> |
 | 包管理 | |
 
-## Microservices
+### Microservices
 
 Dubbo
 Spring Cloud
 
-## Containers
+### Containers
 
 Docker Kubernetes Rancher
 
 ---
 
-## NetWork
-
----
-
-## BlockChain
+## [BlockChain](https://blockchainc.lijun.in)
 
 比特币
 以太坊
 EOS
 
-## Storages
+---
+
+## [Storages](https://s.lijun.in)  
 
 ---
 
-## BigData
-
-Hadoop
+## [BigData](https://bigdata.lijun.in)
 
 ---
 
-## BI
+## [BI](https://bi.lijun.in)
 
 ---
 
-## DT
-
----
-
-## 编程语言
-
-Shell CMD PowerShell Java Python Go Ruby Perl JavaScript 
-
----
-
-##  [Favorite](https://oubk.com)
+## [Python](https://python.lijun.in)
