@@ -41,10 +41,8 @@ MySQL Oracle SqlServer PQ
 
 ### DevOps
 
-| DevOps | Tool Chain |
-| :-: | :- |
-| 版本控制 |GitHub、GitLab、BitBucket、SubVersion、Gogs       |
-| 构建工具|Ant、Gradle、maven                                 |
+* | 版本控制 |GitHub、GitLab、BitBucket、SubVersion、Gogs       |
+* | 构建工具|Ant、Gradle、maven                                 |
 | 自动部署|Capistrano、CodeDeploy                             |
 | 持续集成 |Bamboo、Hudson、Jenkins                      |
 | 配置管理|Ansible、Chef、Puppet、SaltStack、ScriptRock GuardRail |
