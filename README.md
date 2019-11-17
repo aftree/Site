@@ -41,11 +41,11 @@ MySQL Oracle SqlServer PQ
 
 ### DevOps
 
-* | 版本控制 |GitHub、GitLab、BitBucket、SubVersion、Gogs       |
-* | 构建工具|Ant、Gradle、maven                                 |
-| 自动部署|Capistrano、CodeDeploy                             |
-| 持续集成 |Bamboo、Hudson、Jenkins                      |
-| 配置管理|Ansible、Chef、Puppet、SaltStack、ScriptRock GuardRail |
+* 版本控制 |GitHub、GitLab、BitBucket、SubVersion、Gogs       |
+* 构建工具|Ant、Gradle、maven                                 |
+* 自动部署|Capistrano、CodeDeploy                             |
+* 持续集成 |Bamboo、Hudson、Jenkins                      |
+* 配置管理|Ansible、Chef、Puppet、SaltStack、ScriptRock GuardRail |
 | 容器|Docker、LXC、第三方厂商如AWS                           |
 | 编排|Kubernetes、Core、Apache Mesos、DC/OS                  |
 | 服务注册与发现|Zookeeper、etcd、Consul                      |
