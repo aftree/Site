@@ -15,6 +15,8 @@
 
 ---
 
+## [Linux](https://linux.lijun.in)  
+
 ## [NetWork](https://network.lijun.in)  
 
 ---
@@ -23,7 +25,7 @@
 
 ---
 
-## Database[DataBase](https://db.lijun.in)  
+## [DataBase](https://db.lijun.in)  
 
 ### 关系型数据库
 
