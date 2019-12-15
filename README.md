@@ -23,24 +23,29 @@
 
 ## [DevOps](https://devops.lijun.in)  
 
-开发与运维、自动化运维、敏捷开发、编程语言、
-
+* 开发与运维、自动化运维、敏捷开发、编程语言、
 * 编程语言
 
 ---
 
 ## [System Integration](https://si.lijun.in)  
 
-机房建设 弱电系统 信息化建设 网络建设 数据中心 私有云 虚拟化 数据库 服务器 行业软件建设 运维
+* 机房建设 
+* 弱电系统 
+* 信息化建设 
+* 网络建设 
+* 安全咨询
+* 数据中心 
+* 虚拟化
 
 ---
 
 ## [Cloud Computing](https://cloud.lijun.in)
 
-### [虚拟化](https://v.lijun.in)  
-### [Storages](https://s.lijun.in) 
-### [NetWork](https://network.lijun.in)
-### [NetWork](https://network.lijun.in)
+* 虚拟化 
+* Storages
+* NetWork
+* NetWork
 
 ---
 
@@ -60,7 +65,7 @@ MySQL Oracle SqlServer PQ
 
 ### DevOps
 
-* **版本控制**：GitHub、GitLab、BitBucket、SubVersion、Gogs
+* 版本控制：GitHub、GitLab、BitBucket、SubVersion、Gogs
 * 构建工具：Ant、Gradle、maven                                 
 * 自动部署：Capistrano、CodeDeploy                             
 * 持续集成：Bamboo、Hudson、Jenkins                      
@@ -92,21 +97,10 @@ Docker Kubernetes Rancher
 
 ---
 
-## [BlockChain](https://blockchainc.lijun.in)
-
-比特币
-以太坊
-EOS
-
----
-
 ## [DATA](https://data.lijun.in)
 
-### [Hadoop](https://hadoop.lijun.in)
-
-### [BigData](https://bigdata.lijun.in)
-
-### [BI](https://bi.lijun.in)
+* Hadoop
+* BI
 
 ---
 
