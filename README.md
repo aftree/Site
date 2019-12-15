@@ -18,8 +18,13 @@
 ## [Linux](https://linux.lijun.in)  
 
 ---
-I
+## [DevOps](https://devops.lijun.in)  
+
+开发与运维、自动化运维、敏捷开发、编程语言、
+---
+
 ## [System Integration](https://si.lijun.in)  
+机房建设 弱电系统 信息化建设 网络建设 数据中心 私有云 虚拟化 数据库 服务器 行业软件建设 运维
 ---
 ## [Cloud](https://cloud.lijun.in)
 
