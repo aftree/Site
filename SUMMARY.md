@@ -37,7 +37,6 @@
 * [Hadoop 生态系统](bigdata/hadoop/README.md)
   * [Hadoop](bigdata/hadoop/hadoop.md)
   * [ZooKeeper](bigdata/hadoop/zookeeper/README.md)
-    * [Untitled](bigdata/hadoop/zookeeper/untitled-3.md)
     * [Untitled](bigdata/hadoop/zookeeper/untitled-2.md)
     * [Untitled](bigdata/hadoop/zookeeper/untitled.md)
     * [Untitled](bigdata/hadoop/zookeeper/untitled-1.md)

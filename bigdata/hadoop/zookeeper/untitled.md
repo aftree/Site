@@ -10,7 +10,7 @@ draft: true
 weight: 5
 ```
 
-```text
+```bash
 [root@hadoop ~]# tree -L 2 apache-zookeeper-3.5.6-bin
 apache-zookeeper-3.5.6-bin
 ├── bin
@@ -43,7 +43,9 @@ zookeeper部署方式
 
 原始配置
 
-```text
+{% tabs %}
+{% tab title="Bash" %}
+```bash
 vim zoo.cfg   
 # The number of milliseconds of each tick
 tickTime=2000
@@ -75,6 +77,20 @@ clientPort=2181
 #autopurge.purgeInterval=1
 ​
 ```
+{% endtab %}
+
+{% tab title="" %}
+```
+dddddd
+```
+{% endtab %}
+
+{% tab title="" %}
+```
+ffff
+```
+{% endtab %}
+{% endtabs %}
 
 ### 单机
 
