@@ -81,7 +81,7 @@
 
 ## 网站架构
 
-* [Untitled](wang-zhan-jia-gou/untitled.md)
+* [Nginx](wang-zhan-jia-gou/nginx.md)
 
 ## BlockChain
 
