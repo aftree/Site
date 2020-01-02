@@ -13,4 +13,5 @@
 * [ActiveMQ](message-queue/activemq.md)
 * [RabbitMQ](message-queue/rabbitmq.md)
 * [RocketMQ](message-queue/rocketmq.md)
+* [Kafka](message-queue/kafka.md)
 
