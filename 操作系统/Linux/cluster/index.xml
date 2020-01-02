@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>集群 on My New Hugo Site</title>
-    <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/</link>
+    <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/</link>
     <description>Recent content in 集群 on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 15 Dec 2019 20:50:40 +0800</lastBuildDate>
     
-	<atom:link href="https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/cluster/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/cluster/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/cluster/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/cluster/</guid>
       <description>Cluster Linux Cluster：
 Cluster：计算机集合，为解决某个特定问题组合起来形成的单个系统； Linux Cluster类型： LB：Load Balancing，负载均衡； HA：High Availiablity，高可用； A=MTBF/（MTBF+MTTR） (0,1)：90%, 95%, 99%, 99.5%, 99.9%, 99.99%, 99.999% HP：High Performance，高性能； www.top500.org 系统扩展方式： Scale UP：向上扩展 Scale Out：向外扩展 Cluster LB Cluster：
 LB Cluster的实现： 硬件： F5 Big-IP Citrix Netscaler A10 A10 软件： lvs：Linux Virtual Server nginx haproxy ats：apache traffic server perlbal pound 基于工作的协议层次划分： 传输层（通用）：（DPORT） lvs： nginx：（stream） haproxy：（mode tcp） 应用层（专用）：（自定义的请求模型分类） proxy sferver： http：nginx, httpd, haproxy(mode http), ... fastcgi：nginx, httpd, ... mysql：mysql-proxy, ... ... 站点指标： PV：Page View UV：Unique Vistor IP： 会话保持： (1) session sticky Source IP Cookie (2) session replication; session cluster (3) session server lvs：Linux Virtual Server VS: Virtual Server RS: Real Server 作者：章文嵩；alibaba --&amp;gt; didi l4：四层路由器，四层交换机； VS：根据请求报文的目标IP和目标协议及端口将其调度转发至某RealServer，根据调度算法来挑选RS； iptables/netfilter： iptables：用户空间的管理工具； netfilter：内核空间上的框架； 流入：PREROUTING --&amp;gt; INPUT 流出：OUTPUT --&amp;gt; POSTROUTING 转发：PREROUTING --&amp;gt; FORWARD --&amp;gt; POSTROUTING DNAT：目标地址转换； PREROUTING； lvs: ipvsadm/ipvs ipvsadm：用户空间的命令行工具，规则管理器，用于管理集群服务及RealServer； ipvs：工作于内核空间的netfilter的INPUT钩子之上的框架； lvs集群类型中的术语： vs：Virtual Server, Director, Dispatcher, Balancer rs：Real Server, upstream server, backend server CIP：Client IP, VIP: Virtual serve IP, RIP: Real server IP, DIP: Director IP CIP &amp;lt;--&amp;gt; VIP == DIP &amp;lt;--&amp;gt; RIP lvs集群的类型： lvs-nat：修改请求报文的目标IP lvs-dr：操纵封装新的MAC地址； lvs-tun：在原请求IP报文之外新加一个IP首部； lvs-fullnat：修改请求报文的源和目标IP； lvs-nat： 多目标IP的DNAT，通过将请求报文中的目标地址和目标端口修改为某挑出的RS的RIP和PORT实现转发； （1）RIP和DIP必须在同一个IP网络，且应该使用私网地址；RS的网关要指向DIP； （2）请求报文和响应报文都必须经由Director转发；Director易于成为系统瓶颈； （3）支持端口映射，可修改请求报文的目标PORT； （4）vs必须是Linux系统，rs可以是任意系统； lvs-dr： Direct Routing，直接路由； 通过为请求报文重新封装一个MAC首部进行转发，源MAC是DIP所在的接口的MAC，目标MAC是某挑选出的RS的RIP所在接口的MAC地址；源IP/PORT，以及目标IP/PORT均保持不变； Director和各RS都得配置使用VIP； (1) 确保前端路由器将目标IP为VIP的请求报文发往Director： (a) 在前端网关做静态绑定； (b) 在RS上使用arptables； (c) 在RS上修改内核参数以限制arp通告及应答级别； arp_announce arp_ignore (2) RS的RIP可以使用私网地址，也可以是公网地址；RIP与DIP在同一IP网络；RIP的网关不能指向DIP，以确保响应报文不会经由Director； (3) RS跟Director要在同一个物理网络； (4) 请求报文要经由Director，但响应不能经由Director，而是由RS直接发往Client； (5) 不支持端口映射； lvs-tun： 转发方式：不修改请求报文的IP首部（源IP为CIP，目标IP为VIP），而在原IP报文之外再封装一个IP首部（源IP是DIP，目标IP是RIP），将报文发往挑选出的目标RS； (1) DIP, VIP, RIP都应该是公网地址； (2) RS的网关不能，也不可能指向DIP； (3) 请求报文要经由Director，但响应不能经由Director； (4) 不支持端口映射； (5) RS的OS得支持隧道功能； lvs-fullnat： 通过同时修改请求报文的源IP地址和目标IP地址进行转发； CIP --&amp;gt; DIP VIP --&amp;gt; RIP (1) VIP是公网地址，RIP和DIP是私网地址，且通常不在同一IP网络；因此，RIP的网关一般不会指向DIP； (2) RS收到的请求报文源地址是DIP，因此，只需响应给DIP；但Director还要将其发往Client； (3) 请求和响应报文都经由Director； (4) 支持端口映射； 注意：此类型默认不支持； 回顾： lvs类型： lvs-nat：通过修改请求报文的目标IP地址完成调度并转发；请求和响应报文都经由Director； lvs-dr：通过直接封装新的MAC首部完成调度并转发；仅请求报文经由Director； lvs-tun：通过在原IP报文首部之外新封装一个IP首部完成调度并转发；仅请求报文经由Director； lvs-fullnat：通过修改请求报文的目标IP地址和源IP地址完成调度并转发；请求和响应报文都经由Director；</description>
@@ -24,20 +24,20 @@ LB Cluster的实现： 硬件： F5 Big-IP Citrix Netscaler A10 A10 软件： lv
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/keepalived/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/keepalived/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/keepalived/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/keepalived/</guid>
       <description>keepalived HA Cluster：
 集群类型：LB（lvs/nginx（http/upstream, stream/upstream））、HA、HP SPoF: Single Point of Failure 系统可用性的公式：A=MTBF/（MTBF+MTTR） \(0,1\), 95% 几个9（指标）: 99%, ..., 99.999%，99.9999%； 99%： %1, 99.9%， 0.1% 系统故障： 硬件故障：设计缺陷、wear out、自然灾害、…… 软件故障：设计缺陷、 提升系统高用性的解决方案之降低MTTR： 手段：冗余（redundant） active/passive（主备），active/active（双主） active --&amp;amp;gt; HEARTBEAT --&amp;amp;gt; passive active &amp;amp;lt;--&amp;amp;gt; HEARTBEAT &amp;amp;lt;--&amp;amp;gt; active 高可用的是“服务”： HA nginx service： vip/nginx process\[/shared storage\] 资源：组成一个高可用服务的“组件”； \(1\) passive node的数量？ \(2\) 资源切换？ shared storage： NAS：文件共享服务器； SAN：存储区域网络，块级别的共享； Network partition：网络分区 隔离设备： node：STONITH = Shooting The Other Node In The Head 资源：fence quorum： with quorum： &amp;amp;gt; total/2 without quorum: &amp;amp;lt;= total/2 TWO nodes Cluster？ 辅助设备：ping node, quorum disk; Failover：故障切换，即某资源的主节点故障时，将资源转移至其它节点的操作； Failback：故障移回，即某资源的主节点故障后重新修改上线后，将转移至其它节点的资源重新切回的过程； HA Cluster实现方案: vrrp协议的实现 keepalived ais：完备HA集群 RHCS（cman） heartbeat corosync keepalived： vrrp协议：Virtual Redundant Routing Protocol 术语： 虚拟路由器：Virtual Router 虚拟路由器标识：VRID\(0-255\) 物理路由器： master：主设备 backup：备用设备 priority：优先级 VIP：Virtual IP VMAC：Virutal MAC \(00-00-5e-00-01-VRID\) GraciousARP 通告：心跳，优先级等；周期性； 抢占式，非抢占式； 安全工作： 认证： 无认证 简单字符认证 MD5 工作模式： 主/备：单虚拟路径器； 主/主：主/备（虚拟路径器1），备/主（虚拟路径器2） keepalived: vrrp协议的软件实现，原生设计的目的为了高可用ipvs服务： vrrp协议完成地址流动； 为vip地址所在的节点生成ipvs规则（在配置文件中预先定义）； 为ipvs集群的各RS做健康状态检测； 基于脚本调用接口通过执行脚本完成脚本中定义的功能，进而影响集群事务； 组件： 核心组件： vrrp stack ipvs wrapper checkers 控制组件：配置文件分析器 IO复用器 内存管理组件 HA Cluster的配置前提： \(1\) 各节点时间必须同步； ntp, chrony \(2\) 确保iptables及selinux不会成为阻碍； \(3\) 各节点之间可通过主机名互相通信（对KA并非必须）； 建议使用/etc/hosts文件实现； \(4\) 各节点之间的root用户可以基于密钥认证的ssh服务完成互相通信；（并非必须） keepalived安装配置： CentOS 6.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/lvs/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/lvs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/lvs/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/lvs/</guid>
       <description>LVS Linux Cluster：
 Cluster：计算机集合，为解决某个特定问题组合起来形成的单个系统； Linux Cluster类型： LB：Load Balancing，负载均衡； HA：High Availiablity，高可用； A=MTBF/（MTBF+MTTR） (0,1)：90%, 95%, 99%, 99.5%, 99.9%, 99.99%, 99.999%, 99.9999% HP：High Performance，高性能； www.top500.org 分布式系统： 分布式存储 分布式计算 系统扩展方式： Scale UP：向上扩展 Scale Out：向外扩展 Cluster LB Cluster：
 LB Cluster的实现： 硬件： F5 Big-IP Citrix Netscaler A10 A10 软件： lvs：Linux Virtual Server nginx haproxy ats：apache traffic server perlbal pound 基于工作的协议层次划分： 传输层（通用）：（DPORT） lvs： nginx：（stream） haproxy：（mode tcp） 应用层（专用）：（自定义的请求模型分类） proxy server： http：nginx, httpd, haproxy(mode http), ... fastcgi：nginx, httpd, ... mysql：mysql-proxy, .</description>
@@ -45,20 +45,20 @@ LB Cluster的实现： 硬件： F5 Big-IP Citrix Netscaler A10 A10 软件： lv
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/nginx/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/nginx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/nginx/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/nginx/</guid>
       <description>nginx Nginx：
 engine X = Nginx http协议：web服务器（类似于httpd）、http reverse proxy（类似于httpd）、imap/pop3 reverse proxy NGINX is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server. C10K（10K Connections）. Tengine, OpenResty. http协议: URL：shceme://username:password@host:port/path;params?query#frag http事务： request： &amp;lt;method&amp;gt; &amp;lt;URL&amp;gt; &amp;lt;VERSION&amp;gt; HEADERS &amp;lt;body&amp;gt; response： &amp;lt;VERSION&amp;gt; &amp;lt;STATUS&amp;gt; &amp;lt;REASON-PHRASE&amp;gt; HEADERS &amp;lt;body&amp;gt; Method：GET/HEAD/POST, PUT/DELETE, TRACES, OPTIONS Status Code： 1xx： 2xx：成功类响应码，200 3xx：重定向类的响应码，301, 302, 304 4xx：客户端错误，403，404 5xx：服务器端错误，502 认证： 基于ip认证 基于用户认证 ：basic/digest httpd MPM： prefork：进程模型，两级结构，主进程master负责生成子进程，每个子进程负责响应一个请求； worker：线程模型，三级结构，主进程master负责生成子进程，每个子进程负责生成多个线程，每个线程响应一个请求； event：主进程master负责生成子进程，每个子进程响应多个请求； I/O模型： 阻塞型、非阻塞型、复用型、信号驱动型、异步 同步/异步： 关注消息通知机制； 消息通知： 同步：等待对方返回消息； 异步：被调用者通过状态、通知或回调机制通知调用者被调用者的运行状态； 阻塞/非阻塞： 关注调用者在等待结果返回之前所处的状态； 阻塞：blocking，调用结果返回之前，调用者被挂起； 非阻塞：nonblocking，调用结果返回之前，调用者不会被挂起； 一次IO请求，都会由两阶段组成： 第一步：等待数据，即数据从磁盘到内核内存； 第二步：复制数据，即数据内核内存到进程内存； 复用型IO调用： select()：1024 poll()： event-driven： epoll（Linux）：libevent Kqueue（BSD）： Solaris：/dev/poll NGINX is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/tomcat/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/tomcat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/tomcat/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/tomcat/</guid>
       <description>tomcat 编程语言： 硬件级：微码编程，汇编语言 系统级：C，C++，&amp;hellip; 应用级：Java, PHP, Python, Ruby, Perl, C#, &amp;hellip; Python： PVM Standard Library Web Framework：Django, Flask, &amp;hellip; Java：JVM，JDK bash：bash explainer &amp;hellip;
 程序：指令+数据 过程式编程：以指令为中心，数据服务于代码； 对象式编程：以数据为中心，指令服务于数据； 对象，方法（method） Java： Sun, Green Project, Oak, James Gosling; 1995：Java 1.0, Write once, Run Anywhere; 1996：JDK（Java Development Kit），包含类库、开发工具(javac)、JVM（SUN Classic VM） JDK 1.0, Applet, AWT 1997：JDK 1.1 1998: JDK 1.2 Sun分拆Java技术为三个方向： J2SE：Standard Edition J2EE：Enterprise Edition J2ME：Mobile Edition 代表性技术：EJB，java plugin, Swing, JIT(Just In Time，即时编译) 2000：JDK 1.3 HotSpot VM 2002：JDK 1.</description>
     </item>

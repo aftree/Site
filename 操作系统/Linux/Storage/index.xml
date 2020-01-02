@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>存储 on My New Hugo Site</title>
-    <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/</link>
+    <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/</link>
     <description>Recent content in 存储 on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 15 Dec 2019 20:50:40 +0800</lastBuildDate>
     
-	<atom:link href="https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/about-storage/readme/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/about-storage/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/about-storage/readme/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/about-storage/readme/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/cloud-storage/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/cloud-storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/cloud-storage/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/cloud-storage/</guid>
       <description>云存储 </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang-2/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang-2/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang-2/</guid>
       <description>安装2 这是另一个安装的文章：Ceph分布式存储-运维操作笔记
 Centos7下使用Ceph-deploy快速部署Ceph分布式存储-操作记录
 1）基本环境
@@ -43,20 +43,20 @@ Centos7下使用Ceph-deploy快速部署Ceph分布式存储-操作记录
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang/</guid>
       <description>安装 （一个ceph cluster集群，至少需要1个mon节点和2个osd节点）
 0）基本信息： 这里我只是测试环境，所以使用一个监控节点，两个存储节点，具体如下： ip地址 主机名 ceph磁盘 备注 192.168.10.200 ceph-node1 20G 作为mds、mon、osd0 192.168.10.201 ceph-node2 20G 作为osd1 192.168.10.202 ceph-node3 20G 作为osd2 192.168.10.203 ceph-client 挂载点：/cephfs ceph客户端 Ceph的文件系统作为一个目录挂载到客户端cephclient的/cephfs目录下，可以像操作普通目录一样对此目录进行操作。 1）安装前准备 分别在ceph的三个节点机（ceph-node1、ceph-node2、ceph-node3）上添加hosts [root@ceph-node1 ~]# cat /etc/hosts 127.0.0.1 localhost localhost.localdomain localhost4 localhost4.localdomain4 ::1 localhost localhost.localdomain localhost6 localhost6.localdomain6 192.168.10.200 ceph-node1 192.168.10.201 ceph-node2 192.168.10.202 ceph-node3 添加完hosts后，做下测试，保证使用hosts中映射的主机名能ping通。 [root@ceph-node3 ~]# ping ceph-node1 PING ceph-node1 (192.168.10.200) 56(84) bytes of data. 64 bytes from ceph-node1 (192.168.10.200): icmp_seq=1 ttl=64 time=0.211 ms 64 bytes from ceph-node1 (192.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gai-shu/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gai-shu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gai-shu/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gai-shu/</guid>
       <description>概述 1）Ceph简单概述 Ceph是一个分布式存储系统，诞生于2004年，最早致力于开发下一代高性能分布式文件系统的项目。Ceph源码下载：http://ceph.com/download/ 。随着云计算的发展，ceph乘上了OpenStack的春风，进而成为了开源社区受关注较高的项目之一。Ceph可以将多台服务器组成一个超大集群，把这些机器中的磁盘资源整合到一块儿，形成一个大的资源池（PB级别），然后按需分配给应用使用。Ceph分布式存储的优势：
 1）CRUSH算法 Crush算法是ceph的两大创新之一，简单来说，ceph摒弃了传统的集中式存储元数据寻址的方案，转而使用CRUSH算法完成数据的寻址操作。 CRUSH在一致性哈希基础上很好的考虑了容灾域的隔离，能够实现各类负载的副本放置规则，例如跨机房、机架感知等。 Crush算法有相当强大的扩展性，理论上支持数千个存储节点。 2）高可用 Ceph中的数据副本数量可以由管理员自行定义，并可以通过CRUSH算法指定副本的物理存储位置以分隔故障域，支持数据强一致性； Ceph可以忍受多种故障场景并自动尝试并行修复； Ceph支持多份强一致性副本，副本能够垮主机、机架、机房、数据中心存放。所以安全可靠。 Ceph存储节点可以自管理、自动修复。无单点故障，容错性强。 3）高性能 因为是多个副本，因此在读写操作时候能够做到高度并行化。理论上，节点越多，整个集群的IOPS和吞吐量越高。 另外一点ceph客户端读写数据直接与存储设备(osd) 交互。在块存储和对象存储中无需元数据服务器。 4）高扩展性 Ceph不同于swift，客户端所有的读写操作都要经过代理节点。一旦集群并发量增大时，代理节点很容易成为单点瓶颈。 Ceph本身并没有主控节点，扩展起来比较容易，并且理论上，它的性能会随着磁盘数量的增加而线性增长。 Ceph扩容方便、容量大。能够管理上千台服务器、EB级的容量。 5）特性丰富 Ceph支持三种调用接口：对象存储，块存储，文件系统挂载。三种方式可以一同使用。 在国内一些公司的云环境中，通常会采用Ceph作为openstack的唯一后端存储来提升数据转发效率。 Ceph统一存储，虽然Ceph底层是一个分布式文件系统，但由于在上层开发了支持对象和块的接口。所以在开源存储软件中，能够一统江湖。至于能不能千秋万代，就不知了。 Ceph提供3种存储方式分别是对象存储，块存储和文件系统，一般我们主要关心的还是块存储，推荐将虚拟机后端存储从SAN过渡到Ceph。Ceph 现在是云计算、虚拟机部署的最火开源存储解决方案，据说有20%的OpenStack部署存储用的都是Ceph的block storage。
 2）Ceph分布式存储的基本架构
@@ -80,10 +80,10 @@ Cluster Map
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gu-zhang-pai-chu/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gu-zhang-pai-chu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gu-zhang-pai-chu/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gu-zhang-pai-chu/</guid>
       <description>故障排除 1）修改 OSD CRUSH weight 1.1）问题描述
 部署完成后，集群处于 PG Degraded 状态，经查 ceph health detail，发现 PG 的 acting OSD 只有 [0]，而不是两个。查 osd tree，osd 日志等，看不出明显问题。
 1.2）原因分析
@@ -93,19 +93,19 @@ Cluster Map
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/images/readme/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/images/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/images/readme/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/images/readme/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ji-qun-guan-li/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ji-qun-guan-li/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ji-qun-guan-li/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ji-qun-guan-li/</guid>
       <description>集群管理 Ceph常规操作及常见问题梳理
 Ceph集群管理
 每次用命令启动、重启、停止Ceph守护进程（或整个集群）时,必须指定至少一个选项和一个命令,还可能要指定守护进程类型或具体例程。
@@ -125,10 +125,10 @@ Ceph集群管理
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/readme/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/readme/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/readme/</guid>
       <description>Ceph Ceph官方文档：http://docs.ceph.com/docs/master/#
 Ceph官网：https://ceph.com
 Ceph可视化监控系统：https://ceph.com/planet/快速构建ceph可视化监控系统/
@@ -140,19 +140,19 @@ Red Hat Ceph存储—《深入理解Ceph架构》：http://ceph.org.cn/2018/06/2
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ri-chang-cao-zuo-ming-ling/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ri-chang-cao-zuo-ming-ling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ri-chang-cao-zuo-ming-ling/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ri-chang-cao-zuo-ming-ling/</guid>
       <description>日常操作命令 查看状态命令： 查看ceph集群状态：ceph -s 查看mon状态：ceph mon stat 查看msd状态：ceph msd stat 查看osd状态：ceph osd stat 查看osd目录树（可以查看每个osd挂在哪台机，是否已启动）：ceph osd tree 启动ceph进程命令： 需要在对应的节点进行启动（如果对应节点没有该服务，会进行提示） 启动mon进程：service ceph start mon.ceph-node1 启动msd进程：service ceph start msd.ceoh-node1 启动osd进程：service ceph start osd.0（在ceph-node1上） 启动osd进程：service ceph start osd.1（在ceph-node2上） 启动osd进程：service ceph start osd.2（在ceph-node3上） 查看机器的监控状态 # ceph health 查看ceph的实时运行状态 # ceph -w 检查信息状态信息 # ceph -s 查看ceph存储空间 [root@client ~]# ceph df 删除一个节点的所有的ceph数据包 # ceph-deploy purge ceph-node1 # ceph-deploy purgedata ceph-node1 为ceph创建一个admin用户并为admin用户创建一个密钥，把密钥保存到/etc/ceph目录下： # ceph auth get-or-create client.admin mds &amp;#39;allow&amp;#39; osd &amp;#39;allow &amp;#39; mon &amp;#39;allow &amp;#39; &amp;gt; /etc/ceph/ceph.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ying-jian-xuan-ze/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ying-jian-xuan-ze/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ying-jian-xuan-ze/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ying-jian-xuan-ze/</guid>
       <description>硬件选择 在规划Ceph分布式存储集群环境的时候，对硬件的选择很重要，这关乎整个Ceph集群的性能，下面梳理到一些硬件的选择标准，可供参考：
 1）CPU选择 Ceph metadata server会动态的重新分配负载，它是CPU敏感性的，所以Metadata Server应该有比较好的处理器性能 (比如四核CPU). Ceph OSDs运行RADOS服务，需要通过CRUSH来计算数据的存放位置，replicate数据，以及维护Cluster Map的拷贝，因此OSD也需要合适的处理性能 Ceph Monitors 简单的维护了Cluster Map的主干信息所以这个是CPU不敏感的。
 2）RAM选择 Metadata servers 以及Monitors 必须能够快速的提供数据，因此必须有充足的内存(e.g., 1GB of RAM per daemon instance). OSDs 在执行正常的操作时不需要过多的内存 (e.g., 500MB of RAM per daemon instance);但是 执行恢复操作时，就需要大量的内存(e.g., ~1GB per 1TB of storage per daemon). Generally, 而且是越多越好。
@@ -173,10 +173,10 @@ BTRFS文件系统的日志数据和对象数据的同时可以写，而XFS和ext
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/yun-wei/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/yun-wei/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/yun-wei/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/yun-wei/</guid>
       <description>运维 一、Ceph简单介绍 1）OSDs:Ceph的OSD守护进程（OSD）存储数据，处理数据复制，恢复，回填，重新调整，并通过检查其它Ceph OSD守护程序作为一个心跳 向Ceph的监视器报告一些检测信息。Ceph的存储集群需要至少2个OSD守护进程来保持一个 active + clean状态.（Ceph默认制作2个备份，但可以调整它）
 2）Monitors:Ceph的监控保持集群状态映射，包括OSD(守护进程)映射,分组(PG)映射，和CRUSH映射。 Ceph 保持一个在Ceph监视器, Ceph OSD 守护进程和 PG的每个状态改变的历史（称之为“epoch”）。
 3）MDS:MDS是Ceph的元数据服务器，代表存储元数据的Ceph文件系统（即Ceph的块设备和Ceph的对象存储不使用MDS）。Ceph的元数据服务器使用POSIX文件系统，用户可以执行基本命令如 ls, find,等，并且不需要在Ceph的存储集群上造成巨大的负载。
@@ -190,10 +190,10 @@ Ceph提供了3种使用场景
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/diao-du/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/diao-du/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/diao-du/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/diao-du/</guid>
       <description>调度 常见的分布式文件系统有，GFS、HDFS、Lustre 、Ceph 、GridFS 、mogileFS、TFS、FastDFS等。各自适用于不同的领域。它们都不是系统级的分布式文件系统，而是应用级的分布式文件存储服务。
 Google学术论文，这是众多分布式文件系统的起源
 Google File System（大规模分散文件系统）
@@ -220,19 +220,19 @@ TFS（Taobao File System）安装方法 （我写的）
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/drbd/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/drbd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/drbd/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/drbd/</guid>
       <description>DRBD https://www.cnblogs.com/kevingrace/category/925329.html</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/bu-shu/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/bu-shu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/bu-shu/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/bu-shu/</guid>
       <description>部署 1）服务器信息（centos6.9）
 描述 ip地址 主机名称 分组 跟踪服务器1 192.168.10.200 Fastdfs_tracker_t1 跟踪服务器2 192.168.10.201 Fastdfs_tracker_t2 存储服务器1 192.168.10.202 Fastdfs_storage_s1 group1 存储服务器2 192.168.10.203 Fastdfs_storage_s2 group2 存储服务器3 192.168.10.204 Fastdfs_storage_s3 group3 客户机1 192.168.10.205 Fastdfs_client 2）FastDFS安装（所有tracker服务器、storage服务器、客户端机器都要有如下操作。这里以Fastdfs_tracker_t1服务器操作为例
 1）编译和安装所需的依赖包 [root@Fastdfs_tracker_t1 ~]# yum install make cmake gcc gcc-c++ 2）安装libfastcommon [root@Fastdfs_tracker_t1 ~]# cd /usr/local/src/ [root@Fastdfs_tracker_t1 src]# wget https://codeload.github.com/happyfish100/libfastcommon/tar.gz/V1.0.7 -O libfastcommon-1.0.7.tar.gz [root@Fastdfs_tracker_t1 src]# tar zxf libfastcommon-1.0.7.tar.gz [root@Fastdfs_tracker_t1 src]# cd libfastcommon-1.0.7 [root@Fastdfs_tracker_t1 libfastcommon-1.0.7]# ./make.sh [root@Fastdfs_tracker_t1 libfastcommon-1.0.7]# ./make.sh install libfastcommon 默认安装到了/usr/lib64/libfastcommon.so和/usr/lib64/libfdfsclient.so 因为FastDFS主程序设置的lib目录是/usr/local/lib，所以需要创建软链接 [root@Fastdfs_tracker_t1 libfastcommon-1.0.7]# ln -s /usr/lib64/libfastcommon.</description>
@@ -240,19 +240,19 @@ TFS（Taobao File System）安装方法 （我写的）
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/chang-yong-ming-ling/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/chang-yong-ming-ling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/chang-yong-ming-ling/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/chang-yong-ming-ling/</guid>
       <description>常用命令 1）上传文件命令：fdfs_upload_file 不仅可以上传图片文件，也可以上传其他文件。 [root@Fastdfs_client src]# echo &amp;#34;hahaha&amp;#34; &amp;gt; test.txt [root@Fastdfs_client src]# /usr/bin/fdfs_upload_file /etc/fdfs/client.conf /usr/local/src/test.txt group3/M00/00/00/wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt 上传成功后，返回一串带有组和路径标识的字符串，这是文件的id，然后到group3组内的存储服务器上查看这个文件的id信息 [root@Fastdfs_storage_s3 ~]# ll /fastdfs/storage/data/00/00/ total 84 -rw-r--r--. 1 root root 7 Feb 27 11:02 wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt [root@Fastdfs_storage_s3 ~]# cat /fastdfs/storage/data/00/00/wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt hahaha [root@Fastdfs_storage_s3 ~]# md5sum /fastdfs/storage/data/00/00/wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt 5a6d311c0d8f6d1dd03c1c129061d3b1 /fastdfs/storage/data/00/00/wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt 2）下载文件命令：fdfs_download_file 在客户端机器上将上面上传到Fastdfs存储里文文件下载下来 [root@Fastdfs_client ~]# cd /mnt/ [root@Fastdfs_client mnt]# /usr/bin/fdfs_download_file /etc/fdfs/client.conf group3/M00/00/00/wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt [root@Fastdfs_client mnt]# ls wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt [root@Fastdfs_client mnt]# cat wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt hahaha [root@Fastdfs_client mnt]# md5sum wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt 5a6d311c0d8f6d1dd03c1c129061d3b1 wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt 下载后可以对比文件的md5值。 3）查看文件信息命令：fdfs_file_info [root@Fastdfs_client ~]# /usr/bin/fdfs_file_info /etc/fdfs/client.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/gai-shu/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/gai-shu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/gai-shu/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/gai-shu/</guid>
       <description>概述 二、FastDFS分布式系统架构介绍 FastDFS：是一个开源的轻量级分布式文件系统，功能包括：文件存储、文件同步、文件访问（文件上传、文件下载）等，解决了大容量存储和负载均衡的问题。特别适合中小文件（建议范围：4KB &amp;lt; file_size &amp;lt;500MB），对以文件为载体的在线服务，如相册网站、视频网站等。
 FastDFS是为互联网应用量身定做的分布式文件系统，充分考虑了冗余备份、负载均衡、线性扩容等机制，并注重高可用、高性能等指标。和现有的类Google FS分布式文件系统相比，FastDFS的架构和设计理念有其独到之处，主要体现在轻量级、分组方式和对等结构三个方面。
 FastDFS架构图 FastDFS服务端有两个角色：跟踪器（tracker）和存储节点（storage）。跟踪器主要做调度工作，在访问上起负载均衡的作用。
@@ -279,28 +279,28 @@ Storage Server会定期的向Tracker Server发送自己的存储信息。当Trac
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/images/readme/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/images/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/images/readme/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/images/readme/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/readme/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/readme/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/readme/</guid>
       <description>FastDFS </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fen-bu-shi/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fen-bu-shi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fen-bu-shi/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fen-bu-shi/</guid>
       <description>分布式 认为对象存储和文件系统最大的区别就是API，文件系统提供了完整POSIX语义，往往具有层次化的目录结构，对文件可以进行精细的操作(open, read, write, seek, delete等)，相对会复杂一些。相比之下，对象存储就简单的多，对象本义是**B**inary **L**arge **OB**ject(BLOB), 是一个大的二进制文件，是作为一个整体出现，不能对其进行修改，因此对象存储系统有一个显著的特点就是Immutable，即不变性，正是因为这个特点对象存储系统一般只提供put, get, 和delete的操作，并且都是以key/val的形式，val一般是整个blob. 具体到实际的资源，主要指的是像图片，视频，文档，源码，二进制程序等这样的文件，这些文件往往都很小，一般在100k左右，视频可能会大一些，能达到几十兆甚至好几个G。
 系统整体对比
    对比说明/文件系统 TFS FastDFS MogileFS MooseFS GlusterFS Ceph     开发语言 C++ C Perl C C C++   开源协议 GPL V2 GPL V3 GPL GPL V3 GPL V3 LGPL   数据存储方式 块 文件/Trunk 文件 块 文件/块 对象/文件/块   集群节点通信协议 私有协议（TCP） 私有协议（TCP） HTTP 私有协议（TCP） 私有协议（TCP）/ RDAM(远程直接访问内存) 私有协议（TCP）   专用元数据存储点 占用NS 无 占用DB 占用MFS 无 占用MDS   在线扩容 支持 支持 支持 支持 支持 支持   冗余备份 支持 支持 - 支持 支持 支持   单点故障 存在 不存在 存在 存在 不存在 存在   跨集群同步 支持 部分支持 - - 支持 不适用   易用性 安装复杂，官方文档少 安装简单，社区相对活跃 - 安装简单，官方文档多 安装简单，官方文档专业化 安装简单，官方文档专业化   适用场景 跨集群的小文件 单集群的中小文件 - 单集群的大中文件 跨集群云存储 单集群的大中小文件    开源协议说明</description>
@@ -308,10 +308,10 @@ Storage Server会定期的向Tracker Server发送自己的存储信息。当Trac
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/</guid>
       <description>GlusterFS分布式系统维护管理手册
 1）管理说明
 在解释系统管理时会提供实例，首先提供一个环境说明。 系统节点： IP 别名 Brick 192.168.2.100 server0 /mnt/sdb1 /mnt/sdc1 /mnt/sdd1 192.168.2.101 server1 /mnt/sdb1 /mnt/sdc1 /mnt/sdd1 192.168.2.102 server2 /mnt/sdb1 /mnt/sdc1 /mnt/sdd1 创建了三个节点，并每台虚拟机 mount 三块磁盘作为 Brick 使用，每个 brick 分配了 30G 的虚拟容量。 实例约定 AFR 卷名： afr_vol DHT 卷名： dht_vol Stripe 卷名： str_vol 客户端挂载点： /mnt/gluster 2）系统部署
@@ -320,29 +320,29 @@ Storage Server会定期的向Tracker Server发送自己的存储信息。当Trac
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin/</guid>
       <description>Admin 接着上一篇Centos7下GlusterFS分布式存储集群环境部署记录文档，继续做一些补充记录，希望能加深对GlusterFS存储操作的理解和熟悉度。
 清理glusterfs存储环境 由上面可知，该glusterfs存储集群有四个节点： [root@GlusterFS-master ~]# cat /etc/hosts ....... 192.168.10.239 GlusterFS-master 192.168.10.212 GlusterFS-slave 192.168.10.204 GlusterFS-slave2 192.168.10.220 GlusterFS-slave3 现将四个节点的存储目录/opt/gluster/data全部删除 [root@GlusterFS-master ~]# rm -rf /opt/gluster [root@GlusterFS-slave ~]# rm -rf /opt/gluster [root@GlusterFS-slave2 ~]# rm -rf /opt/gluster [root@GlusterFS-slave3 ~]# rm -rf /opt/gluster [root@GlusterFS-master ~]# gluster volume list models [root@GlusterFS-master ~]# gluster volume info Volume Name: models Type: Distributed-Replicate Volume ID: f1945b0b-67d6-4202-9198-639244ab0a6a Status: Stopped Number of Bricks: 2 x 2 = 4 Transport-type: tcp Bricks: Brick1: 192.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin2/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin2/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin2/</guid>
       <description>Admin2 Gluster设置允许可信任客户端IP 设置只允许192.168.1.*的访问 [root@GlusterFS-master ~]# gluster volume set gluster_share auth.allow 192.168.1.* volume set: success 查看卷信息 [root@GlusterFS-master ~]# gluster volume info Volume Name: gluster_share Type: Distributed-Replicate Volume ID: a9f989bd-7edd-4089-836a-d9f742b8d37a Status: Started Number of Bricks: 2 x 2 = 4 Transport-type: tcp Bricks: Brick1: 192.168.10.239:/data/gluster Brick2: 192.168.10.212:/data/gluster Brick3: 192.168.10.204:/data/gluster Brick4: 192.168.10.220:/data/gluster Options Reconfigured: auth.allow: 192.168.1.* 注意上面最后一行卷信息，说明只允许客户端ip为192.168.10.*网段的机器挂载。 然后在192.168.10.213客户端进行挂载，发现就挂载不上了 [root@Client ~]# mount -t glusterfs 192.168.10.239:gluster_share /opt/gfsmount/ [root@Client ~]# df -h Filesystem Size Used Avail Use% Mounted on /dev/mapper/centos-root 38G 4.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/geng-huan-gu-zhang-brick/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/geng-huan-gu-zhang-brick/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/geng-huan-gu-zhang-brick/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/geng-huan-gu-zhang-brick/</guid>
       <description>更换故障Brick 前面已经介绍了GlusterFS分布式存储集群环境部署记录，现在模拟下更换故障Brick的操作：
 1）GlusterFS集群系统一共有4个节点，集群信息如下：
 分别在各个节点上配置hosts、同步好系统时间，关闭防火墙和selinux [root@GlusterFS-slave data]# cat /etc/hosts 192.168.10.239 GlusterFS-master 192.168.10.212 GlusterFS-slave 192.168.10.204 GlusterFS-slave2 192.168.10.220 GlusterFS-slave3 ------------------------------------------------------------------------------------ 分别在四个节点机上使用df创建一个虚拟分区，然后在这个分区上创建存储目录 [root@GlusterFS-master ~]# df -h Filesystem Size Used Avail Use% Mounted on /dev/mapper/centos-root 36G 1.8G 34G 5% / devtmpfs 2.9G 0 2.9G 0% /dev tmpfs 2.9G 0 2.9G 0% /dev/shm tmpfs 2.9G 8.5M 2.9G 1% /run tmpfs 2.9G 0 2.9G 0% /sys/fs/cgroup /dev/vda1 1014M 143M 872M 15% /boot /dev/mapper/centos-home 18G 33M 18G 1% /home tmpfs 581M 0 581M 0% /run/user/0 dd命令创建一个虚拟分区出来，格式化并挂载到/data目录下 [root@GlusterFS-master ~]# dd if=/dev/vda1 of=/dev/vdb1 2097152+0 records in 2097152+0 records out 1073741824 bytes (1.</description>
@@ -350,19 +350,19 @@ Storage Server会定期的向Tracker Server发送自己的存储信息。当Trac
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/readme/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/readme/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/readme/</guid>
       <description>Administration Guide </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/gai-shu/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/gai-shu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/gai-shu/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/gai-shu/</guid>
       <description>概述 GlusterFS系统是一个可扩展的网络文件系统，相比其他分布式文件系统，GlusterFS具有高扩展性、高可用性、高性能、可横向扩展等特点，并且其没有元数据服务器的设计，让整个服务没有单点故障的隐患。Glusterfs是一个横向扩展的分布式文件系统，就是把多台异构的存储服务器的存储空间整合起来给用户提供统一的命名空间。用户访问存储资源的方式有很多，可以通过NFS，SMB，HTTP协议等访问，还可以通过gluster本身提供的客户端访问。
 GlusterFS是Scale-Out存储解决方案Gluster的核心，它是一个开源的分布式文件系统，具有强大的横向扩展能力，通过扩展能够支持数PB存储容量和处理数千客户端。GlusterFS借助TCP/IP或InfiniBand RDMA网络将物理分布的存储资源聚集在一起，使用单一全局命名空间来管理数据。GlusterFS基于可堆叠的用户空间设计，可为各种不同的数据负载提供优异的性能。
 **GlusterFS 适合大文件还是小文件存储？**弹性哈希算法和Stripe 数据分布策略，移除了元数据依赖，优化了数据分布，提高数据访问并行性，能够大幅提高大文件存储的性能。对于小文件，无元数据服务设计解决了元数据的问题。但GlusterFS 并没有在I/O 方面作优化，在存储服务器底层文件系统上仍然是大量小文件，本地文件系统元数据访问是一个瓶颈，数据分布和并行性也无法充分发挥作用。因此，GlusterFS 适合存储大文件，小文件性能较差，还存在很大优化空间。
@@ -398,19 +398,19 @@ node1# gluster peer detach node3
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/images/readme/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/images/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/images/readme/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/images/readme/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/install-guide/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/install-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/install-guide/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/install-guide/</guid>
       <description>Install Guide 之前已经简单地对
 GlusterFS分布式文件系统
 做了介绍，下面就该环境部署做一记录：
@@ -421,10 +421,10 @@ GlusterFS分布式文件系统
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/readme/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/readme/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/readme/</guid>
       <description>GlusterFS Gluster官网：https://www.gluster.org
 官方文档：https://docs.gluster.org/en/latest/
 相关资料：https://www.cnblogs.com/wangtao1993/p/6030918.html</description>
@@ -432,10 +432,10 @@ GlusterFS分布式文件系统
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/shu-ju-de-hui-fu-ji-523628-afr-de-shuo-ming/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/shu-ju-de-hui-fu-ji-523628-afr-de-shuo-ming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/shu-ju-de-hui-fu-ji-523628-afr-de-shuo-ming/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/shu-ju-de-hui-fu-ji-523628-afr-de-shuo-ming/</guid>
       <description>数据的恢复机制(AFR)的说明 GlusterFSFS恢复数据都是基于副本卷来说的，GlusterFSFS复制卷是采用镜像的方式做的，并且是同步事务性操作。简单来说就是，某一个客户要写文件时，先把这个文件锁住，然后同时写两个或多个副本，写完后解锁，这个操作才算结束。那么在写某一个副本时发生故障没有写成功，或者运行过程中某一个节点断电了，造成数据丢失了，等等，就能通过另一个副本来恢复。
 现在这里说一个疑问： 就是GlusterFS写副本时同步写的，就是客户端同时写两份数据，这样就会产生两倍的流量，测2副本的分布式复制卷性能时，能明确看到性能只有无副本的一半，或者只有读的一半；另一个分布式文件系统ceph就不是这样，是异步来写副本的，就是写到一个主OSD（ceph的存储单元）就返回了，这个OSD再通过内部网络异步写到其他的OSD，这样不是更快了。那么这两种方法有什么优缺点呢，那种比较好，或者各自为什么采用这样的方法？
 说道恢复就有什么时候恢复，怎么恢复，凭什么说这个副本是好的，那个副本是坏的呢，这样的问题，一个一个来说吧。
@@ -461,28 +461,28 @@ WISE：相反，自己是0，别人不是0 ，自己没问题别人有问题，�
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/mgfs/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/mgfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/mgfs/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/mgfs/</guid>
       <description>mgfs </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/moosefs/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/moosefs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/moosefs/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/moosefs/</guid>
       <description>MooseFS https://www.cnblogs.com/kevingrace/category/924882.html</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/readme/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/readme/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/readme/</guid>
       <description>分布式文件系统 https://blog.csdn.net/wendowswd/article/details/78319323
 分布式文件系统
 分布式文件系统（Distributed File System）是指文件系统管理的物理存储资源并不直接与本地节点相连，而是分布于计算网络中的一个或者多个节点的计算机上。目前意义上的分布式文件系统大多都是由多个节点计算机构成，结构上是典型的客户机/服务器模式。流行的模式是当客户机需要存储数据时，服务器指引其将数据分散的存储到多个存储节点上，以提供更快的速度，更大的容量及更好的冗余特性。
@@ -513,10 +513,10 @@ NFS还可以共享软驱,CDROM和ZIP等的存储设备,减少整个网络上的�
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/shi/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/shi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/shi/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/shi/</guid>
       <description>诗 一、各种分布式文件系统对比
 1.1 表格对比
    技术 优点 缺点 总结     HDFS 1.大数据批量读写，吞吐量高;2.一次写入，多次读取，顺序读写； 1、交互式应用，低延迟很难满足； 2、不支持多用户并发写相同文件。 如果是很多小文件，nameNode压力大   googleFs 1、成本低，运行在廉价的普通硬件上 、不开源 不开源，使用困难   Tfs 1、 开源 1、小于1M的文件 2、TFS内部是没有任何数据的内存缓冲的 适合单个文件比较小的系统   Lustre 1、 开源 2、 支持POSIX 3、 文件被分割成若干的Chunk，每个chunk是一般为1MB－4MB     Ceph 1、支持POSIX 2、开源  1、 在Linux主流内核中找到ceph 2、不成熟，处于测试推广阶段   MogileFs 1、开源  比FastDFS 差   FastDFS 1、 开源 2、 适合以文件为载体的在线服务 3、 FastDFS没有对文件做分块存储 4、 不需要二次开发即可直接使用 5、 比mogileFS更易维护和使用 6、 直接使用socket通信方式，相对于MogileFS的HTTP方式，效率更高。 1、文件访问方式使用专有API，不支持POSIX    swiftfs   1、基于HDFS   NFS 1、用户和程序可以象访问本地文件一样访问远端系统上的文件      开源的分布式文件/对象系统比较有名的包括Lustre（HPC）GlusterFS（NAS NFS）、HDFS（hadoop）、ceph（虚机块存储）、swift（restful对象存储），各有不同的领域。</description>
@@ -524,28 +524,28 @@ NFS还可以共享软驱,CDROM和ZIP等的存储设备,减少整个网络上的�
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/das/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/das/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/das/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/das/</guid>
       <description>DAS </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/fc-san/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/fc-san/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/fc-san/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/fc-san/</guid>
       <description>FC-SAN </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/ip-san/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/ip-san/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/ip-san/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/ip-san/</guid>
       <description>IP-SAN Linux下IP SAN共享存储操作记录 操作需求：
 公司之前在阿里云上购买了6台机器，磁盘空间大小不一致，后续IDC建设好后，又将业务从阿里云上迁移到IDC机器上了。
 为了不浪费阿里云上的这几台机器资源，打算将这其中的5台机器做成IP SAN共享存储，另一台机器共享这5台的SAN存储，然后跟自己的磁盘一起做成LVM逻辑卷，最后统一作为备份磁盘使用！
@@ -556,10 +556,10 @@ ip地址 数据盘空间 主机名 系统版本 192.168.10.17 200G ipsan-node01 
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/readme/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/readme/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/readme/</guid>
       <description>SAN 简单介绍 SAN，即存储区域网络（storage area network and SAN protocols），它是一种高速网络实现计算机与存储系统之间的数据传输。常见的分类是FC-SAN和IP-SAN两种。FC-SAN通过光纤通道协议转发scsi协议；IP-SAN通过TCP协议转发scsi协议，也就是IP 地址。存储设备是指一台或多台用以存储计算机数据的磁盘设备，通常指磁盘阵列，主要厂商EMC、日立等。
 iSCSI（internet SCSI）技术由IBM公司研究开发，是一个供硬件设备使用的、可以在IP协议的上层运行的SCSI指令集，这种指令集合可以实现在IP网络上运行SCSI协议，使其能够在诸如高速千兆以太网上进行路由选择。iSCSI是一种新储存技术，它是将现有SCSI接口与以太网络(Ethernet)技术结合，使服务器可与使用IP网络的储存装置互相交换资料。
 iSCSI是一种基于TCP/IP 的协议，用来建立和管理IP存储设备、主机和客户机等之间的相互连接，并创建存储区域网络（SAN）。SAN 使得SCSI 协议应用于高速数据传输网络成为可能，这种传输以数据块级别（block-level）在多个数据存储网络间进行。SCSI 结构基于C/S模式，其通常应用环境是：设备互相靠近，并且这些设备由SCSI 总线连接。
@@ -593,19 +593,19 @@ SAN由三个基本的组件构成：接口（如SCSI、
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/nas/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/nas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/nas/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/nas/</guid>
       <description>NAS </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/readme/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/readme/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/readme/</guid>
       <description>网络存储 Direc(DirectAttachedStorage)，全称为直接连接附加存储，采用DAS的方式可以很简单的实现平台的容量扩容，同时对数据可以提供多种RAlD级别的保护。
 DAS直联存储
 采用DAS方式，在视频存储单元上部署相关的HBA卡。用于跟后端的存储设备建立数据通道。前端的视频存储单元可以是DVR，也可以是视频存储服务器。其通道可以采用光纤、IP网线、SAS线缆甚至于USB。采用DAS方式并不能同时支持很多视频存储服务单元同时接入，而且其扩容能力严重依赖所选择的存储设备自身的扩容能力。所以在大型数字视频监控系统中，应用DAS存储方式将造成系统维护难度的极大提升。正是由于DAS存储的这些特点，所以这种存储方式一般应用于对于DVR的扩容或者小型数字视频监控项目中。
@@ -620,10 +620,10 @@ SAN(StorageAreaNetwork)，全称为存储区域网络，通过交换机等连接
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/mgfs/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/mgfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/mgfs/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/mgfs/</guid>
       <description>mgfs MogileFS是一个开源的分布式文件存储系统，由LiveJournal旗下的Danga Interactive公司开发。Danga团队开发了包括 Memcached、MogileFS、Perlbal 等多个知名的开源项目。目前使用MogileFS 的公司非常多，如日本排名先前的几个互联公司及国内的yupoo(又拍)、digg、豆瓣、1号店、大众点评、搜狗和安居客等，分别为所在的组织或公司管理着海量的图片。
 MogileFS由3个部分组成： (1) server：主要包括mogilefsd和mogstored两个应用程序。mogilefsd实现的是tracker，它通过数据库来保存元数据信息，包括站点domain、class、host等；mogstored是存储节点(store node)，它其实是个WebDAV服务，默认监听在7500端口，接受客户端的文件存储请求。在MogileFS安装完后，要运行mogadm工具将所有的store node注册到mogilefsd的数据库里，mogilefsd会对这些节点进行管理和监控。 (2) utils（工具集）：主要是MogileFS的一些管理工具，例如mogadm等。 (3) 客户端API：MogileFS的客户端API很多，例如Perl、PHP、Java、Python等，用这个模块可以编写客户端程序，实现文件的备份管理功能等。
 存储主机(节点) 这个是 MogileFS 存储文件存放在这些机器上,也是 mogstored 节点,也叫 Storage Server,一台存储主要都要启动一个 mogstored 服务.扩容就是增加这些机器.
@@ -635,19 +635,19 @@ cpanm DBD::mysql cpanm MogileFS::Server cpanm MogileFS::Utils cpanm MogileFS::Cl
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/network-storage/ip-san/images/readme/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/network-storage/ip-san/images/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/network-storage/ip-san/images/readme/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/network-storage/ip-san/images/readme/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/she-bei/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/she-bei/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/she-bei/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/she-bei/</guid>
       <description>存储设备 存储设备是用于储存信息的设备，通常是将信息数字化后再以利用电、磁或光学等方式的媒体加以存储。
 常见设备 1、利用电能方式存储信息的设备如：各式存储器，如RAM、ROM等
 2、利用磁能方式存储信息的设备如：硬盘、软盘（已经淘汰）、磁带、磁芯存储器、磁泡存储器（磁泡存储器在1970年代出现，但是在1980年代硬盘价格急剧下降的情况下未能获得商业上的成功。），U盘
@@ -661,10 +661,10 @@ cpanm DBD::mysql cpanm MogileFS::Server cpanm MogileFS::Utils cpanm MogileFS::Cl
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/chapter1/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/chapter1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/chapter1/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/chapter1/</guid>
       <description>存储 存储的内容比较广泛和零散，概念比较多，下面我就分享一下学习存储的心得
 一、基本概念 1、什么是数据及数据与信息的区别：数据可以理解为对所有事物的数字表示，信息是经过加工处理的数据，它是在数据层面上经过
 提炼得出来的有价值的数据。其实这两个概念都比较简单，但是非常重要。
@@ -729,10 +729,10 @@ SNIA（全球网络存储工业协会）对大数据下的定义是，在最强�
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/cun-chu-lei-xing/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/cun-chu-lei-xing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/cun-chu-lei-xing/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/cun-chu-lei-xing/</guid>
       <description>存储类型 原文：https://yq.aliyun.com/articles/85619
 1.存储引擎 1.1 Hash Table  1.1.1 dbm (database manager)  https://en.wikipedia.org/wiki/Dbm
 The dbm library stores arbitrary data by use of a single key (a primary key) in fixed-size buckets and uses hashing techniques to enable fast retrieval of the data by key.
@@ -750,10 +750,10 @@ http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/over
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/leixing/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/leixing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/leixing/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/leixing/</guid>
       <description>leixing https://blog.csdn.net/enweitech/article/details/51445087
 https://blog.csdn.net/liuaigui/article/details/17973039
    差异点\产品 ServerSAN 分布式NAS 分布式对象存储     接口协议 块（SCSI协议） 文件（NFS、CIFS协议） 对象（OpenStackSWIFT、Amazon S3）   时延 较低(&amp;lt;10ms左右) 中(10ms~100ms) 高（60ms以上）   一致性 强一致性 强一致性 最终一致性   应用场景 分布式云平台、数据仓库、虚拟机；客户为企业客户 文件共享，如媒资、医疗影像归档、卫星图片 云服务，如Amazon S3;客户为个人客户    ServerSAN
@@ -776,19 +776,19 @@ https://blog.csdn.net/liuaigui/article/details/17973039
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/readme/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/readme/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/readme/</guid>
       <description>浅谈存储 </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/summary/</link>
+      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/summary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/summary/</guid>
+      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/summary/</guid>
       <description> 浅谈存储  存储 存储类型 leixing   存储设备 网络存储  DAS NAS SAN  IP-SAN FC-SAN     分布式文件系统  分布式 Ceph  硬件选择 概述 安装2 集群管理 日常操作命令 故障排除 安装 运维   GlusterFS  概述 Install Guide Administration Guide  Admin Admin2 更换故障Brick   数据的恢复机制(AFR)的说明   FastDFS  概述 部署 常用命令   MooseFS DRBD 调度 诗   云存储  </description>
     </item>
     

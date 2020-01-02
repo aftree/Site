@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>版本控制 on My New Hugo Site</title>
-    <link>https://lijun.in/%E4%BA%91%E5%8E%9F%E7%94%9F/devops/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</link>
+    <link>http://aftree.github.io/%E4%BA%91%E5%8E%9F%E7%94%9F/devops/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</link>
     <description>Recent content in 版本控制 on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 15 Dec 2019 20:50:40 +0800</lastBuildDate>
     
-	<atom:link href="https://lijun.in/%E4%BA%91%E5%8E%9F%E7%94%9F/devops/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://aftree.github.io/%E4%BA%91%E5%8E%9F%E7%94%9F/devops/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
