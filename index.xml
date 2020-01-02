@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Site on My New Hugo Site</title>
-    <link>http://aftree.github.io/</link>
+    <link>https://lijun.in/</link>
     <description>Recent content in Site on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 15 Dec 2019 20:50:40 +0800</lastBuildDate>
     
-	<atom:link href="http://aftree.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://lijun.in/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/cluster/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/cluster/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/cluster/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/cluster/</guid>
       <description>Cluster Linux Cluster：
 Cluster：计算机集合，为解决某个特定问题组合起来形成的单个系统； Linux Cluster类型： LB：Load Balancing，负载均衡； HA：High Availiablity，高可用； A=MTBF/（MTBF+MTTR） (0,1)：90%, 95%, 99%, 99.5%, 99.9%, 99.99%, 99.999% HP：High Performance，高性能； www.top500.org 系统扩展方式： Scale UP：向上扩展 Scale Out：向外扩展 Cluster LB Cluster：
 LB Cluster的实现： 硬件： F5 Big-IP Citrix Netscaler A10 A10 软件： lvs：Linux Virtual Server nginx haproxy ats：apache traffic server perlbal pound 基于工作的协议层次划分： 传输层（通用）：（DPORT） lvs： nginx：（stream） haproxy：（mode tcp） 应用层（专用）：（自定义的请求模型分类） proxy sferver： http：nginx, httpd, haproxy(mode http), ... fastcgi：nginx, httpd, ... mysql：mysql-proxy, ... ... 站点指标： PV：Page View UV：Unique Vistor IP： 会话保持： (1) session sticky Source IP Cookie (2) session replication; session cluster (3) session server lvs：Linux Virtual Server VS: Virtual Server RS: Real Server 作者：章文嵩；alibaba --&amp;gt; didi l4：四层路由器，四层交换机； VS：根据请求报文的目标IP和目标协议及端口将其调度转发至某RealServer，根据调度算法来挑选RS； iptables/netfilter： iptables：用户空间的管理工具； netfilter：内核空间上的框架； 流入：PREROUTING --&amp;gt; INPUT 流出：OUTPUT --&amp;gt; POSTROUTING 转发：PREROUTING --&amp;gt; FORWARD --&amp;gt; POSTROUTING DNAT：目标地址转换； PREROUTING； lvs: ipvsadm/ipvs ipvsadm：用户空间的命令行工具，规则管理器，用于管理集群服务及RealServer； ipvs：工作于内核空间的netfilter的INPUT钩子之上的框架； lvs集群类型中的术语： vs：Virtual Server, Director, Dispatcher, Balancer rs：Real Server, upstream server, backend server CIP：Client IP, VIP: Virtual serve IP, RIP: Real server IP, DIP: Director IP CIP &amp;lt;--&amp;gt; VIP == DIP &amp;lt;--&amp;gt; RIP lvs集群的类型： lvs-nat：修改请求报文的目标IP lvs-dr：操纵封装新的MAC地址； lvs-tun：在原请求IP报文之外新加一个IP首部； lvs-fullnat：修改请求报文的源和目标IP； lvs-nat： 多目标IP的DNAT，通过将请求报文中的目标地址和目标端口修改为某挑出的RS的RIP和PORT实现转发； （1）RIP和DIP必须在同一个IP网络，且应该使用私网地址；RS的网关要指向DIP； （2）请求报文和响应报文都必须经由Director转发；Director易于成为系统瓶颈； （3）支持端口映射，可修改请求报文的目标PORT； （4）vs必须是Linux系统，rs可以是任意系统； lvs-dr： Direct Routing，直接路由； 通过为请求报文重新封装一个MAC首部进行转发，源MAC是DIP所在的接口的MAC，目标MAC是某挑选出的RS的RIP所在接口的MAC地址；源IP/PORT，以及目标IP/PORT均保持不变； Director和各RS都得配置使用VIP； (1) 确保前端路由器将目标IP为VIP的请求报文发往Director： (a) 在前端网关做静态绑定； (b) 在RS上使用arptables； (c) 在RS上修改内核参数以限制arp通告及应答级别； arp_announce arp_ignore (2) RS的RIP可以使用私网地址，也可以是公网地址；RIP与DIP在同一IP网络；RIP的网关不能指向DIP，以确保响应报文不会经由Director； (3) RS跟Director要在同一个物理网络； (4) 请求报文要经由Director，但响应不能经由Director，而是由RS直接发往Client； (5) 不支持端口映射； lvs-tun： 转发方式：不修改请求报文的IP首部（源IP为CIP，目标IP为VIP），而在原IP报文之外再封装一个IP首部（源IP是DIP，目标IP是RIP），将报文发往挑选出的目标RS； (1) DIP, VIP, RIP都应该是公网地址； (2) RS的网关不能，也不可能指向DIP； (3) 请求报文要经由Director，但响应不能经由Director； (4) 不支持端口映射； (5) RS的OS得支持隧道功能； lvs-fullnat： 通过同时修改请求报文的源IP地址和目标IP地址进行转发； CIP --&amp;gt; DIP VIP --&amp;gt; RIP (1) VIP是公网地址，RIP和DIP是私网地址，且通常不在同一IP网络；因此，RIP的网关一般不会指向DIP； (2) RS收到的请求报文源地址是DIP，因此，只需响应给DIP；但Director还要将其发往Client； (3) 请求和响应报文都经由Director； (4) 支持端口映射； 注意：此类型默认不支持； 回顾： lvs类型： lvs-nat：通过修改请求报文的目标IP地址完成调度并转发；请求和响应报文都经由Director； lvs-dr：通过直接封装新的MAC首部完成调度并转发；仅请求报文经由Director； lvs-tun：通过在原IP报文首部之外新封装一个IP首部完成调度并转发；仅请求报文经由Director； lvs-fullnat：通过修改请求报文的目标IP地址和源IP地址完成调度并转发；请求和响应报文都经由Director；</description>
@@ -24,20 +24,20 @@ LB Cluster的实现： 硬件： F5 Big-IP Citrix Netscaler A10 A10 软件： lv
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/keepalived/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/keepalived/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/keepalived/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/keepalived/</guid>
       <description>keepalived HA Cluster：
 集群类型：LB（lvs/nginx（http/upstream, stream/upstream））、HA、HP SPoF: Single Point of Failure 系统可用性的公式：A=MTBF/（MTBF+MTTR） \(0,1\), 95% 几个9（指标）: 99%, ..., 99.999%，99.9999%； 99%： %1, 99.9%， 0.1% 系统故障： 硬件故障：设计缺陷、wear out、自然灾害、…… 软件故障：设计缺陷、 提升系统高用性的解决方案之降低MTTR： 手段：冗余（redundant） active/passive（主备），active/active（双主） active --&amp;amp;gt; HEARTBEAT --&amp;amp;gt; passive active &amp;amp;lt;--&amp;amp;gt; HEARTBEAT &amp;amp;lt;--&amp;amp;gt; active 高可用的是“服务”： HA nginx service： vip/nginx process\[/shared storage\] 资源：组成一个高可用服务的“组件”； \(1\) passive node的数量？ \(2\) 资源切换？ shared storage： NAS：文件共享服务器； SAN：存储区域网络，块级别的共享； Network partition：网络分区 隔离设备： node：STONITH = Shooting The Other Node In The Head 资源：fence quorum： with quorum： &amp;amp;gt; total/2 without quorum: &amp;amp;lt;= total/2 TWO nodes Cluster？ 辅助设备：ping node, quorum disk; Failover：故障切换，即某资源的主节点故障时，将资源转移至其它节点的操作； Failback：故障移回，即某资源的主节点故障后重新修改上线后，将转移至其它节点的资源重新切回的过程； HA Cluster实现方案: vrrp协议的实现 keepalived ais：完备HA集群 RHCS（cman） heartbeat corosync keepalived： vrrp协议：Virtual Redundant Routing Protocol 术语： 虚拟路由器：Virtual Router 虚拟路由器标识：VRID\(0-255\) 物理路由器： master：主设备 backup：备用设备 priority：优先级 VIP：Virtual IP VMAC：Virutal MAC \(00-00-5e-00-01-VRID\) GraciousARP 通告：心跳，优先级等；周期性； 抢占式，非抢占式； 安全工作： 认证： 无认证 简单字符认证 MD5 工作模式： 主/备：单虚拟路径器； 主/主：主/备（虚拟路径器1），备/主（虚拟路径器2） keepalived: vrrp协议的软件实现，原生设计的目的为了高可用ipvs服务： vrrp协议完成地址流动； 为vip地址所在的节点生成ipvs规则（在配置文件中预先定义）； 为ipvs集群的各RS做健康状态检测； 基于脚本调用接口通过执行脚本完成脚本中定义的功能，进而影响集群事务； 组件： 核心组件： vrrp stack ipvs wrapper checkers 控制组件：配置文件分析器 IO复用器 内存管理组件 HA Cluster的配置前提： \(1\) 各节点时间必须同步； ntp, chrony \(2\) 确保iptables及selinux不会成为阻碍； \(3\) 各节点之间可通过主机名互相通信（对KA并非必须）； 建议使用/etc/hosts文件实现； \(4\) 各节点之间的root用户可以基于密钥认证的ssh服务完成互相通信；（并非必须） keepalived安装配置： CentOS 6.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/lvs/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/lvs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/lvs/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/lvs/</guid>
       <description>LVS Linux Cluster：
 Cluster：计算机集合，为解决某个特定问题组合起来形成的单个系统； Linux Cluster类型： LB：Load Balancing，负载均衡； HA：High Availiablity，高可用； A=MTBF/（MTBF+MTTR） (0,1)：90%, 95%, 99%, 99.5%, 99.9%, 99.99%, 99.999%, 99.9999% HP：High Performance，高性能； www.top500.org 分布式系统： 分布式存储 分布式计算 系统扩展方式： Scale UP：向上扩展 Scale Out：向外扩展 Cluster LB Cluster：
 LB Cluster的实现： 硬件： F5 Big-IP Citrix Netscaler A10 A10 软件： lvs：Linux Virtual Server nginx haproxy ats：apache traffic server perlbal pound 基于工作的协议层次划分： 传输层（通用）：（DPORT） lvs： nginx：（stream） haproxy：（mode tcp） 应用层（专用）：（自定义的请求模型分类） proxy server： http：nginx, httpd, haproxy(mode http), ... fastcgi：nginx, httpd, ... mysql：mysql-proxy, .</description>
@@ -45,75 +45,75 @@ LB Cluster的实现： 硬件： F5 Big-IP Citrix Netscaler A10 A10 软件： lv
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/nginx/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/nginx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/nginx/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/nginx/</guid>
       <description>nginx Nginx：
 engine X = Nginx http协议：web服务器（类似于httpd）、http reverse proxy（类似于httpd）、imap/pop3 reverse proxy NGINX is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server. C10K（10K Connections）. Tengine, OpenResty. http协议: URL：shceme://username:password@host:port/path;params?query#frag http事务： request： &amp;lt;method&amp;gt; &amp;lt;URL&amp;gt; &amp;lt;VERSION&amp;gt; HEADERS &amp;lt;body&amp;gt; response： &amp;lt;VERSION&amp;gt; &amp;lt;STATUS&amp;gt; &amp;lt;REASON-PHRASE&amp;gt; HEADERS &amp;lt;body&amp;gt; Method：GET/HEAD/POST, PUT/DELETE, TRACES, OPTIONS Status Code： 1xx： 2xx：成功类响应码，200 3xx：重定向类的响应码，301, 302, 304 4xx：客户端错误，403，404 5xx：服务器端错误，502 认证： 基于ip认证 基于用户认证 ：basic/digest httpd MPM： prefork：进程模型，两级结构，主进程master负责生成子进程，每个子进程负责响应一个请求； worker：线程模型，三级结构，主进程master负责生成子进程，每个子进程负责生成多个线程，每个线程响应一个请求； event：主进程master负责生成子进程，每个子进程响应多个请求； I/O模型： 阻塞型、非阻塞型、复用型、信号驱动型、异步 同步/异步： 关注消息通知机制； 消息通知： 同步：等待对方返回消息； 异步：被调用者通过状态、通知或回调机制通知调用者被调用者的运行状态； 阻塞/非阻塞： 关注调用者在等待结果返回之前所处的状态； 阻塞：blocking，调用结果返回之前，调用者被挂起； 非阻塞：nonblocking，调用结果返回之前，调用者不会被挂起； 一次IO请求，都会由两阶段组成： 第一步：等待数据，即数据从磁盘到内核内存； 第二步：复制数据，即数据内核内存到进程内存； 复用型IO调用： select()：1024 poll()： event-driven： epoll（Linux）：libevent Kqueue（BSD）： Solaris：/dev/poll NGINX is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/tomcat/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/tomcat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/tomcat/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/tomcat/</guid>
       <description>tomcat 编程语言： 硬件级：微码编程，汇编语言 系统级：C，C++，&amp;hellip; 应用级：Java, PHP, Python, Ruby, Perl, C#, &amp;hellip; Python： PVM Standard Library Web Framework：Django, Flask, &amp;hellip; Java：JVM，JDK bash：bash explainer &amp;hellip;
 程序：指令+数据 过程式编程：以指令为中心，数据服务于代码； 对象式编程：以数据为中心，指令服务于数据； 对象，方法（method） Java： Sun, Green Project, Oak, James Gosling; 1995：Java 1.0, Write once, Run Anywhere; 1996：JDK（Java Development Kit），包含类库、开发工具(javac)、JVM（SUN Classic VM） JDK 1.0, Applet, AWT 1997：JDK 1.1 1998: JDK 1.2 Sun分拆Java技术为三个方向： J2SE：Standard Edition J2EE：Enterprise Edition J2ME：Mobile Edition 代表性技术：EJB，java plugin, Swing, JIT(Just In Time，即时编译) 2000：JDK 1.3 HotSpot VM 2002：JDK 1.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/commandlist/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/commandlist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/commandlist/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/commandlist/</guid>
       <description>命令列表    Category Command - Linux命令大全：http://man.linuxde.net     系统管理 系统管理   文本编辑器 vi、vim、nano   时间日期 cal、date、hwclock、clockdiff、rdate、sleep   获取帮助 help、man、info   搜索查找 type、file、which、whatis、、find   文件/目录管理 一切皆文件   文件/目录 ls、cd、cp、mv、mkdir、touch、pwd   查看文件/文本处理 cat、tac、more、less、head、tail   文件传输/数据同步 rsync   压缩/解压缩 tar、gzip、gunzip、zcmp、zip、unzip、zcat、zless、zipinfo、zipsplit、zipgrep、zmore、   系统信息 uname   网络管理 telnet、ssh、scp、wget、ping、route、ifconfig、ifup、ifdown、netstat、ss、nmap、lsof、mail、dig、host、traceroute、tcpdump   软件包管理 rpm、yum、dnf、dpkg、apt-get   登录信息 whoami、who、w、last、lastlog、users、finger   系统性能 sar、iostat、iotop、mpstat、vmstat、tload、time、uptime、ipcs、ipcrm、lslk   登录/关机/重启/注销/ login、logout、exit、rlogin、powerdown、halt、reboot、init 0/6   进程管理 ps、top、pgrep、pidof、kill、killall、pkill、timeout、wait、fuser、nohup、pmap、lsof、chkconfig、bg、fg、jobs   服务管理 6：service、chkconfig，7：systemctl   用户/用户组管理 useradd、adduser、userdel、usermod、、、、passwd、groupadd、groupdel、groupmod、users、groups、idd、su、sudo   磁盘管理 mount、umonut、fsck、dd、fdisk、parted、mkfsmkswap、swapon、swapoff、sync、resize2fs   任务计划 at、atq、atrm、crontab、watch    </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/bccbpf/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/bccbpf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/bccbpf/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/bccbpf/</guid>
       <description>bcc/BPF </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/jing-tai-gong-ju/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/jing-tai-gong-ju/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/jing-tai-gong-ju/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/jing-tai-gong-ju/</guid>
       <description>静态工具 </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/linux-sar/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/linux-sar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/linux-sar/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/linux-sar/</guid>
       <description>Linux sar Linux sar</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/perf-tools/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/perf-tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/perf-tools/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/perf-tools/</guid>
       <description>perf-tools perf-tools</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/readme/</guid>
       <description>系统系能 一个完整运行的 Linux 系统包括很多子系统（介绍，CPU，Memory，IO，Network，…），监测和评估这些子系统是性能监测的一部分。我们往往需要宏观的看整个系统状态，也需要微观的看每个子系统的运行情况。
 系统性能专家 Brendan D. Gregg 的个人主页  Linux Performance ：http://www.brendangregg.com/linuxperf.html
 Linux Performance Tools  observability + static + perf-tools/bcc</description>
@@ -121,37 +121,37 @@ Linux Performance Tools  observability + static + perf-tools/bcc</description>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-ce-shi/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-ce-shi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-ce-shi/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-ce-shi/</guid>
       <description>性能测试 </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-diao-you/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-diao-you/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-diao-you/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-diao-you/</guid>
       <description>性能调优 </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-guan-cha/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-guan-cha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-guan-cha/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-guan-cha/</guid>
       <description>性能观察    lsof、perf、strace、pidstat、iostat、iotop、blktrace、swapon       top、ps、free、netstat       ss、netstat、tcpdump、iptraf、ethtool、ip       Applications       System Libraries ltrac perf   System Call Interface strace、sysdig perf   **VFS：**lsof、pcstat **Sockets：**ss、netstat Scheduler：   File Systems： **TCP/UDP：**netstat、iptraf perf、mpstat、top、ps、pidstat   VM： **IP：**netstat、iptraf **Virtual Memory：**   **BDI：**iostat、iotop、blktrace **Ethernet：**netstat、iptraf、tcpdump top、ps、pidstat、vmstat、slabtop、free   Device Drivers      I/O Bridge    I/O Cintroller：swapon、iostat、iptop、blktrace  Network Controller：ethtool、ip、nicstat、netstat、snmpget、lldptool    </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/man/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/man/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/man/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/man/</guid>
       <description>获取帮助 00零.whatis为例，查找帮助信息思路
 type Command
 whatis Command
@@ -173,28 +173,28 @@ makewhatis 版本6 | mandb 版本7 制作数据库
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/nano-1/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/nano-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/nano-1/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/nano-1/</guid>
       <description>nano </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/nano/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/nano/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/nano/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/nano/</guid>
       <description>nano </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/readme/</guid>
       <description>基础知识 1、Linux的命令可以分为内部命令和外部命令：
 内置命令在系统启动时就调入内存，是常驻内存的，所以执行效率高。
 而外部命令是系统的软件功能，用户需要时才从硬盘中读入内存。
@@ -208,48 +208,48 @@ alias, bg, bind, break, builtin, caller, cd, command, compgen, complete, compopt
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/rhce/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/rhce/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/rhce/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/rhce/</guid>
       <description>RHCE考试题 RHCE7 考试测试题 2017-05-21 王晓春 地点:北京市朝阳区东大桥路 9 号北京侨福芳草地大厦 A 座 8 层，地铁 6 号线东大桥站西 北 A 口出，过红绿灯十字路口，向南约 300 米路西。进电梯前，需在前台登记个人信息， 工作人员发放门禁卡，刷卡才可进入电梯间，离开考场出门禁时，自动回收门禁卡。注意 不要遗失门禁卡。 时间:考试时间共 6 个小时,分成上、下午两部分。上午 2.5 小时,考试内容对应红帽官方第 一、二本教材编号 124 和 134,下午 3.5 小时, 考试内容对应第三本教材编号 254.,一般在上 午 10:00 开始第一部分考试,下午 14:00 开始第二部分考试.建议考生在 9:00 前到达考场。 成绩:上午 EX200 和下午 EX300 两部分满分都是 300 分,及格分都为 210 分，只有两门考试 都通过 210 分，才能获得 RHCE 证书 注意事项: 1. 考场座位自由安排,可提早进考场，自行选择合适座位。考试现场有打印纸,没有笔,如有 需要，建议考生自行准备。 2. 考试的时候请不要小抄或等作弊工具，考官一旦发现不会当场提示考生，但考后结束后 考生的考试成绩将按 0 分计算。 3. 考试的时候手机必须上交，考官一但发现考生的手机没有上交，一律按作弊计算。 4. 考试题目的顺序每个人有可能都不一样，考生可以不按题目顺序完成考试，但要注意不 要落题。 5. 考试题目的分数没有标注，但有可能因为一些题目的错误影响整个考试结果。 6.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/security/iptables/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/security/iptables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/security/iptables/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/security/iptables/</guid>
       <description>iptables iptables/netfilter:
 Packets Filter Firewall： 包过滤型防火墙： Firewall：隔离工具，工作于主机或网络的边缘处，对经由的报文根据预先定义的规则（识别标准）进行检测，对于能够被规则匹配到的报文实行某种预定义的处理机制的一套组件； 硬件防火墙：在硬件级别实现部分功能的； 软件防火墙：应用软件逻辑在通用硬件基础上实现； 主机防火墙： 网络防火墙： ipfw --&amp;gt; ipchians --&amp;gt; iptables(ip6tables) iptables/netfilter： iptables：规则管理工具； netfilter：防火墙框架，承载并生效规则； hook functions(netfilter)： prerouting input forward output postrouting iptables： PREROUTING INPUT FORWARD OUTPUT POSTROUTING 允许用户自定义规则链；它们需要手动关联至指定的”钩子“； netfilter：功能 filter(“防火”)：包过滤 NAT：Network Address Translation mangle：拆解报文，做出修改，而后重新封装 raw：关闭nat表上启用的连接追踪机制 功能（表）&amp;lt;--&amp;gt;钩子 filter：input, forward, output nat：prerouting, input, output, postrouting mangle：prerouting, input, forward, output, postrouting raw：prerouting, output 优先级（由高而低）：raw --&amp;gt; mangle --&amp;gt; nat --&amp;gt; filter iptables规则的组成部分： 匹配条件： 网络层首部：SourceIP, DestinationIP, ... 传输层首部：SourtPort, DestinationPort, TCP Flags(SYN,ACK,FIN,URG,RST,PSH), .</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/security/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/security/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/security/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/security/readme/</guid>
       <description>Security </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/bashte-xing/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/bashte-xing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/bashte-xing/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/bashte-xing/</guid>
       <description>学习 shell 的原因主要有：文字接口的 shell 在各大 distribution 都一样；远程管理时文字接口速度较快； shell 是管理 Linux 系统非常重要的一环，因为 Linux 内很多控制都是以 shell 撰写的。 Shell 是指一种应用程序，这个应用程序提供了一个界面，用户通过这个界面访问操作系统内核的服务。 Linux的Shell种类众多，常见的有： Bourne Shell（/bin/sh） Bourne Again Shell（/bin/bash）Linux 预设的 shell C Shell（/usr/bin/csh） K Shell（/usr/bin/ksh） Bash的基础特性 1 命令历史 2 命令别名 3 快捷键 4 命令补全和路径补全 5 命令行展开 6 命令执行状态码 7 glob通配符 8 I/O重定向和管道 9 变量 10 进程控制 11 bash 环境中的特殊符号  1 命令历史
 shell进程会保存其会话中用户曾经执行过的命令，默认可以记录1000条历史命令； 命令保存在用户的家目录中的.bash_history文件中。 只有当用户正常退出当前shell时，在当前shell中运行的命令才会保存至.bash_history文件中。 登录进shell 后新执行的命令只会记录在缓存中；这些命令会用户退出时“追加”至命令历史文件中 同一账号同时登录 bash，因为等到退出时才会保存文件， 最后退出的 bash 才会最后写入文件(前面退出保存的只是被最后退出的 bash 覆盖更新了) 无法记录时间：其实可以透过 ~/.bash_logout 来进行 history 的记录，并加上 date来增加时间参数 history -c: 清空命令历史 -d: 删除历史中指定的命令 #: 显示最近的 # 条历史 -a: 追加本次会话新执行的命令历史列表至历史文件 -n: 读历史文件中未读过的行到历史列表 -r: 读历史文件附加到历史列表 -w: 保存历史列表到指定的历史文件 -p: 展开历史参数成多行 ，但不存在历史列表中 -s: 展开历史参数成一行，附加在历史列表后 命令历史相关环境变量 HISTSIZE ：命令历史记录的条数 HISTFILE ：指定历史文件，默认为~/.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/cc/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/cc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/cc/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/cc/</guid>
       <description>#!/bin/bash
 Author:Lee Desc:Auto Deny Black_IP Script. Date:Today 取得参数$1为并发阈值，若留空则默认允许单IP最大50并发(实际测试发现，2M带宽，十来个并发服务器就已经无法访问了！) if [[ -z $1 ]];then num=50 else num=$1 fi
 #巧妙的进入到脚本工作目录 cd $(cd $(dirname $BASH_SOURCE) &amp;amp;&amp;amp; pwd)
@@ -258,10 +258,10 @@ Author:Lee Desc:Auto Deny Black_IP Script. Date:Today 取得参数$1为并发阈
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter01/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter01/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter01/</guid>
       <description>准备工作  前言 什么是 Shell 搭建运行环境 基本语法介绍 Shell 程序设计过程 调试方法介绍 小结 参考资料  前言 到最后一节来写“开篇”，确实有点古怪。不过，在第一篇（数值操作）的开头实际上也算是一个小的开篇，那里提到整个系列的前提是需要有一定的 Shell 编程基础，因此，为了能够让没有 Shell 编程基础的读者也可以阅读这个系列，我到最后来重写这个开篇。开篇主要介绍什么是 Shell，Shell 运行环境，Shell 基本语法和调试技巧。
 什么是 Shell 首先让我们从下图看看 Shell 在整个操作系统中所处的位置吧，该图的外圆描述了整个操作系统（比如 Debian/Ubuntu/Slackware 等），内圆描述了操作系统的核心（比如 Linux Kernel），而 Shell 和 GUI 一样作为用户和操作系统之间的接口。
 GUI 提供了一种图形化的用户接口，使用起来非常简便易学；而 Shell 则为用户提供了一种命令行的接口，接收用户的键盘输入，并分析和执行输入字符串中的命令，然后给用户返回执行结果，使用起来可能会复杂一些，但是由于占用的资源少，而且在操作熟练以后可能会提高工作效率，而且具有批处理的功能，因此在某些应用场合还非常流行。
@@ -273,10 +273,10 @@ $ echo $SHELL /bin/bash $ ls -l /bin/bash -rwxr-xr-x 1 root root 702160 2008-05-
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter02/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter02/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter02/</guid>
       <description>数值运算  前言 整数运算  范例：对某个数加 1 范例：从 1 加到某个数 范例：求模 范例：求幂 范例：进制转换 范例：ascii 字符编码   浮点运算  范例：求 1 除以 13，保留 3 位有效数字 范例：余弦值转角度 范例：有一组数据，求人均月收入最高家庭   随机数  范例：获取一个随机数 范例：随机产生一个从 0 到 255 之间的数字   其他运算  范例：获取一系列数 范例：统计字符串中各单词出现次数 范例：统计指定单词出现次数   小结 资料 后记  前言 从本文开始，打算结合平时积累和进一步实践，通过一些范例来介绍Shell编程。因为范例往往能够给人以学有所用的感觉，而且给人以动手实践的机会，从而激发人的学习热情。
 考虑到易读性，这些范例将非常简单，但是实用，希望它们能够成为我们解决日常问题的参照物或者是“茶余饭后”的小点心，当然这些“点心”肯定还有值得探讨、优化的地方。
 更复杂有趣的例子请参考 Advanced Bash-Scripting Guide (一本深入学习 Shell 脚本艺术的书籍)。
@@ -286,28 +286,28 @@ $ echo $SHELL /bin/bash $ ls -l /bin/bash -rwxr-xr-x 1 root root 702160 2008-05-
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter03/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter03/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter03/</guid>
       <description>布尔运算  前言 常规的布尔运算  在 Shell 下如何进行逻辑运算  范例：true or false 范例：与运算 范例：或运算 范例：非运算，即取反   Bash 里头的 true 和 false 是我们通常认为的 1 和 0 么？  范例：返回值 v.s. 逻辑值 范例：查看 true 和 false 帮助和类型     条件测试  条件测试基本使用  范例：数值测试 范例：字符串测试 范例：文件测试   各种逻辑测试的组合  范例：如果 a，b，c 都等于下面对应的值，那么打印 YES，通过 -a 进行与测试 范例：测试某个“东西”是文件或者目录，通过 -o 进行“或”运算 范例：测试某个“东西”是否为文件，测试 ! 非运算   比较 -a 与 &amp;amp;&amp;amp;, -o 与 ||， !</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter04/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter04/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter04/</guid>
       <description>字符串操作  前言 字符串的属性  字符串的类型  范例：数字或者数字组合 范例：字符组合（小写字母、大写字母、两者的组合） 范例：字母和数字的组合 范例：空格或者 Tab 键等 范例：匹配邮件地址 范例：匹配 URL 地址(以 http 链接为例） 范例：判断字符是否为可打印字符   字符串的长度  范例：计算某个字符串的长度 范例：计算某些指定字符或者字符组合的个数 范例：统计单词个数     字符串的显示  范例：在屏幕控制字符显示位置、颜色、背景等 范例：在屏幕的某个位置动态显示当前系统时间 范例：过滤掉某些控制字符串   字符串的存储  范例：把字符串拆分成字符串数组   字符串常规操作  取子串  范例：按照位置取子串 范例：匹配字符求子串   查询子串  范例：查询子串在目标串中的位置 范例：查询子串，返回包含子串的行   子串替换  范例：把变量 var 中的空格替换成下划线   插入子串  范例：在 var 字符串的空格之前或之后插入一个下划线   删除子串  范例：把 var 字符串中所有的空格给删除掉。   子串比较 子串排序 子串进制转换 子串编码转换   字符串操作进阶  正则表达式  范例：处理 URL 地址 范例：匹配某个文件中的特定范围的行   处理格式化的文本  范例：选取指定列 范例：文件关联操作     参考资料 后记  前言 忙活了一个礼拜，终于等到周末，可以空下来写点东西。</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter05/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter05/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter05/</guid>
       <description>文件操作  前言 文件的各种属性  文件类型  范例：在命令行简单地区分各类文件 范例：简单比较它们的异同 范例：普通文件再分类   文件属主  范例：修改文件的属主 范例：查看文件的属主 范例：分析文件属主实现的背后原理   文件权限  范例：给文件添加读、写、可执行权限 范例：授权普通用户执行root所属命令 范例：给重要文件加锁   文件大小  范例：查看普通文件和链接文件 范例：查看设备文件 范例：查看目录   文件访问、更新、修改时间 文件名   文件的基本操作  范例：创建文件 范例：删除文件 范例：复制文件 范例：修改文件名 范例：编辑文件 范例：压缩／解压缩文件 范例：文件搜索（文件定位）   参考资料 后记  前言 这周来探讨文件操作。
 在日常学习和工作中，总是在不断地和各种文件打交道，这些文件包括普通文本文件，可以执行的程序，带有控制字符的文档、存放各种文件的目录、网络套接字文件、设备文件等。这些文件又具有诸如属主、大小、创建和修改日期等各种属性。文件对应文件系统的一些数据块，对应磁盘等存储设备的一片连续空间，对应于显示设备却是一些具有不同形状的字符集。
 在这一节，为了把关注点定位在文件本身，不会深入探讨文件系统以及存储设备是如何组织文件的（在后续章节再深入探讨），而是探讨对它最熟悉的一面，即把文件当成是一系列的字符（一个 byte）集合看待。因此之前介绍的《 Shell 编程范例之字符串操作》在这里将会得到广泛的应用，关于普通文件的读写操作已经非常熟练，那就是“重定向”，这里会把这部分独立出来介绍。关于文件在 Linux 下的“数字化”（文件描述符）高度抽象，“一切皆为文件”的哲学在 Shell 编程里也得到了深刻的体现。
@@ -318,10 +318,10 @@ struct stat { dev_t st_dev; /* 设备 */ ino_t st_ino; /* 节点 */ mode_t st_mo
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter06/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter06/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter06/</guid>
       <description>文件系统操作  前言 文件系统在 Linux 操作系统中的位置 硬件管理和设备驱动  范例：查找设备所需的驱动文件 范例：查看已经加载的设备驱动 范例：卸载设备驱动 范例：挂载设备驱动 范例：查看设备驱动对应的设备文件 范例：访问设备文件   理解、查看磁盘分区  磁盘分区基本原理 通过分析 MBR 来理解分区原理   分区和文件系统的关系  常见分区类型 范例：格式化文件系统   分区、逻辑卷和文件系统的关系 文件系统的可视化结构  范例：挂载文件系统 范例：卸载某个分区   如何制作一个文件系统  范例：用 dd 创建一个固定大小的文件 范例：用 mkfs 格式化文件 范例：挂载刚创建的文件系统 范例：对文件系统进行读、写、删除等操作   如何开发自己的文件系统 后记  前言 准备了很久，找了好多天资料，还不知道应该如何动笔写：因为担心拿捏不住，所以一方面继续查找资料，一方面思考如何来写。作为《Shell编程范例》的一部分，希望它能够很好地帮助 Shell 程序员理解如何用 Shell 命令来完成和 Linux 系统关系非常大的文件系统的各种操作，希望让 Shell 程序员中对文件系统&amp;quot;混沌&amp;quot;的状态从此消失，希望文件系统以一种更为清晰的样子呈现在眼前。
 文件系统在 Linux 操作系统中的位置 如何来认识文件系统呢？从 Shell 程序员的角度来看，文件系统就是一个用来组织各种文件的方法。但是文件系统无法独立于硬件存储设备和操作系统而存在，因此还是有必要来弄清楚硬件存储设备、分区、操作系统、逻辑卷、文件系统等各种概念之间的联系，以便理解文件系统常规操作的一些“细节”。这个联系或许（也许会有一些问题）可以通过这样一种方式来呈现：
 从图中可以清晰地看到各个“概念”之间的关系，它们以不同层次分布，覆盖硬件设备、系统内核空间、系统用户空间。在用户空间，用户可以不管内核如何操作具体硬件设备，仅仅使用程序员设计的各种界面就可以，而普通程序员也仅仅需要利用内核提供的各种接口（System Call）或者一些C库来和内核进行交互，而无须关心具体的实现细节。不过对于操作系统开发人员，他们需要在内核空间设计特定的数据结构来管理和组织底层的硬件设备。</description>
@@ -329,10 +329,10 @@ struct stat { dev_t st_dev; /* 设备 */ ino_t st_ino; /* 节点 */ mode_t st_mo
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter07/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter07/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter07/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter07/</guid>
       <description>进程操作  前言 什么是程序，什么又是进程 进程的创建  范例：让程序在后台运行 范例：查看进程 ID 范例：查看进程的内存映像   查看进程的属性和状态  范例：通过 ps 命令查看进程属性 范例：通过 pstree 查看进程亲缘关系 范例：用 top 动态查看进程信息 范例：确保特定程序只有一个副本在运行   调整进程的优先级  范例：获取进程优先级 范例：调整进程的优先级   结束进程  范例：结束进程 范例：暂停某个进程 范例：查看进程退出状态   进程通信  范例：无名管道（pipe） 范例：有名管道（named pipe） 范例：信号（Signal）   作业和作业控制  范例：创建后台进程，获取进程的作业号和进程号 范例：把作业调到前台并暂停 范例：查看当前作业情况 范例：启动停止的进程并运行在后台   参考资料  前言 进程作为程序真正发挥作用时的“形态”，我们有必要对它的一些相关操作非常熟悉，这一节主要描述进程相关的概念和操作，将介绍包括程序、进程、作业等基本概念以及进程状态查询、进程通信等相关的操作。
 什么是程序，什么又是进程 程序是指令的集合，而进程则是程序执行的基本单元。为了让程序完成它的工作，必须让程序运行起来成为进程，进而利用处理器资源、内存资源，进行各种 I/O 操作，从而完成某项特定工作。
 从这个意思上说，程序是静态的，而进程则是动态的。
@@ -342,10 +342,10 @@ struct stat { dev_t st_dev; /* 设备 */ ino_t st_ino; /* 节点 */ mode_t st_mo
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter08/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter08/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter08/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter08/</guid>
       <description>网络操作  前言 网络原理介绍  我们的网络世界 网络体系结构和网络协议介绍   Linux 下网络“实战”  如何把我们的 Linux 主机接入网络  范例：通过dhclient获取IP地址 范例：静态配置IP地址   用 Linux 搭建网桥 用 Linux 做路由 用 Linux 搭建各种常规的网络服务 Linux 下网络问题诊断与维护   Linux 下网络编程与开发 后记 参考资料  前言 前面章节已经介绍了Shell编程范例之数值、布尔值、字符串、文件、文件系统、进程等的操作。这些内容基本覆盖了网络中某个独立机器正常工作的“方方面面”，现在需要把视角从单一的机器延伸到这些机器通过各种网络设备和协议连接起来的网络世界，分析网络拓扑结构、网络工作原理、了解各种常见网络协议、各种常见硬件工作原理、网络通信与安全相关软件以及工作原理分析等。
 不过，因为网络相关的问题确实太复杂了，这里不可能介绍具体，因此如果想了解更多细节，还是建议参考相关资料。但Linux是一个网络原理学习和实践的好平台，不仅因为它本身对网络体系结构的实现是开放源代码的，而且各种相关的分析工具和函数库数不胜数，因此，如果你是学生，千万不要错过通过它来做相关的实践工作。
 网络原理介绍 我们的网络世界 在进行所有介绍之前，来直观地感受一下那个真真实实存在的网络世界吧。当我在 Linux 下通过 Web 编辑器写这篇 Blog 时，一边用 mplayer 听着远程音乐，累了时则打开兰大的网络 TV 频道开始看看凤凰卫视……这些“现代化”的生活，我想，如果没有网络，将变得无法想象。
@@ -360,10 +360,10 @@ struct stat { dev_t st_dev; /* 设备 */ ino_t st_ino; /* 节点 */ mode_t st_mo
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter09/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter09/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter09/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter09/</guid>
       <description>用户管理  用户帐号  添加 删除 修改 禁用   用户口令  设置 删除 修改 禁用   用户组别  添加 删除 修改   用户和组  增加 删除   用户切换  切换帐号 免密码切到 Root    在初次撰写本书时，都只讨论到了“物”，而没有关注“人”。而在实际使用中，Linux 系统首先是面向用户的系统，所有之前介绍的内容全部是提供给不同的用户使用的。实际使用中常常碰到各类用户操作，所以这里添加一个独立的章节来介绍。
 Linux 支持多用户，也就是说允许不同的人使用同一个系统，每个人有一个属于自己的帐号。而且允许大家设置不同的认证密码，确保大家的私有信息得到保护。另外，为了确保整个系统的安全，用户权限又做了进一步划分，包括普通用户和系统管理员。普通用户只允许访问自己账户授权下的信息，而系统管理员才能访问所有资源。普通用户如果想行使管理员的职能，必须获得系统管理员的许可。
 为避免分散注意力，咱们不去介绍背后的那些数据文件： /etc/passwd，/etc/shadow，/etc/group，/etc/gshadow
@@ -374,10 +374,10 @@ Linux 支持多用户，也就是说允许不同的人使用同一个系统，�
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter10/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter10/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter10/</guid>
       <description>总结  前言 Shell 编程范例回顾 常用 Shell 编程“框架” 程序优化技巧 其他注意事项  前言 到这里，整个 Shell 编程系列就要结束了，作为总结篇，主要回顾一下各个小节的主要内容，并总结出 Shell 编程的一些常用框架和相关注意事项等。
 Shell 编程范例回顾 TODO：主要回顾各小节的内容。
 常用 Shell 编程“框架” TODO：通过分析一些实例总结各种常见问题的解决办法，比如如何保证同一时刻每个程序只有一个运行实体（进程）。
@@ -389,58 +389,58 @@ Shell 编程范例回顾 TODO：主要回顾各小节的内容。
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter11/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter11/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter11/</guid>
       <description>附录  Shell 编程学习笔记  前言 执行 Shell 脚本的方式  范例：输入重定向到Bash 范例：以脚本名作为参数 范例：以 . 来执行 范例：直接执行   Shell 的执行原理 变量赋值  范例：获取当前的工作目录并存放到变量中   数组  范例：对数组元素赋值 范例：访问某个数组元素 范例：数组组合赋值 范例：列出数组中所有内容 范例：获取数组元素个数   参数传递 设置环境变量 键盘读起变量值 设置变量的只读属性 条件测试命令 test  范例：数值比较 范例：测试文件属性 范例：字符传属性以及比较 范例：串比较   整数算术或关系运算 expr 控制执行流程命令  范例：条件分支命令 if 范例：case 命令举例 范例：循环语句 while, until 范例：有限循环命令 for   函数 后记    Shell编程学习笔记 前言 这是作者早期的 Shell 编程学习笔记，主要包括 Shell 概述、 Shell 变量、位置参数、特殊符号、别名、各种控制语句、函数等 Shell 编程知识。</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/example/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/example/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/example/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/example/</guid>
       <description>简介 Shell 编程范例 以面向“对象” 的方式引入大量的实例介绍 Shell 日常操作，“对象” 涵盖数值、逻辑值、字符串、文件、进程、文件系统等。
 介绍  代码仓库：https://github.com/tinyclub/open-shell-book 在线阅读：http://tinylab.gitbooks.io/shellbook  </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/readme/</guid>
       <description>编程范例 </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/guan-dao/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/guan-dao/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/guan-dao/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/guan-dao/</guid>
       <description>管道命令 1 按列选取：cut 2 排序统计：sort, uniq, wc 3 重定向到多个目标：tee 4 字符转换命令：tr, col, join, paste, expand 5 分割命令： split 6 参数代换： xargs 7 关于减号 - 的用途  1 cut &amp;ndash; 按列选取
 $ cut -d&#39;分隔字符&#39; -f 字段	==用于有特定分隔字符 $ cut -c 字符区间 ==用于排列整齐的讯息 选项与参数： -d ：后面接分隔字符。与 -f 一起使用； -f ：依据 -d 的分隔字符将一段讯息分割成为数段，用 -f 取出第几段的意思； #: 第# 个字段 #,#[,#] ：离散的多个字段，例如1,3,6 #-# ：连续的多个字段, 例如1-6 混合使用：1-3,7 -c ：以字符 (characters) 的单位取出固定字符区间； cut -c 2-5 cut -c 12- --output-delimiter=STRING 指定输出分隔符 例：取得第 12 字符以后的所有字符串 $ export declare -x HISTCONTROL=&amp;quot;ignoredups&amp;quot; $ export | cut -c 12- HISTCONTROL=&amp;quot;ignoredups&amp;quot; cut 主要使用在分析一些数据或文字数据的时候 这是因为有时候我们会以某些字符当作分割的参数，然后来将数据加以切割，以取得我们所需要的数据。  2 sort &amp;ndash; 依据不同的数据类型排序，显示在标准输出，不改变原始文件</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/nano/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/nano/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/nano/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/nano/</guid>
       <description>nano文本编辑器 #nano test.txt # test.txt存在就打开，不存在就新建
  GNU nano 2.3.1 File: test.txt | &amp;lt;==这个是游标所在处 [ New File ] ^G Get Help ^O WriteOut ^R Read File ^Y Prev Page ^K Cut Text ^C Cur Pos ^X Exit ^J Justify ^W Where Is ^V Next Page ^U UnCut Te ^T To Spell # 上面两行是指令说明列，其中^代表的是[ctrl]的意思 如上图所示，你可以看到第一行反白的部分，那仅是在宣告nano的版本与档名(File: text.txt)而已。 之后你会看到最底下的三行，分别是档案的状态(New File)与两行指令说明列。指令说明列反白的部分就是组合键， 接的则是该组合键的功能。那个指数符号(^)代表的是键盘的[Ctrl]按键啦！底下先来说说比较重要的几个组合按键： •	[ctrl]-G：取得联机帮助(help)，很有用的！ •	[ctrl]-X：离开nano软件，若有修改过档案会提示是否需要储存喔！ •	[ctrl]-O：储存档案，若你有权限的话就能够储存档案了； •	[ctrl]-R：从其他档案读入资料，可以将某个档案的内容贴在本档案中； •	[ctrl]-W：搜寻字符串，这个也是很有帮助的指令喔！ •	[ctrl]-C：说明目前光标所在处的行数与列数等信息； •	[ctrl]-_：可以直接输入行号，让光标快速移动到该行； •	[alt]-Y：校正语法功能开启或关闭(单击开、再单击关) •	[alt]-M：可以支持鼠标来移动光标的功能 比较常见的功能是这些，如果你想要取得更完整的说明，可以在nano的画面中按下[ctrl]-G或者是[F1]按键， 就能够显示出完整的nano内指令说明了。好了，请你在上述的画面中随便输入许多字， 输入完毕之后就储存后离开，如下所示： GNU nano 2.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/readme/</guid>
       <description>Shell 什么是shell编程呢？简单来说，shell编程就是对多个Linux命令进行逻辑处理。
 编程基础 1.什么是程序？ 程序是指：指令+数据
 程序编程风格可分为：
@@ -487,56 +487,56 @@ shell脚本的用途有： 自动化常用命令
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/vim/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/vim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/vim/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/vim/</guid>
       <description>1 vi 与 vim 2 vi 的使用 2.1 打开文件 2.2 模式 2.3 vim 缓存、恢复、报警 3 vim 功能 3.1 区块选择(Visual Block) 3.2 多文件编辑 3.3 多窗口功能 3.4 vim 补全功能 3.5 vim 环境设定与记录： ~/.vimrc, ~/.viminfo 4 vim 注意 4.1 中文编码的问题 4.2 DOS 与 Linux 的断行字符： dos2unix, unix2dos 4.3 字符编码转换： iconv 5 配置vimrc 6 帮助 7 练习  1 vi 与 vim
 vi: Visual Interface，文本编辑器 vim - Vi Improved vi增强版 vim特性 •	类Unix系统都会内置 vi 文本编辑器，其他的文本编辑器则不一定会存在 •	很多软件的编辑接口都会主动调用 vi (例如未来会谈到的 crontab, edquota 等命令) •	vim 支持编程，以字体颜色辨别语法的正确性，方便程序设计 •	程序简单，编辑速度快  2 vi 的使用</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/vim-1/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/vim-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/vim-1/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/vim-1/</guid>
       <description>Vim </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/vim/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/vim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/vim/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/vim/</guid>
       <description>Vim </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/netstat/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/netstat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/netstat/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/netstat/</guid>
       <description>netstat </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/readme/</guid>
       <description>网络管理 </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/route/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/route/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/route/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/route/</guid>
       <description>route route命令用来显示并设置Linux内核中的网络路由表，route命令设置的路由主要是静态路由。要实现两个不同的子网之间的通信，需要一台连接两个网络的路由器，或者同时位于两个网络的网关来实现。
 在Linux系统中设置路由通常是为了解决以下问题：该Linux系统在一个局域网中，局域网中有一个网关，能够让机器访问Internet，那么就需要将这台机器的ip地址设置为Linux机器的默认路由。要注意的是，直接在命令行下执行route命令来添加路由，不会永久保存，当网卡重启或者机器重启之后，该路由就失效了；可以在/etc/rc.local中添加route命令来保证该路由设置永久有效。
 语法
@@ -549,10 +549,10 @@ Add：增加指定的路由记录； Del：删除指定的路由记录； Target
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/ss/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/ss/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/ss/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/ss/</guid>
       <description>ss ss命令用来显示处于活动状态的套接字信息。ss命令可以用来获取socket统计信息，它可以显示和netstat类似的内容。但ss的优势在于它能够显示更多更详细的有关TCP和连接状态的信息，而且比netstat更快速更高效。
 当服务器的socket连接数量变得非常大时，无论是使用netstat命令还是直接cat/proc/net/tcp，执行速度都会很慢。可能你不会有切身的感受，但请相信我，当服务器维持的连接达到上万个的时候，使用netstat等于浪费 生命，而用ss才是节省时间。
 天下武功唯快不破。ss快的秘诀在于，它利用到了TCP协议栈中tcp_diag。tcp_diag是一个用于分析统计的模块，可以获得Linux 内核中第一手的信息，这就确保了ss的快捷高效。当然，如果你的系统中没有tcp_diag，ss也可以正常运行，只是效率会变得稍慢。
@@ -562,19 +562,19 @@ Add：增加指定的路由记录； Del：删除指定的路由记录； Target
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-bian-ji-qi/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-bian-ji-qi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-bian-ji-qi/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-bian-ji-qi/</guid>
       <description>文本编辑器 </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/awk/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/awk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/awk/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/awk/</guid>
       <description>awk  awk其名称得自于它的创始人 Alfred Aho 、Peter Weinberger 和 Brian Kernighan 姓氏的首个字母。实际上 AWK 的确拥有自己的语言： AWK 程序设计语言 ， 三位创建者已将它正式定义为“样式扫描和处理语言”。
 它允许您创建简短的程序，这些程序读取输入文件、为数据排序、处理数据、对输入执行计算以及生成报表，还有无数其他的功能。Linux及Unix环境中现有的功能最强大的数据处理引擎之一。
  AWK简介及使用方法 awk是一个强大的文本分析工具，相对于grep的查找，sed的编辑，awk在其对数据分析并生成报告时，显得尤为强大。简单来说awk就是把文件逐行的读入，以空格为默认分隔符将每行切片，切开的部分再进行各种分析处理。 awk有3个不同版本: awk、nawk和gawk，未作特别说明，一般指gawk，gawk 是 AWK 的 GNU 版本。
@@ -591,10 +591,10 @@ awk [options] ‘program’ var=value file… awk [options] -f programfile var=v
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/grep/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/grep/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/grep/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/grep/</guid>
       <description>grep  grep，Global search REgular expression and Print out the line. 是Linux中常用的文本搜索工具，基于正则表达式（Regular Expression）和文本字符来编写模式（Pattern），然后根据指定的模式对目标文本逐行进行匹配，打印匹配到的行。
  工具分类 grep工具共有三个：
  grep – 默认支持基本正则表达式BRE； egrep – 默认支持扩展正则表达式ERE； fgrep – 默认不支持正则表达式。  虽然工具由三种，但三者都可以通过选项来达到彼此的使用效果：
@@ -607,10 +607,10 @@ grep [OPRIONS] [-e PATTERN | -f FILE] [FILE…]
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/nginxri-zhi-fen-xi/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/nginxri-zhi-fen-xi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/nginxri-zhi-fen-xi/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/nginxri-zhi-fen-xi/</guid>
       <description>nginx访问日志分析 access.log
 58.35.39.71 - - [24/Aug/2018:14:30:51 +0800] &amp;#34;GET / HTTP/1.1&amp;#34; 304 0 &amp;#34;-&amp;#34; &amp;#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36&amp;#34; &amp;#34;-&amp;#34; 58.35.39.71 - - [24/Aug/2018:14:31:33 +0800] &amp;#34;GET / HTTP/1.1&amp;#34; 200 3700 &amp;#34;-&amp;#34; &amp;#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1.2 Safari/605.1.15&amp;#34; &amp;#34;-&amp;#34; nginx 访问量统计
 PV(访问量)：即Page View, 即页面浏览量或点击量，用户每次刷新即被计算一次。 UV(独立访客)：即Unique Visitor,访问您网站的一台电脑客户端为一个访客。00:00-24:00内相同的客户端只被计算一次。 IP(独立IP)：即Internet Protocol,指独立IP数。00:00-24:00内相同IP地址之被计算一次。 1.根据访问IP统计UV awk &amp;#39;{print $1}&amp;#39; access.log|sort | uniq -c |wc -l 2.</description>
@@ -618,47 +618,47 @@ PV(访问量)：即Page View, 即页面浏览量或点击量，用户每次刷�
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/readme/</guid>
       <description>文本处理 </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/sed/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/sed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/sed/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/sed/</guid>
       <description>sed </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-fu-wu/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-fu-wu/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-fu-wu/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-fu-wu/readme/</guid>
       <description>系统服务 </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-fu-wu/ri-zhi-xi-tong/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-fu-wu/ri-zhi-xi-tong/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-fu-wu/ri-zhi-xi-tong/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-fu-wu/ri-zhi-xi-tong/</guid>
       <description>日志系统 rsyslog：
 日志：历史事件； 历史事件：时间、地点、事件； syslog： klogd：kernel syslogd：system(application) 事件记录格式： 日期时间 主机 进程[pid]: 事件内容； C/S架构：通过TCP或UDP协议的服务完成日志记录传送； rsyslog： rsyslog的特性： 多线程； UDP/TCP/SSL/TLS/RELP； 存储日志信息于MySQL, PGSQL, Oracle等RDBMS； 强大的过滤器，实现过滤日志信息中的任何部分的内容； 自定义的输出格式； …… ELK： E: elasticsearch, L: logstash, K: kibana rsyslog日志收集器的基本术语： facility：设施，收束日志数据流为有限几个； auth, authpriv, cron, daemon, kern, lpr, mail, mark, news, security, user, uucp, syslog, local0-local7 proirity：优先级 debug, info, notice, warn(warning), err(error), crit(critical), alert, emerg(panic) 程序包：rsyslog 程序环境： 配置文件：/etc/rsyslog.conf，/etc/rsyslog.d/*.conf 主程序：/usr/sbin/rsyslogd CentOS 6：service rsyslogs {start|stop|restart|status} CentOS 7：/usr/lib/systemd/system/rsyslog.service 配置文件格式： 由三部分组成： MODULES：模块配置 GLOBAL DIRECTIVES：全局配置 RULES：日志记录相关的配置 RULES: 配置格式： facility.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/cron/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/cron/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/cron/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/cron/</guid>
       <description>&lt;h1 id=&#34;cron&#34;&gt;cron&lt;/h1&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;1 计划任务
   1.1 Linux 工作排程的种类： at, crontab
@@ -680,46 +680,46 @@ PV(访问量)：即Page View, 即页面浏览量或点击量，用户每次刷�
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/mu-lu-wen-jian/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/mu-lu-wen-jian/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/mu-lu-wen-jian/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/mu-lu-wen-jian/</guid>
       <description>目录 &amp;amp; 文件 </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/readme/</guid>
       <description>系统管理 </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/systemed/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/systemed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/systemed/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/systemed/</guid>
       <description>systemed 系统服务 1 什么是进程与服务 (service) 1.1 早期 SysV 的 init 管理行为中服务进程的主要分类 1.2 systemd 使用的 unit 分类 2 透过 systemctl 管理服务 2.1 透过 systemctl 管理单一服务 (service unit) 的启动/开机启动与观察状态 2.3 透过 systemctl 观察系统上所有的服务 2.2 透过 systemctl 管理不同的操作环境 (target unit) 2.3 透过 systemctl 分析各服务之间的相依性 2.4 与 systemd 的 daemon 运作过程相关的目录简介： /etc/services 2.5 关闭网络服务 3 systemctl 针对 service 类型的配置文件 3.1 systemctl 配置文件相关目录简介 3.2 systemctl 配置文件的设定项目简介 3.3 两个 vsftpd 运作的实例 3.4 多重的重复设定方式：以 getty 为例 3.5 自己的服务自己作 4 systemctl 针对 timer 的配置文件 5 CentOS 7.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/xi-tong-deng-lu-3001-tui-chu-3001-guan-ji-3001-zhong-qi/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/xi-tong-deng-lu-3001-tui-chu-3001-guan-ji-3001-zhong-qi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/xi-tong-deng-lu-3001-tui-chu-3001-guan-ji-3001-zhong-qi/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/xi-tong-deng-lu-3001-tui-chu-3001-guan-ji-3001-zhong-qi/</guid>
       <description>系统登录、退出、关机、重启 </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/qqq/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/qqq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/qqq/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/qqq/</guid>
       <description>Introduction 1、Linux的命令可以分为内部命令和外部命令：
 内置命令在系统启动时就调入内存，是常驻内存的，所以执行效率高。
 而外部命令是系统的软件功能，用户需要时才从硬盘中读入内存。
@@ -733,28 +733,28 @@ alias, bg, bind, break, builtin, caller, cd, command, compgen, complete, compopt
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/about-storage/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/about-storage/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/about-storage/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/about-storage/readme/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/cloud-storage/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/cloud-storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/cloud-storage/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/cloud-storage/</guid>
       <description>云存储 </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang-2/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang-2/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang-2/</guid>
       <description>安装2 这是另一个安装的文章：Ceph分布式存储-运维操作笔记
 Centos7下使用Ceph-deploy快速部署Ceph分布式存储-操作记录
 1）基本环境
@@ -763,20 +763,20 @@ Centos7下使用Ceph-deploy快速部署Ceph分布式存储-操作记录
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang/</guid>
       <description>安装 （一个ceph cluster集群，至少需要1个mon节点和2个osd节点）
 0）基本信息： 这里我只是测试环境，所以使用一个监控节点，两个存储节点，具体如下： ip地址 主机名 ceph磁盘 备注 192.168.10.200 ceph-node1 20G 作为mds、mon、osd0 192.168.10.201 ceph-node2 20G 作为osd1 192.168.10.202 ceph-node3 20G 作为osd2 192.168.10.203 ceph-client 挂载点：/cephfs ceph客户端 Ceph的文件系统作为一个目录挂载到客户端cephclient的/cephfs目录下，可以像操作普通目录一样对此目录进行操作。 1）安装前准备 分别在ceph的三个节点机（ceph-node1、ceph-node2、ceph-node3）上添加hosts [root@ceph-node1 ~]# cat /etc/hosts 127.0.0.1 localhost localhost.localdomain localhost4 localhost4.localdomain4 ::1 localhost localhost.localdomain localhost6 localhost6.localdomain6 192.168.10.200 ceph-node1 192.168.10.201 ceph-node2 192.168.10.202 ceph-node3 添加完hosts后，做下测试，保证使用hosts中映射的主机名能ping通。 [root@ceph-node3 ~]# ping ceph-node1 PING ceph-node1 (192.168.10.200) 56(84) bytes of data. 64 bytes from ceph-node1 (192.168.10.200): icmp_seq=1 ttl=64 time=0.211 ms 64 bytes from ceph-node1 (192.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gai-shu/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gai-shu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gai-shu/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gai-shu/</guid>
       <description>概述 1）Ceph简单概述 Ceph是一个分布式存储系统，诞生于2004年，最早致力于开发下一代高性能分布式文件系统的项目。Ceph源码下载：http://ceph.com/download/ 。随着云计算的发展，ceph乘上了OpenStack的春风，进而成为了开源社区受关注较高的项目之一。Ceph可以将多台服务器组成一个超大集群，把这些机器中的磁盘资源整合到一块儿，形成一个大的资源池（PB级别），然后按需分配给应用使用。Ceph分布式存储的优势：
 1）CRUSH算法 Crush算法是ceph的两大创新之一，简单来说，ceph摒弃了传统的集中式存储元数据寻址的方案，转而使用CRUSH算法完成数据的寻址操作。 CRUSH在一致性哈希基础上很好的考虑了容灾域的隔离，能够实现各类负载的副本放置规则，例如跨机房、机架感知等。 Crush算法有相当强大的扩展性，理论上支持数千个存储节点。 2）高可用 Ceph中的数据副本数量可以由管理员自行定义，并可以通过CRUSH算法指定副本的物理存储位置以分隔故障域，支持数据强一致性； Ceph可以忍受多种故障场景并自动尝试并行修复； Ceph支持多份强一致性副本，副本能够垮主机、机架、机房、数据中心存放。所以安全可靠。 Ceph存储节点可以自管理、自动修复。无单点故障，容错性强。 3）高性能 因为是多个副本，因此在读写操作时候能够做到高度并行化。理论上，节点越多，整个集群的IOPS和吞吐量越高。 另外一点ceph客户端读写数据直接与存储设备(osd) 交互。在块存储和对象存储中无需元数据服务器。 4）高扩展性 Ceph不同于swift，客户端所有的读写操作都要经过代理节点。一旦集群并发量增大时，代理节点很容易成为单点瓶颈。 Ceph本身并没有主控节点，扩展起来比较容易，并且理论上，它的性能会随着磁盘数量的增加而线性增长。 Ceph扩容方便、容量大。能够管理上千台服务器、EB级的容量。 5）特性丰富 Ceph支持三种调用接口：对象存储，块存储，文件系统挂载。三种方式可以一同使用。 在国内一些公司的云环境中，通常会采用Ceph作为openstack的唯一后端存储来提升数据转发效率。 Ceph统一存储，虽然Ceph底层是一个分布式文件系统，但由于在上层开发了支持对象和块的接口。所以在开源存储软件中，能够一统江湖。至于能不能千秋万代，就不知了。 Ceph提供3种存储方式分别是对象存储，块存储和文件系统，一般我们主要关心的还是块存储，推荐将虚拟机后端存储从SAN过渡到Ceph。Ceph 现在是云计算、虚拟机部署的最火开源存储解决方案，据说有20%的OpenStack部署存储用的都是Ceph的block storage。
 2）Ceph分布式存储的基本架构
@@ -800,10 +800,10 @@ Cluster Map
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gu-zhang-pai-chu/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gu-zhang-pai-chu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gu-zhang-pai-chu/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gu-zhang-pai-chu/</guid>
       <description>故障排除 1）修改 OSD CRUSH weight 1.1）问题描述
 部署完成后，集群处于 PG Degraded 状态，经查 ceph health detail，发现 PG 的 acting OSD 只有 [0]，而不是两个。查 osd tree，osd 日志等，看不出明显问题。
 1.2）原因分析
@@ -813,19 +813,19 @@ Cluster Map
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/images/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/images/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/images/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/images/readme/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ji-qun-guan-li/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ji-qun-guan-li/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ji-qun-guan-li/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ji-qun-guan-li/</guid>
       <description>集群管理 Ceph常规操作及常见问题梳理
 Ceph集群管理
 每次用命令启动、重启、停止Ceph守护进程（或整个集群）时,必须指定至少一个选项和一个命令,还可能要指定守护进程类型或具体例程。
@@ -845,10 +845,10 @@ Ceph集群管理
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/readme/</guid>
       <description>Ceph Ceph官方文档：http://docs.ceph.com/docs/master/#
 Ceph官网：https://ceph.com
 Ceph可视化监控系统：https://ceph.com/planet/快速构建ceph可视化监控系统/
@@ -860,19 +860,19 @@ Red Hat Ceph存储—《深入理解Ceph架构》：http://ceph.org.cn/2018/06/2
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ri-chang-cao-zuo-ming-ling/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ri-chang-cao-zuo-ming-ling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ri-chang-cao-zuo-ming-ling/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ri-chang-cao-zuo-ming-ling/</guid>
       <description>日常操作命令 查看状态命令： 查看ceph集群状态：ceph -s 查看mon状态：ceph mon stat 查看msd状态：ceph msd stat 查看osd状态：ceph osd stat 查看osd目录树（可以查看每个osd挂在哪台机，是否已启动）：ceph osd tree 启动ceph进程命令： 需要在对应的节点进行启动（如果对应节点没有该服务，会进行提示） 启动mon进程：service ceph start mon.ceph-node1 启动msd进程：service ceph start msd.ceoh-node1 启动osd进程：service ceph start osd.0（在ceph-node1上） 启动osd进程：service ceph start osd.1（在ceph-node2上） 启动osd进程：service ceph start osd.2（在ceph-node3上） 查看机器的监控状态 # ceph health 查看ceph的实时运行状态 # ceph -w 检查信息状态信息 # ceph -s 查看ceph存储空间 [root@client ~]# ceph df 删除一个节点的所有的ceph数据包 # ceph-deploy purge ceph-node1 # ceph-deploy purgedata ceph-node1 为ceph创建一个admin用户并为admin用户创建一个密钥，把密钥保存到/etc/ceph目录下： # ceph auth get-or-create client.admin mds &amp;#39;allow&amp;#39; osd &amp;#39;allow &amp;#39; mon &amp;#39;allow &amp;#39; &amp;gt; /etc/ceph/ceph.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ying-jian-xuan-ze/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ying-jian-xuan-ze/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ying-jian-xuan-ze/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ying-jian-xuan-ze/</guid>
       <description>硬件选择 在规划Ceph分布式存储集群环境的时候，对硬件的选择很重要，这关乎整个Ceph集群的性能，下面梳理到一些硬件的选择标准，可供参考：
 1）CPU选择 Ceph metadata server会动态的重新分配负载，它是CPU敏感性的，所以Metadata Server应该有比较好的处理器性能 (比如四核CPU). Ceph OSDs运行RADOS服务，需要通过CRUSH来计算数据的存放位置，replicate数据，以及维护Cluster Map的拷贝，因此OSD也需要合适的处理性能 Ceph Monitors 简单的维护了Cluster Map的主干信息所以这个是CPU不敏感的。
 2）RAM选择 Metadata servers 以及Monitors 必须能够快速的提供数据，因此必须有充足的内存(e.g., 1GB of RAM per daemon instance). OSDs 在执行正常的操作时不需要过多的内存 (e.g., 500MB of RAM per daemon instance);但是 执行恢复操作时，就需要大量的内存(e.g., ~1GB per 1TB of storage per daemon). Generally, 而且是越多越好。
@@ -893,10 +893,10 @@ BTRFS文件系统的日志数据和对象数据的同时可以写，而XFS和ext
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/yun-wei/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/yun-wei/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/yun-wei/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/yun-wei/</guid>
       <description>运维 一、Ceph简单介绍 1）OSDs:Ceph的OSD守护进程（OSD）存储数据，处理数据复制，恢复，回填，重新调整，并通过检查其它Ceph OSD守护程序作为一个心跳 向Ceph的监视器报告一些检测信息。Ceph的存储集群需要至少2个OSD守护进程来保持一个 active + clean状态.（Ceph默认制作2个备份，但可以调整它）
 2）Monitors:Ceph的监控保持集群状态映射，包括OSD(守护进程)映射,分组(PG)映射，和CRUSH映射。 Ceph 保持一个在Ceph监视器, Ceph OSD 守护进程和 PG的每个状态改变的历史（称之为“epoch”）。
 3）MDS:MDS是Ceph的元数据服务器，代表存储元数据的Ceph文件系统（即Ceph的块设备和Ceph的对象存储不使用MDS）。Ceph的元数据服务器使用POSIX文件系统，用户可以执行基本命令如 ls, find,等，并且不需要在Ceph的存储集群上造成巨大的负载。
@@ -910,10 +910,10 @@ Ceph提供了3种使用场景
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/diao-du/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/diao-du/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/diao-du/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/diao-du/</guid>
       <description>调度 常见的分布式文件系统有，GFS、HDFS、Lustre 、Ceph 、GridFS 、mogileFS、TFS、FastDFS等。各自适用于不同的领域。它们都不是系统级的分布式文件系统，而是应用级的分布式文件存储服务。
 Google学术论文，这是众多分布式文件系统的起源
 Google File System（大规模分散文件系统）
@@ -940,19 +940,19 @@ TFS（Taobao File System）安装方法 （我写的）
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/drbd/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/drbd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/drbd/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/drbd/</guid>
       <description>DRBD https://www.cnblogs.com/kevingrace/category/925329.html</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/bu-shu/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/bu-shu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/bu-shu/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/bu-shu/</guid>
       <description>部署 1）服务器信息（centos6.9）
 描述 ip地址 主机名称 分组 跟踪服务器1 192.168.10.200 Fastdfs_tracker_t1 跟踪服务器2 192.168.10.201 Fastdfs_tracker_t2 存储服务器1 192.168.10.202 Fastdfs_storage_s1 group1 存储服务器2 192.168.10.203 Fastdfs_storage_s2 group2 存储服务器3 192.168.10.204 Fastdfs_storage_s3 group3 客户机1 192.168.10.205 Fastdfs_client 2）FastDFS安装（所有tracker服务器、storage服务器、客户端机器都要有如下操作。这里以Fastdfs_tracker_t1服务器操作为例
 1）编译和安装所需的依赖包 [root@Fastdfs_tracker_t1 ~]# yum install make cmake gcc gcc-c++ 2）安装libfastcommon [root@Fastdfs_tracker_t1 ~]# cd /usr/local/src/ [root@Fastdfs_tracker_t1 src]# wget https://codeload.github.com/happyfish100/libfastcommon/tar.gz/V1.0.7 -O libfastcommon-1.0.7.tar.gz [root@Fastdfs_tracker_t1 src]# tar zxf libfastcommon-1.0.7.tar.gz [root@Fastdfs_tracker_t1 src]# cd libfastcommon-1.0.7 [root@Fastdfs_tracker_t1 libfastcommon-1.0.7]# ./make.sh [root@Fastdfs_tracker_t1 libfastcommon-1.0.7]# ./make.sh install libfastcommon 默认安装到了/usr/lib64/libfastcommon.so和/usr/lib64/libfdfsclient.so 因为FastDFS主程序设置的lib目录是/usr/local/lib，所以需要创建软链接 [root@Fastdfs_tracker_t1 libfastcommon-1.0.7]# ln -s /usr/lib64/libfastcommon.</description>
@@ -960,19 +960,19 @@ TFS（Taobao File System）安装方法 （我写的）
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/chang-yong-ming-ling/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/chang-yong-ming-ling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/chang-yong-ming-ling/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/chang-yong-ming-ling/</guid>
       <description>常用命令 1）上传文件命令：fdfs_upload_file 不仅可以上传图片文件，也可以上传其他文件。 [root@Fastdfs_client src]# echo &amp;#34;hahaha&amp;#34; &amp;gt; test.txt [root@Fastdfs_client src]# /usr/bin/fdfs_upload_file /etc/fdfs/client.conf /usr/local/src/test.txt group3/M00/00/00/wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt 上传成功后，返回一串带有组和路径标识的字符串，这是文件的id，然后到group3组内的存储服务器上查看这个文件的id信息 [root@Fastdfs_storage_s3 ~]# ll /fastdfs/storage/data/00/00/ total 84 -rw-r--r--. 1 root root 7 Feb 27 11:02 wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt [root@Fastdfs_storage_s3 ~]# cat /fastdfs/storage/data/00/00/wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt hahaha [root@Fastdfs_storage_s3 ~]# md5sum /fastdfs/storage/data/00/00/wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt 5a6d311c0d8f6d1dd03c1c129061d3b1 /fastdfs/storage/data/00/00/wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt 2）下载文件命令：fdfs_download_file 在客户端机器上将上面上传到Fastdfs存储里文文件下载下来 [root@Fastdfs_client ~]# cd /mnt/ [root@Fastdfs_client mnt]# /usr/bin/fdfs_download_file /etc/fdfs/client.conf group3/M00/00/00/wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt [root@Fastdfs_client mnt]# ls wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt [root@Fastdfs_client mnt]# cat wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt hahaha [root@Fastdfs_client mnt]# md5sum wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt 5a6d311c0d8f6d1dd03c1c129061d3b1 wKgKzFqUyiqAabn8AAAAB-kMomQ229.txt 下载后可以对比文件的md5值。 3）查看文件信息命令：fdfs_file_info [root@Fastdfs_client ~]# /usr/bin/fdfs_file_info /etc/fdfs/client.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/gai-shu/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/gai-shu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/gai-shu/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/gai-shu/</guid>
       <description>概述 二、FastDFS分布式系统架构介绍 FastDFS：是一个开源的轻量级分布式文件系统，功能包括：文件存储、文件同步、文件访问（文件上传、文件下载）等，解决了大容量存储和负载均衡的问题。特别适合中小文件（建议范围：4KB &amp;lt; file_size &amp;lt;500MB），对以文件为载体的在线服务，如相册网站、视频网站等。
 FastDFS是为互联网应用量身定做的分布式文件系统，充分考虑了冗余备份、负载均衡、线性扩容等机制，并注重高可用、高性能等指标。和现有的类Google FS分布式文件系统相比，FastDFS的架构和设计理念有其独到之处，主要体现在轻量级、分组方式和对等结构三个方面。
 FastDFS架构图 FastDFS服务端有两个角色：跟踪器（tracker）和存储节点（storage）。跟踪器主要做调度工作，在访问上起负载均衡的作用。
@@ -999,28 +999,28 @@ Storage Server会定期的向Tracker Server发送自己的存储信息。当Trac
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/images/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/images/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/images/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/images/readme/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/readme/</guid>
       <description>FastDFS </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fen-bu-shi/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fen-bu-shi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fen-bu-shi/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fen-bu-shi/</guid>
       <description>分布式 认为对象存储和文件系统最大的区别就是API，文件系统提供了完整POSIX语义，往往具有层次化的目录结构，对文件可以进行精细的操作(open, read, write, seek, delete等)，相对会复杂一些。相比之下，对象存储就简单的多，对象本义是**B**inary **L**arge **OB**ject(BLOB), 是一个大的二进制文件，是作为一个整体出现，不能对其进行修改，因此对象存储系统有一个显著的特点就是Immutable，即不变性，正是因为这个特点对象存储系统一般只提供put, get, 和delete的操作，并且都是以key/val的形式，val一般是整个blob. 具体到实际的资源，主要指的是像图片，视频，文档，源码，二进制程序等这样的文件，这些文件往往都很小，一般在100k左右，视频可能会大一些，能达到几十兆甚至好几个G。
 系统整体对比
    对比说明/文件系统 TFS FastDFS MogileFS MooseFS GlusterFS Ceph     开发语言 C++ C Perl C C C++   开源协议 GPL V2 GPL V3 GPL GPL V3 GPL V3 LGPL   数据存储方式 块 文件/Trunk 文件 块 文件/块 对象/文件/块   集群节点通信协议 私有协议（TCP） 私有协议（TCP） HTTP 私有协议（TCP） 私有协议（TCP）/ RDAM(远程直接访问内存) 私有协议（TCP）   专用元数据存储点 占用NS 无 占用DB 占用MFS 无 占用MDS   在线扩容 支持 支持 支持 支持 支持 支持   冗余备份 支持 支持 - 支持 支持 支持   单点故障 存在 不存在 存在 存在 不存在 存在   跨集群同步 支持 部分支持 - - 支持 不适用   易用性 安装复杂，官方文档少 安装简单，社区相对活跃 - 安装简单，官方文档多 安装简单，官方文档专业化 安装简单，官方文档专业化   适用场景 跨集群的小文件 单集群的中小文件 - 单集群的大中文件 跨集群云存储 单集群的大中小文件    开源协议说明</description>
@@ -1028,10 +1028,10 @@ Storage Server会定期的向Tracker Server发送自己的存储信息。当Trac
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/</guid>
       <description>GlusterFS分布式系统维护管理手册
 1）管理说明
 在解释系统管理时会提供实例，首先提供一个环境说明。 系统节点： IP 别名 Brick 192.168.2.100 server0 /mnt/sdb1 /mnt/sdc1 /mnt/sdd1 192.168.2.101 server1 /mnt/sdb1 /mnt/sdc1 /mnt/sdd1 192.168.2.102 server2 /mnt/sdb1 /mnt/sdc1 /mnt/sdd1 创建了三个节点，并每台虚拟机 mount 三块磁盘作为 Brick 使用，每个 brick 分配了 30G 的虚拟容量。 实例约定 AFR 卷名： afr_vol DHT 卷名： dht_vol Stripe 卷名： str_vol 客户端挂载点： /mnt/gluster 2）系统部署
@@ -1040,29 +1040,29 @@ Storage Server会定期的向Tracker Server发送自己的存储信息。当Trac
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin/</guid>
       <description>Admin 接着上一篇Centos7下GlusterFS分布式存储集群环境部署记录文档，继续做一些补充记录，希望能加深对GlusterFS存储操作的理解和熟悉度。
 清理glusterfs存储环境 由上面可知，该glusterfs存储集群有四个节点： [root@GlusterFS-master ~]# cat /etc/hosts ....... 192.168.10.239 GlusterFS-master 192.168.10.212 GlusterFS-slave 192.168.10.204 GlusterFS-slave2 192.168.10.220 GlusterFS-slave3 现将四个节点的存储目录/opt/gluster/data全部删除 [root@GlusterFS-master ~]# rm -rf /opt/gluster [root@GlusterFS-slave ~]# rm -rf /opt/gluster [root@GlusterFS-slave2 ~]# rm -rf /opt/gluster [root@GlusterFS-slave3 ~]# rm -rf /opt/gluster [root@GlusterFS-master ~]# gluster volume list models [root@GlusterFS-master ~]# gluster volume info Volume Name: models Type: Distributed-Replicate Volume ID: f1945b0b-67d6-4202-9198-639244ab0a6a Status: Stopped Number of Bricks: 2 x 2 = 4 Transport-type: tcp Bricks: Brick1: 192.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin2/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin2/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin2/</guid>
       <description>Admin2 Gluster设置允许可信任客户端IP 设置只允许192.168.1.*的访问 [root@GlusterFS-master ~]# gluster volume set gluster_share auth.allow 192.168.1.* volume set: success 查看卷信息 [root@GlusterFS-master ~]# gluster volume info Volume Name: gluster_share Type: Distributed-Replicate Volume ID: a9f989bd-7edd-4089-836a-d9f742b8d37a Status: Started Number of Bricks: 2 x 2 = 4 Transport-type: tcp Bricks: Brick1: 192.168.10.239:/data/gluster Brick2: 192.168.10.212:/data/gluster Brick3: 192.168.10.204:/data/gluster Brick4: 192.168.10.220:/data/gluster Options Reconfigured: auth.allow: 192.168.1.* 注意上面最后一行卷信息，说明只允许客户端ip为192.168.10.*网段的机器挂载。 然后在192.168.10.213客户端进行挂载，发现就挂载不上了 [root@Client ~]# mount -t glusterfs 192.168.10.239:gluster_share /opt/gfsmount/ [root@Client ~]# df -h Filesystem Size Used Avail Use% Mounted on /dev/mapper/centos-root 38G 4.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/geng-huan-gu-zhang-brick/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/geng-huan-gu-zhang-brick/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/geng-huan-gu-zhang-brick/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/geng-huan-gu-zhang-brick/</guid>
       <description>更换故障Brick 前面已经介绍了GlusterFS分布式存储集群环境部署记录，现在模拟下更换故障Brick的操作：
 1）GlusterFS集群系统一共有4个节点，集群信息如下：
 分别在各个节点上配置hosts、同步好系统时间，关闭防火墙和selinux [root@GlusterFS-slave data]# cat /etc/hosts 192.168.10.239 GlusterFS-master 192.168.10.212 GlusterFS-slave 192.168.10.204 GlusterFS-slave2 192.168.10.220 GlusterFS-slave3 ------------------------------------------------------------------------------------ 分别在四个节点机上使用df创建一个虚拟分区，然后在这个分区上创建存储目录 [root@GlusterFS-master ~]# df -h Filesystem Size Used Avail Use% Mounted on /dev/mapper/centos-root 36G 1.8G 34G 5% / devtmpfs 2.9G 0 2.9G 0% /dev tmpfs 2.9G 0 2.9G 0% /dev/shm tmpfs 2.9G 8.5M 2.9G 1% /run tmpfs 2.9G 0 2.9G 0% /sys/fs/cgroup /dev/vda1 1014M 143M 872M 15% /boot /dev/mapper/centos-home 18G 33M 18G 1% /home tmpfs 581M 0 581M 0% /run/user/0 dd命令创建一个虚拟分区出来，格式化并挂载到/data目录下 [root@GlusterFS-master ~]# dd if=/dev/vda1 of=/dev/vdb1 2097152+0 records in 2097152+0 records out 1073741824 bytes (1.</description>
@@ -1070,19 +1070,19 @@ Storage Server会定期的向Tracker Server发送自己的存储信息。当Trac
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/readme/</guid>
       <description>Administration Guide </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/gai-shu/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/gai-shu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/gai-shu/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/gai-shu/</guid>
       <description>概述 GlusterFS系统是一个可扩展的网络文件系统，相比其他分布式文件系统，GlusterFS具有高扩展性、高可用性、高性能、可横向扩展等特点，并且其没有元数据服务器的设计，让整个服务没有单点故障的隐患。Glusterfs是一个横向扩展的分布式文件系统，就是把多台异构的存储服务器的存储空间整合起来给用户提供统一的命名空间。用户访问存储资源的方式有很多，可以通过NFS，SMB，HTTP协议等访问，还可以通过gluster本身提供的客户端访问。
 GlusterFS是Scale-Out存储解决方案Gluster的核心，它是一个开源的分布式文件系统，具有强大的横向扩展能力，通过扩展能够支持数PB存储容量和处理数千客户端。GlusterFS借助TCP/IP或InfiniBand RDMA网络将物理分布的存储资源聚集在一起，使用单一全局命名空间来管理数据。GlusterFS基于可堆叠的用户空间设计，可为各种不同的数据负载提供优异的性能。
 **GlusterFS 适合大文件还是小文件存储？**弹性哈希算法和Stripe 数据分布策略，移除了元数据依赖，优化了数据分布，提高数据访问并行性，能够大幅提高大文件存储的性能。对于小文件，无元数据服务设计解决了元数据的问题。但GlusterFS 并没有在I/O 方面作优化，在存储服务器底层文件系统上仍然是大量小文件，本地文件系统元数据访问是一个瓶颈，数据分布和并行性也无法充分发挥作用。因此，GlusterFS 适合存储大文件，小文件性能较差，还存在很大优化空间。
@@ -1118,19 +1118,19 @@ node1# gluster peer detach node3
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/images/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/images/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/images/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/images/readme/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/install-guide/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/install-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/install-guide/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/install-guide/</guid>
       <description>Install Guide 之前已经简单地对
 GlusterFS分布式文件系统
 做了介绍，下面就该环境部署做一记录：
@@ -1141,10 +1141,10 @@ GlusterFS分布式文件系统
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/readme/</guid>
       <description>GlusterFS Gluster官网：https://www.gluster.org
 官方文档：https://docs.gluster.org/en/latest/
 相关资料：https://www.cnblogs.com/wangtao1993/p/6030918.html</description>
@@ -1152,10 +1152,10 @@ GlusterFS分布式文件系统
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/shu-ju-de-hui-fu-ji-523628-afr-de-shuo-ming/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/shu-ju-de-hui-fu-ji-523628-afr-de-shuo-ming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/shu-ju-de-hui-fu-ji-523628-afr-de-shuo-ming/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/shu-ju-de-hui-fu-ji-523628-afr-de-shuo-ming/</guid>
       <description>数据的恢复机制(AFR)的说明 GlusterFSFS恢复数据都是基于副本卷来说的，GlusterFSFS复制卷是采用镜像的方式做的，并且是同步事务性操作。简单来说就是，某一个客户要写文件时，先把这个文件锁住，然后同时写两个或多个副本，写完后解锁，这个操作才算结束。那么在写某一个副本时发生故障没有写成功，或者运行过程中某一个节点断电了，造成数据丢失了，等等，就能通过另一个副本来恢复。
 现在这里说一个疑问： 就是GlusterFS写副本时同步写的，就是客户端同时写两份数据，这样就会产生两倍的流量，测2副本的分布式复制卷性能时，能明确看到性能只有无副本的一半，或者只有读的一半；另一个分布式文件系统ceph就不是这样，是异步来写副本的，就是写到一个主OSD（ceph的存储单元）就返回了，这个OSD再通过内部网络异步写到其他的OSD，这样不是更快了。那么这两种方法有什么优缺点呢，那种比较好，或者各自为什么采用这样的方法？
 说道恢复就有什么时候恢复，怎么恢复，凭什么说这个副本是好的，那个副本是坏的呢，这样的问题，一个一个来说吧。
@@ -1181,28 +1181,28 @@ WISE：相反，自己是0，别人不是0 ，自己没问题别人有问题，�
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/mgfs/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/mgfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/mgfs/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/mgfs/</guid>
       <description>mgfs </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/moosefs/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/moosefs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/moosefs/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/moosefs/</guid>
       <description>MooseFS https://www.cnblogs.com/kevingrace/category/924882.html</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/readme/</guid>
       <description>分布式文件系统 https://blog.csdn.net/wendowswd/article/details/78319323
 分布式文件系统
 分布式文件系统（Distributed File System）是指文件系统管理的物理存储资源并不直接与本地节点相连，而是分布于计算网络中的一个或者多个节点的计算机上。目前意义上的分布式文件系统大多都是由多个节点计算机构成，结构上是典型的客户机/服务器模式。流行的模式是当客户机需要存储数据时，服务器指引其将数据分散的存储到多个存储节点上，以提供更快的速度，更大的容量及更好的冗余特性。
@@ -1233,10 +1233,10 @@ NFS还可以共享软驱,CDROM和ZIP等的存储设备,减少整个网络上的�
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/shi/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/shi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/shi/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/shi/</guid>
       <description>诗 一、各种分布式文件系统对比
 1.1 表格对比
    技术 优点 缺点 总结     HDFS 1.大数据批量读写，吞吐量高;2.一次写入，多次读取，顺序读写； 1、交互式应用，低延迟很难满足； 2、不支持多用户并发写相同文件。 如果是很多小文件，nameNode压力大   googleFs 1、成本低，运行在廉价的普通硬件上 、不开源 不开源，使用困难   Tfs 1、 开源 1、小于1M的文件 2、TFS内部是没有任何数据的内存缓冲的 适合单个文件比较小的系统   Lustre 1、 开源 2、 支持POSIX 3、 文件被分割成若干的Chunk，每个chunk是一般为1MB－4MB     Ceph 1、支持POSIX 2、开源  1、 在Linux主流内核中找到ceph 2、不成熟，处于测试推广阶段   MogileFs 1、开源  比FastDFS 差   FastDFS 1、 开源 2、 适合以文件为载体的在线服务 3、 FastDFS没有对文件做分块存储 4、 不需要二次开发即可直接使用 5、 比mogileFS更易维护和使用 6、 直接使用socket通信方式，相对于MogileFS的HTTP方式，效率更高。 1、文件访问方式使用专有API，不支持POSIX    swiftfs   1、基于HDFS   NFS 1、用户和程序可以象访问本地文件一样访问远端系统上的文件      开源的分布式文件/对象系统比较有名的包括Lustre（HPC）GlusterFS（NAS NFS）、HDFS（hadoop）、ceph（虚机块存储）、swift（restful对象存储），各有不同的领域。</description>
@@ -1244,28 +1244,28 @@ NFS还可以共享软驱,CDROM和ZIP等的存储设备,减少整个网络上的�
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/das/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/das/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/das/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/das/</guid>
       <description>DAS </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/fc-san/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/fc-san/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/fc-san/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/fc-san/</guid>
       <description>FC-SAN </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/ip-san/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/ip-san/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/ip-san/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/ip-san/</guid>
       <description>IP-SAN Linux下IP SAN共享存储操作记录 操作需求：
 公司之前在阿里云上购买了6台机器，磁盘空间大小不一致，后续IDC建设好后，又将业务从阿里云上迁移到IDC机器上了。
 为了不浪费阿里云上的这几台机器资源，打算将这其中的5台机器做成IP SAN共享存储，另一台机器共享这5台的SAN存储，然后跟自己的磁盘一起做成LVM逻辑卷，最后统一作为备份磁盘使用！
@@ -1276,10 +1276,10 @@ ip地址 数据盘空间 主机名 系统版本 192.168.10.17 200G ipsan-node01 
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/readme/</guid>
       <description>SAN 简单介绍 SAN，即存储区域网络（storage area network and SAN protocols），它是一种高速网络实现计算机与存储系统之间的数据传输。常见的分类是FC-SAN和IP-SAN两种。FC-SAN通过光纤通道协议转发scsi协议；IP-SAN通过TCP协议转发scsi协议，也就是IP 地址。存储设备是指一台或多台用以存储计算机数据的磁盘设备，通常指磁盘阵列，主要厂商EMC、日立等。
 iSCSI（internet SCSI）技术由IBM公司研究开发，是一个供硬件设备使用的、可以在IP协议的上层运行的SCSI指令集，这种指令集合可以实现在IP网络上运行SCSI协议，使其能够在诸如高速千兆以太网上进行路由选择。iSCSI是一种新储存技术，它是将现有SCSI接口与以太网络(Ethernet)技术结合，使服务器可与使用IP网络的储存装置互相交换资料。
 iSCSI是一种基于TCP/IP 的协议，用来建立和管理IP存储设备、主机和客户机等之间的相互连接，并创建存储区域网络（SAN）。SAN 使得SCSI 协议应用于高速数据传输网络成为可能，这种传输以数据块级别（block-level）在多个数据存储网络间进行。SCSI 结构基于C/S模式，其通常应用环境是：设备互相靠近，并且这些设备由SCSI 总线连接。
@@ -1313,19 +1313,19 @@ SAN由三个基本的组件构成：接口（如SCSI、
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/nas/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/nas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/nas/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/nas/</guid>
       <description>NAS </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/readme/</guid>
       <description>网络存储 Direc(DirectAttachedStorage)，全称为直接连接附加存储，采用DAS的方式可以很简单的实现平台的容量扩容，同时对数据可以提供多种RAlD级别的保护。
 DAS直联存储
 采用DAS方式，在视频存储单元上部署相关的HBA卡。用于跟后端的存储设备建立数据通道。前端的视频存储单元可以是DVR，也可以是视频存储服务器。其通道可以采用光纤、IP网线、SAS线缆甚至于USB。采用DAS方式并不能同时支持很多视频存储服务单元同时接入，而且其扩容能力严重依赖所选择的存储设备自身的扩容能力。所以在大型数字视频监控系统中，应用DAS存储方式将造成系统维护难度的极大提升。正是由于DAS存储的这些特点，所以这种存储方式一般应用于对于DVR的扩容或者小型数字视频监控项目中。
@@ -1340,10 +1340,10 @@ SAN(StorageAreaNetwork)，全称为存储区域网络，通过交换机等连接
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/mgfs/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/mgfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/mgfs/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/mgfs/</guid>
       <description>mgfs MogileFS是一个开源的分布式文件存储系统，由LiveJournal旗下的Danga Interactive公司开发。Danga团队开发了包括 Memcached、MogileFS、Perlbal 等多个知名的开源项目。目前使用MogileFS 的公司非常多，如日本排名先前的几个互联公司及国内的yupoo(又拍)、digg、豆瓣、1号店、大众点评、搜狗和安居客等，分别为所在的组织或公司管理着海量的图片。
 MogileFS由3个部分组成： (1) server：主要包括mogilefsd和mogstored两个应用程序。mogilefsd实现的是tracker，它通过数据库来保存元数据信息，包括站点domain、class、host等；mogstored是存储节点(store node)，它其实是个WebDAV服务，默认监听在7500端口，接受客户端的文件存储请求。在MogileFS安装完后，要运行mogadm工具将所有的store node注册到mogilefsd的数据库里，mogilefsd会对这些节点进行管理和监控。 (2) utils（工具集）：主要是MogileFS的一些管理工具，例如mogadm等。 (3) 客户端API：MogileFS的客户端API很多，例如Perl、PHP、Java、Python等，用这个模块可以编写客户端程序，实现文件的备份管理功能等。
 存储主机(节点) 这个是 MogileFS 存储文件存放在这些机器上,也是 mogstored 节点,也叫 Storage Server,一台存储主要都要启动一个 mogstored 服务.扩容就是增加这些机器.
@@ -1355,19 +1355,19 @@ cpanm DBD::mysql cpanm MogileFS::Server cpanm MogileFS::Utils cpanm MogileFS::Cl
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/network-storage/ip-san/images/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/network-storage/ip-san/images/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/network-storage/ip-san/images/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/network-storage/ip-san/images/readme/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/she-bei/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/she-bei/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/she-bei/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/she-bei/</guid>
       <description>存储设备 存储设备是用于储存信息的设备，通常是将信息数字化后再以利用电、磁或光学等方式的媒体加以存储。
 常见设备 1、利用电能方式存储信息的设备如：各式存储器，如RAM、ROM等
 2、利用磁能方式存储信息的设备如：硬盘、软盘（已经淘汰）、磁带、磁芯存储器、磁泡存储器（磁泡存储器在1970年代出现，但是在1980年代硬盘价格急剧下降的情况下未能获得商业上的成功。），U盘
@@ -1381,10 +1381,10 @@ cpanm DBD::mysql cpanm MogileFS::Server cpanm MogileFS::Utils cpanm MogileFS::Cl
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/chapter1/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/chapter1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/chapter1/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/chapter1/</guid>
       <description>存储 存储的内容比较广泛和零散，概念比较多，下面我就分享一下学习存储的心得
 一、基本概念 1、什么是数据及数据与信息的区别：数据可以理解为对所有事物的数字表示，信息是经过加工处理的数据，它是在数据层面上经过
 提炼得出来的有价值的数据。其实这两个概念都比较简单，但是非常重要。
@@ -1449,10 +1449,10 @@ SNIA（全球网络存储工业协会）对大数据下的定义是，在最强�
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/cun-chu-lei-xing/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/cun-chu-lei-xing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/cun-chu-lei-xing/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/cun-chu-lei-xing/</guid>
       <description>存储类型 原文：https://yq.aliyun.com/articles/85619
 1.存储引擎 1.1 Hash Table  1.1.1 dbm (database manager)  https://en.wikipedia.org/wiki/Dbm
 The dbm library stores arbitrary data by use of a single key (a primary key) in fixed-size buckets and uses hashing techniques to enable fast retrieval of the data by key.
@@ -1470,10 +1470,10 @@ http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/over
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/leixing/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/leixing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/leixing/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/leixing/</guid>
       <description>leixing https://blog.csdn.net/enweitech/article/details/51445087
 https://blog.csdn.net/liuaigui/article/details/17973039
    差异点\产品 ServerSAN 分布式NAS 分布式对象存储     接口协议 块（SCSI协议） 文件（NFS、CIFS协议） 对象（OpenStackSWIFT、Amazon S3）   时延 较低(&amp;lt;10ms左右) 中(10ms~100ms) 高（60ms以上）   一致性 强一致性 强一致性 最终一致性   应用场景 分布式云平台、数据仓库、虚拟机；客户为企业客户 文件共享，如媒资、医疗影像归档、卫星图片 云服务，如Amazon S3;客户为个人客户    ServerSAN
@@ -1496,19 +1496,19 @@ https://blog.csdn.net/liuaigui/article/details/17973039
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/readme/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/readme/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/readme/</guid>
       <description>浅谈存储 </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/summary/</link>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/summary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://aftree.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/summary/</guid>
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/summary/</guid>
       <description> 浅谈存储  存储 存储类型 leixing   存储设备 网络存储  DAS NAS SAN  IP-SAN FC-SAN     分布式文件系统  分布式 Ceph  硬件选择 概述 安装2 集群管理 日常操作命令 故障排除 安装 运维   GlusterFS  概述 Install Guide Administration Guide  Admin Admin2 更换故障Brick   数据的恢复机制(AFR)的说明   FastDFS  概述 部署 常用命令   MooseFS DRBD 调度 诗   云存储  </description>
     </item>
     
