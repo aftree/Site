@@ -11,13 +11,13 @@
 ## 消息队列 <a id="message-queue"></a>
 
 * [Untitled](message-queue/untitled.md)
-* [ActiveMQ](message-queue/activemq.md)
+* [ActiveMQ](message-queue/activemq/README.md)
   * [Untitled](message-queue/activemq/untitled.md)
-* [RabbitMQ](message-queue/rabbitmq.md)
+* [RabbitMQ](message-queue/rabbitmq/README.md)
   * [Untitled](message-queue/rabbitmq/untitled.md)
-* [RocketMQ](message-queue/rocketmq.md)
+* [RocketMQ](message-queue/rocketmq/README.md)
   * [Untitled](message-queue/rocketmq/untitled.md)
-* [Kafka](message-queue/kafka.md)
+* [Kafka](message-queue/kafka/README.md)
   * [Untitled](message-queue/kafka/untitled.md)
 
 ## 关于
@@ -31,7 +31,18 @@
 
 ## 大数据 <a id="bigdata"></a>
 
-* [Hadoop 生态系统](bigdata/hadoop.md)
+* [Hadoop 生态系统](bigdata/hadoop/README.md)
+  * [Sqoop](bigdata/hadoop/sqoop.md)
+  * [Flume](bigdata/hadoop/flume.md)
+  * [Pig](bigdata/hadoop/pig.md)
+  * [Hive](bigdata/hadoop/hive.md)
+  * [Hbase](bigdata/hadoop/hbase.md)
+  * [Hadoop](bigdata/hadoop/hadoop.md)
+  * [ZooKeeper](bigdata/hadoop/zookeeper/README.md)
+    * [Untitled](bigdata/hadoop/zookeeper/untitled-3.md)
+    * [Untitled](bigdata/hadoop/zookeeper/untitled-2.md)
+    * [Untitled](bigdata/hadoop/zookeeper/untitled.md)
+    * [Untitled](bigdata/hadoop/zookeeper/untitled-1.md)
 * [Spark](bigdata/spark.md)
 * [BI](bigdata/bi.md)
 
