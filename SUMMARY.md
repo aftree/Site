@@ -8,6 +8,14 @@
 * [Winodws](operating-system/windows/README.md)
   * [Windows](operating-system/windows/windows.md)
 
+## 系统集成 <a id="system-integration"></a>
+
+* [系统集成](system-integration/system-integration.md)
+* [机房建设](system-integration/ji-fang-jian-she.md)
+* [弱电系统](system-integration/ruo-dian-xi-tong.md)
+* [网络建设](system-integration/wang-luo-jian-she.md)
+* [信息安全](system-integration/xin-xi-an-quan.md)
+
 ## 消息队列 <a id="message-queue"></a>
 
 * [Untitled](message-queue/untitled.md)
@@ -19,11 +27,6 @@
   * [Untitled](message-queue/rocketmq/untitled.md)
 * [Kafka](message-queue/kafka/README.md)
   * [Untitled](message-queue/kafka/untitled.md)
-
-## 关于
-
-* [Hugo](guan-yu/untitled.md)
-* [企业组织架构](guan-yu/qi-ye-zu-zhi-jia-gou.md)
 
 ## 安全
 
@@ -55,14 +58,6 @@
 ## Cloud Computing
 
 * [Untitled](cloud-computing/untitled.md)
-
-## 系统集成 <a id="system-integration"></a>
-
-* [系统集成](system-integration/system-integration.md)
-* [机房建设](system-integration/ji-fang-jian-she.md)
-* [弱电系统](system-integration/ruo-dian-xi-tong.md)
-* [网络建设](system-integration/wang-luo-jian-she.md)
-* [信息安全](system-integration/xin-xi-an-quan.md)
 
 ## 网站架构
 
@@ -120,4 +115,9 @@
   * [KVM](xu-ni-hua/untitled/kvm.md)
   * [VMware](xu-ni-hua/untitled/vmware.md)
 * [虚拟化概览](xu-ni-hua/xu-ni-hua-gai-lan.md)
+
+## 关于
+
+* [Hugo](guan-yu/untitled.md)
+* [企业组织架构](guan-yu/qi-ye-zu-zhi-jia-gou.md)
 
