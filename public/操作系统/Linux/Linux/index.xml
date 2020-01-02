@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on My New Hugo Site</title>
+    <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/</link>
+    <description>Recent content in Linux on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Dec 2019 20:50:40 +0800</lastBuildDate>
+    
+	<atom:link href="https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/commandlist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/commandlist/</guid>
+      <description>命令列表    Category Command - Linux命令大全：http://man.linuxde.net     系统管理 系统管理   文本编辑器 vi、vim、nano   时间日期 cal、date、hwclock、clockdiff、rdate、sleep   获取帮助 help、man、info   搜索查找 type、file、which、whatis、、find   文件/目录管理 一切皆文件   文件/目录 ls、cd、cp、mv、mkdir、touch、pwd   查看文件/文本处理 cat、tac、more、less、head、tail   文件传输/数据同步 rsync   压缩/解压缩 tar、gzip、gunzip、zcmp、zip、unzip、zcat、zless、zipinfo、zipsplit、zipgrep、zmore、   系统信息 uname   网络管理 telnet、ssh、scp、wget、ping、route、ifconfig、ifup、ifdown、netstat、ss、nmap、lsof、mail、dig、host、traceroute、tcpdump   软件包管理 rpm、yum、dnf、dpkg、apt-get   登录信息 whoami、who、w、last、lastlog、users、finger   系统性能 sar、iostat、iotop、mpstat、vmstat、tload、time、uptime、ipcs、ipcrm、lslk   登录/关机/重启/注销/ login、logout、exit、rlogin、powerdown、halt、reboot、init 0/6   进程管理 ps、top、pgrep、pidof、kill、killall、pkill、timeout、wait、fuser、nohup、pmap、lsof、chkconfig、bg、fg、jobs   服务管理 6：service、chkconfig，7：systemctl   用户/用户组管理 useradd、adduser、userdel、usermod、、、、passwd、groupadd、groupdel、groupmod、users、groups、idd、su、sudo   磁盘管理 mount、umonut、fsck、dd、fdisk、parted、mkfsmkswap、swapon、swapoff、sync、resize2fs   任务计划 at、atq、atrm、crontab、watch    </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/bccbpf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/bccbpf/</guid>
+      <description>bcc/BPF </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/jing-tai-gong-ju/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/jing-tai-gong-ju/</guid>
+      <description>静态工具 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/linux-sar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/linux-sar/</guid>
+      <description>Linux sar Linux sar</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/perf-tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/perf-tools/</guid>
+      <description>perf-tools perf-tools</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/readme/</guid>
+      <description>系统系能 一个完整运行的 Linux 系统包括很多子系统（介绍，CPU，Memory，IO，Network，…），监测和评估这些子系统是性能监测的一部分。我们往往需要宏观的看整个系统状态，也需要微观的看每个子系统的运行情况。
+系统性能专家 Brendan D. Gregg 的个人主页  Linux Performance ：http://www.brendangregg.com/linuxperf.html
+Linux Performance Tools  observability + static + perf-tools/bcc</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-ce-shi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-ce-shi/</guid>
+      <description>性能测试 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-diao-you/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-diao-you/</guid>
+      <description>性能调优 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-guan-cha/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-guan-cha/</guid>
+      <description>性能观察    lsof、perf、strace、pidstat、iostat、iotop、blktrace、swapon       top、ps、free、netstat       ss、netstat、tcpdump、iptraf、ethtool、ip       Applications       System Libraries ltrac perf   System Call Interface strace、sysdig perf   **VFS：**lsof、pcstat **Sockets：**ss、netstat Scheduler：   File Systems： **TCP/UDP：**netstat、iptraf perf、mpstat、top、ps、pidstat   VM： **IP：**netstat、iptraf **Virtual Memory：**   **BDI：**iostat、iotop、blktrace **Ethernet：**netstat、iptraf、tcpdump top、ps、pidstat、vmstat、slabtop、free   Device Drivers      I/O Bridge    I/O Cintroller：swapon、iostat、iptop、blktrace  Network Controller：ethtool、ip、nicstat、netstat、snmpget、lldptool    </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/man/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/man/</guid>
+      <description>获取帮助 00零.whatis为例，查找帮助信息思路
+type Command
+whatis Command
+man Command
+Command &amp;ndash;help/-h
+info Command
+/usr/share/doc/
+本地帮助文档/usr/share/doc/
+官网在线文档
+Red Hat documentation
+其它网站和搜索
+whatis
+显示命令的简短描述
+每晚使用一个数据库更新
+刚安装后不可立即使用
+makewhatis 版本6 | mandb 版本7 制作数据库
+在学习man命令时候，估计很多朋友都发现有man –f ,man –k 参数，可以查出很多数据。这些有的与man手册页相同，有些不是属于手册页的。它们数据怎么收集来的，并且whatis是怎么样工作的。 # man -h ... f:same as whatis(1) ... #觉得比较奇怪，whatis是什么呢？ [chengmo@centos5 ~]$ man whatis #查询得到是： #whatis - search the whatis database for complete words. #它是查询whatis数据库的工具 #The whatis database is created using the command /usr/sbin/makewhatis. #里面还说，whatis数据库 是通过/usr/bin/makewhatis建立的 收获：whatis数据库，并且有makewhatis创建，whatis脚本是用作查询的 makewhatis是怎么样工作的呢？ [chengmo@centos5 ~]$ man makewhatis #得到： makewhatis reads all the manual pages contained in the given sections of manpath or the preformatted pages con-tained in the given sections of catpath.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/nano-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/nano-1/</guid>
+      <description>nano </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/nano/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/nano/</guid>
+      <description>nano </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/readme/</guid>
+      <description>基础知识 1、Linux的命令可以分为内部命令和外部命令：
+内置命令在系统启动时就调入内存，是常驻内存的，所以执行效率高。
+而外部命令是系统的软件功能，用户需要时才从硬盘中读入内存。
+2、type - Display information about command type
+# 查看当前系统的命令是否为内置命令和外部命令。
+3、BUILTIN COMMANDS
+alias, bg, bind, break, builtin, caller, cd, command, compgen, complete, compopt, continue, declare, dirs, disown, echo,enable, eval, exec, exit, export, false, fc, fg, getopts, hash, help,history, jobs, kill, let, local, logout, mapfile, popd, printf, pushd,pwd, read, readonly, return, set, shift, shopt, source, suspend, test,times, trap, true, type, typeset, ulimit, umask, unalias, unset, wait
+#Linux中所有的内置命令。
+4、内置命令和外部命令的总结</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/rhce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/rhce/</guid>
+      <description>RHCE考试题 RHCE7 考试测试题 2017-05-21 王晓春 地点:北京市朝阳区东大桥路 9 号北京侨福芳草地大厦 A 座 8 层，地铁 6 号线东大桥站西 北 A 口出，过红绿灯十字路口，向南约 300 米路西。进电梯前，需在前台登记个人信息， 工作人员发放门禁卡，刷卡才可进入电梯间，离开考场出门禁时，自动回收门禁卡。注意 不要遗失门禁卡。 时间:考试时间共 6 个小时,分成上、下午两部分。上午 2.5 小时,考试内容对应红帽官方第 一、二本教材编号 124 和 134,下午 3.5 小时, 考试内容对应第三本教材编号 254.,一般在上 午 10:00 开始第一部分考试,下午 14:00 开始第二部分考试.建议考生在 9:00 前到达考场。 成绩:上午 EX200 和下午 EX300 两部分满分都是 300 分,及格分都为 210 分，只有两门考试 都通过 210 分，才能获得 RHCE 证书 注意事项: 1. 考场座位自由安排,可提早进考场，自行选择合适座位。考试现场有打印纸,没有笔,如有 需要，建议考生自行准备。 2. 考试的时候请不要小抄或等作弊工具，考官一旦发现不会当场提示考生，但考后结束后 考生的考试成绩将按 0 分计算。 3. 考试的时候手机必须上交，考官一但发现考生的手机没有上交，一律按作弊计算。 4. 考试题目的顺序每个人有可能都不一样，考生可以不按题目顺序完成考试，但要注意不 要落题。 5. 考试题目的分数没有标注，但有可能因为一些题目的错误影响整个考试结果。 6.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/security/iptables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/security/iptables/</guid>
+      <description>iptables iptables/netfilter:
+Packets Filter Firewall： 包过滤型防火墙： Firewall：隔离工具，工作于主机或网络的边缘处，对经由的报文根据预先定义的规则（识别标准）进行检测，对于能够被规则匹配到的报文实行某种预定义的处理机制的一套组件； 硬件防火墙：在硬件级别实现部分功能的； 软件防火墙：应用软件逻辑在通用硬件基础上实现； 主机防火墙： 网络防火墙： ipfw --&amp;gt; ipchians --&amp;gt; iptables(ip6tables) iptables/netfilter： iptables：规则管理工具； netfilter：防火墙框架，承载并生效规则； hook functions(netfilter)： prerouting input forward output postrouting iptables： PREROUTING INPUT FORWARD OUTPUT POSTROUTING 允许用户自定义规则链；它们需要手动关联至指定的”钩子“； netfilter：功能 filter(“防火”)：包过滤 NAT：Network Address Translation mangle：拆解报文，做出修改，而后重新封装 raw：关闭nat表上启用的连接追踪机制 功能（表）&amp;lt;--&amp;gt;钩子 filter：input, forward, output nat：prerouting, input, output, postrouting mangle：prerouting, input, forward, output, postrouting raw：prerouting, output 优先级（由高而低）：raw --&amp;gt; mangle --&amp;gt; nat --&amp;gt; filter iptables规则的组成部分： 匹配条件： 网络层首部：SourceIP, DestinationIP, ... 传输层首部：SourtPort, DestinationPort, TCP Flags(SYN,ACK,FIN,URG,RST,PSH), .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/security/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/security/readme/</guid>
+      <description>Security </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/bashte-xing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/bashte-xing/</guid>
+      <description>学习 shell 的原因主要有：文字接口的 shell 在各大 distribution 都一样；远程管理时文字接口速度较快； shell 是管理 Linux 系统非常重要的一环，因为 Linux 内很多控制都是以 shell 撰写的。 Shell 是指一种应用程序，这个应用程序提供了一个界面，用户通过这个界面访问操作系统内核的服务。 Linux的Shell种类众多，常见的有： Bourne Shell（/bin/sh） Bourne Again Shell（/bin/bash）Linux 预设的 shell C Shell（/usr/bin/csh） K Shell（/usr/bin/ksh） Bash的基础特性 1 命令历史 2 命令别名 3 快捷键 4 命令补全和路径补全 5 命令行展开 6 命令执行状态码 7 glob通配符 8 I/O重定向和管道 9 变量 10 进程控制 11 bash 环境中的特殊符号  1 命令历史
+shell进程会保存其会话中用户曾经执行过的命令，默认可以记录1000条历史命令； 命令保存在用户的家目录中的.bash_history文件中。 只有当用户正常退出当前shell时，在当前shell中运行的命令才会保存至.bash_history文件中。 登录进shell 后新执行的命令只会记录在缓存中；这些命令会用户退出时“追加”至命令历史文件中 同一账号同时登录 bash，因为等到退出时才会保存文件， 最后退出的 bash 才会最后写入文件(前面退出保存的只是被最后退出的 bash 覆盖更新了) 无法记录时间：其实可以透过 ~/.bash_logout 来进行 history 的记录，并加上 date来增加时间参数 history -c: 清空命令历史 -d: 删除历史中指定的命令 #: 显示最近的 # 条历史 -a: 追加本次会话新执行的命令历史列表至历史文件 -n: 读历史文件中未读过的行到历史列表 -r: 读历史文件附加到历史列表 -w: 保存历史列表到指定的历史文件 -p: 展开历史参数成多行 ，但不存在历史列表中 -s: 展开历史参数成一行，附加在历史列表后 命令历史相关环境变量 HISTSIZE ：命令历史记录的条数 HISTFILE ：指定历史文件，默认为~/.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/cc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/cc/</guid>
+      <description>#!/bin/bash
+Author:Lee Desc:Auto Deny Black_IP Script. Date:Today 取得参数$1为并发阈值，若留空则默认允许单IP最大50并发(实际测试发现，2M带宽，十来个并发服务器就已经无法访问了！) if [[ -z $1 ]];then num=50 else num=$1 fi
+#巧妙的进入到脚本工作目录 cd $(cd $(dirname $BASH_SOURCE) &amp;amp;&amp;amp; pwd)
+#请求检查、判断及拉黑主功能函数 function check(){ iplist=netstat -an |grep ^tcp.*:80|egrep -v &#39;LISTEN|127.0.0.1&#39;|awk -F&amp;quot;[ ]+|[:]&amp;quot; &#39;{print $6}&#39;|sort|uniq -c|sort -rn|awk -v str=$num &#39;{if ($1&amp;gt;str){print $2}}&#39; if [[ ! -z $iplist ]]; then &amp;gt;./black_ip.txt for black_ip in $iplist do #白名单过滤中已取消IP段的判断功能，可根据需要自行修改以下代码(请参考前天写的脚本) #exclude_ip=echo $black_ip | awk -F&amp;quot;.&amp;quot; &#39;{print $1&amp;quot;.&amp;quot;$2&amp;quot;.&amp;quot;$3}&#39; #grep -q $exclude_ip ./white_ip.txt grep -q $black_ip .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter01/</guid>
+      <description>准备工作  前言 什么是 Shell 搭建运行环境 基本语法介绍 Shell 程序设计过程 调试方法介绍 小结 参考资料  前言 到最后一节来写“开篇”，确实有点古怪。不过，在第一篇（数值操作）的开头实际上也算是一个小的开篇，那里提到整个系列的前提是需要有一定的 Shell 编程基础，因此，为了能够让没有 Shell 编程基础的读者也可以阅读这个系列，我到最后来重写这个开篇。开篇主要介绍什么是 Shell，Shell 运行环境，Shell 基本语法和调试技巧。
+什么是 Shell 首先让我们从下图看看 Shell 在整个操作系统中所处的位置吧，该图的外圆描述了整个操作系统（比如 Debian/Ubuntu/Slackware 等），内圆描述了操作系统的核心（比如 Linux Kernel），而 Shell 和 GUI 一样作为用户和操作系统之间的接口。
+GUI 提供了一种图形化的用户接口，使用起来非常简便易学；而 Shell 则为用户提供了一种命令行的接口，接收用户的键盘输入，并分析和执行输入字符串中的命令，然后给用户返回执行结果，使用起来可能会复杂一些，但是由于占用的资源少，而且在操作熟练以后可能会提高工作效率，而且具有批处理的功能，因此在某些应用场合还非常流行。
+Shell 作为一种用户接口，它实际上是一个能够解释和分析用户键盘输入，执行输入中的命令，然后返回结果的一个解释程序（Interpreter，例如在 linux 下比较常用的 Bash），我们可以通过下面的命令查看当前的 Shell ：
+$ echo $SHELL /bin/bash $ ls -l /bin/bash -rwxr-xr-x 1 root root 702160 2008-05-13 02:33 /bin/bash 该解释程序不仅能够解释简单的命令，而且可以解释一个具有特定语法结构的文件，这种文件被称作脚本（Script）。它具体是如何解释这些命令和脚本文件的，这里不深入分析，请看我在 2008 年写的另外一篇文章：《Linux命令行上程序执行的一刹那》。
+既然该程序可以解释具有一定语法结构的文件，那么我们就可以遵循某一语法来编写它，它有什么样的语法，如何运行，如何调试呢？下面我们以 Bash 为例来讨论这几个方面。
+搭建运行环境 为了方便后面的练习，我们先搭建一个基本运行环境：在一个 Linux 操作系统中，有一个运行有 Bash 的命令行在等待我们键入命令，这个命令行可以是图形界面下的 Terminal （例如 Ubuntu 下非常厉害的 Terminator），也可以是字符界面的 Console （可以用 CTRL+ALT+F1~6 切换），如果你发现当前 Shell 不是 Bash，请用下面的方法替换它：</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter02/</guid>
+      <description>数值运算  前言 整数运算  范例：对某个数加 1 范例：从 1 加到某个数 范例：求模 范例：求幂 范例：进制转换 范例：ascii 字符编码   浮点运算  范例：求 1 除以 13，保留 3 位有效数字 范例：余弦值转角度 范例：有一组数据，求人均月收入最高家庭   随机数  范例：获取一个随机数 范例：随机产生一个从 0 到 255 之间的数字   其他运算  范例：获取一系列数 范例：统计字符串中各单词出现次数 范例：统计指定单词出现次数   小结 资料 后记  前言 从本文开始，打算结合平时积累和进一步实践，通过一些范例来介绍Shell编程。因为范例往往能够给人以学有所用的感觉，而且给人以动手实践的机会，从而激发人的学习热情。
+考虑到易读性，这些范例将非常简单，但是实用，希望它们能够成为我们解决日常问题的参照物或者是“茶余饭后”的小点心，当然这些“点心”肯定还有值得探讨、优化的地方。
+更复杂有趣的例子请参考 Advanced Bash-Scripting Guide (一本深入学习 Shell 脚本艺术的书籍)。
+该系列概要：
+ 目的：享受用 Shell 解决问题的乐趣；和朋友们一起交流和探讨。 计划：先零散地写些东西，之后再不断补充，最后整理成册。 读者：熟悉 Linux 基本知识，如文件系统结构、常用命令行工具、Shell 编程基础等。 建议：看范例时，可参考《Shell基础十二篇》和《Shell十三问》。 环境：如没特别说明，该系列使用的 Shell 将特指 Bash，版本在 3.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter03/</guid>
+      <description>布尔运算  前言 常规的布尔运算  在 Shell 下如何进行逻辑运算  范例：true or false 范例：与运算 范例：或运算 范例：非运算，即取反   Bash 里头的 true 和 false 是我们通常认为的 1 和 0 么？  范例：返回值 v.s. 逻辑值 范例：查看 true 和 false 帮助和类型     条件测试  条件测试基本使用  范例：数值测试 范例：字符串测试 范例：文件测试   各种逻辑测试的组合  范例：如果 a，b，c 都等于下面对应的值，那么打印 YES，通过 -a 进行与测试 范例：测试某个“东西”是文件或者目录，通过 -o 进行“或”运算 范例：测试某个“东西”是否为文件，测试 ! 非运算   比较 -a 与 &amp;amp;&amp;amp;, -o 与 ||， !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter04/</guid>
+      <description>字符串操作  前言 字符串的属性  字符串的类型  范例：数字或者数字组合 范例：字符组合（小写字母、大写字母、两者的组合） 范例：字母和数字的组合 范例：空格或者 Tab 键等 范例：匹配邮件地址 范例：匹配 URL 地址(以 http 链接为例） 范例：判断字符是否为可打印字符   字符串的长度  范例：计算某个字符串的长度 范例：计算某些指定字符或者字符组合的个数 范例：统计单词个数     字符串的显示  范例：在屏幕控制字符显示位置、颜色、背景等 范例：在屏幕的某个位置动态显示当前系统时间 范例：过滤掉某些控制字符串   字符串的存储  范例：把字符串拆分成字符串数组   字符串常规操作  取子串  范例：按照位置取子串 范例：匹配字符求子串   查询子串  范例：查询子串在目标串中的位置 范例：查询子串，返回包含子串的行   子串替换  范例：把变量 var 中的空格替换成下划线   插入子串  范例：在 var 字符串的空格之前或之后插入一个下划线   删除子串  范例：把 var 字符串中所有的空格给删除掉。   子串比较 子串排序 子串进制转换 子串编码转换   字符串操作进阶  正则表达式  范例：处理 URL 地址 范例：匹配某个文件中的特定范围的行   处理格式化的文本  范例：选取指定列 范例：文件关联操作     参考资料 后记  前言 忙活了一个礼拜，终于等到周末，可以空下来写点东西。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter05/</guid>
+      <description>文件操作  前言 文件的各种属性  文件类型  范例：在命令行简单地区分各类文件 范例：简单比较它们的异同 范例：普通文件再分类   文件属主  范例：修改文件的属主 范例：查看文件的属主 范例：分析文件属主实现的背后原理   文件权限  范例：给文件添加读、写、可执行权限 范例：授权普通用户执行root所属命令 范例：给重要文件加锁   文件大小  范例：查看普通文件和链接文件 范例：查看设备文件 范例：查看目录   文件访问、更新、修改时间 文件名   文件的基本操作  范例：创建文件 范例：删除文件 范例：复制文件 范例：修改文件名 范例：编辑文件 范例：压缩／解压缩文件 范例：文件搜索（文件定位）   参考资料 后记  前言 这周来探讨文件操作。
+在日常学习和工作中，总是在不断地和各种文件打交道，这些文件包括普通文本文件，可以执行的程序，带有控制字符的文档、存放各种文件的目录、网络套接字文件、设备文件等。这些文件又具有诸如属主、大小、创建和修改日期等各种属性。文件对应文件系统的一些数据块，对应磁盘等存储设备的一片连续空间，对应于显示设备却是一些具有不同形状的字符集。
+在这一节，为了把关注点定位在文件本身，不会深入探讨文件系统以及存储设备是如何组织文件的（在后续章节再深入探讨），而是探讨对它最熟悉的一面，即把文件当成是一系列的字符（一个 byte）集合看待。因此之前介绍的《 Shell 编程范例之字符串操作》在这里将会得到广泛的应用，关于普通文件的读写操作已经非常熟练，那就是“重定向”，这里会把这部分独立出来介绍。关于文件在 Linux 下的“数字化”（文件描述符）高度抽象，“一切皆为文件”的哲学在 Shell 编程里也得到了深刻的体现。
+下面先来介绍文件的各种属性，然后介绍普通文件的一般操作。
+文件的各种属性 首先通过文件的结构体来看看文件到底有哪些属性：
+struct stat { dev_t st_dev; /* 设备 */ ino_t st_ino; /* 节点 */ mode_t st_mode; /* 模式 */ nlink_t st_nlink; /* 硬连接 */ uid_t st_uid; /* 用户ID */ gid_t st_gid; /* 组ID */ dev_t st_rdev; /* 设备类型 */ off_t st_off; /* 文件字节数 */ unsigned long st_blksize; /* 块大小 */ unsigned long st_blocks; /* 块数 */ time_t st_atime; /* 最后一次访问时间 */ time_t st_mtime; /* 最后一次修改时间 */ time_t st_ctime; /* 最后一次改变时间(指属性) */ }; 下面逐次来了解这些属性，如果需要查看某个文件属性，用 stat 命令就可，它会按照上面的结构体把信息列出来。另外，ls 命令在跟上一定参数后也可以显示文件的相关属性，比如 -l 参数。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter06/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter06/</guid>
+      <description>文件系统操作  前言 文件系统在 Linux 操作系统中的位置 硬件管理和设备驱动  范例：查找设备所需的驱动文件 范例：查看已经加载的设备驱动 范例：卸载设备驱动 范例：挂载设备驱动 范例：查看设备驱动对应的设备文件 范例：访问设备文件   理解、查看磁盘分区  磁盘分区基本原理 通过分析 MBR 来理解分区原理   分区和文件系统的关系  常见分区类型 范例：格式化文件系统   分区、逻辑卷和文件系统的关系 文件系统的可视化结构  范例：挂载文件系统 范例：卸载某个分区   如何制作一个文件系统  范例：用 dd 创建一个固定大小的文件 范例：用 mkfs 格式化文件 范例：挂载刚创建的文件系统 范例：对文件系统进行读、写、删除等操作   如何开发自己的文件系统 后记  前言 准备了很久，找了好多天资料，还不知道应该如何动笔写：因为担心拿捏不住，所以一方面继续查找资料，一方面思考如何来写。作为《Shell编程范例》的一部分，希望它能够很好地帮助 Shell 程序员理解如何用 Shell 命令来完成和 Linux 系统关系非常大的文件系统的各种操作，希望让 Shell 程序员中对文件系统&amp;quot;混沌&amp;quot;的状态从此消失，希望文件系统以一种更为清晰的样子呈现在眼前。
+文件系统在 Linux 操作系统中的位置 如何来认识文件系统呢？从 Shell 程序员的角度来看，文件系统就是一个用来组织各种文件的方法。但是文件系统无法独立于硬件存储设备和操作系统而存在，因此还是有必要来弄清楚硬件存储设备、分区、操作系统、逻辑卷、文件系统等各种概念之间的联系，以便理解文件系统常规操作的一些“细节”。这个联系或许（也许会有一些问题）可以通过这样一种方式来呈现：
+从图中可以清晰地看到各个“概念”之间的关系，它们以不同层次分布，覆盖硬件设备、系统内核空间、系统用户空间。在用户空间，用户可以不管内核如何操作具体硬件设备，仅仅使用程序员设计的各种界面就可以，而普通程序员也仅仅需要利用内核提供的各种接口（System Call）或者一些C库来和内核进行交互，而无须关心具体的实现细节。不过对于操作系统开发人员，他们需要在内核空间设计特定的数据结构来管理和组织底层的硬件设备。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter07/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter07/</guid>
+      <description>进程操作  前言 什么是程序，什么又是进程 进程的创建  范例：让程序在后台运行 范例：查看进程 ID 范例：查看进程的内存映像   查看进程的属性和状态  范例：通过 ps 命令查看进程属性 范例：通过 pstree 查看进程亲缘关系 范例：用 top 动态查看进程信息 范例：确保特定程序只有一个副本在运行   调整进程的优先级  范例：获取进程优先级 范例：调整进程的优先级   结束进程  范例：结束进程 范例：暂停某个进程 范例：查看进程退出状态   进程通信  范例：无名管道（pipe） 范例：有名管道（named pipe） 范例：信号（Signal）   作业和作业控制  范例：创建后台进程，获取进程的作业号和进程号 范例：把作业调到前台并暂停 范例：查看当前作业情况 范例：启动停止的进程并运行在后台   参考资料  前言 进程作为程序真正发挥作用时的“形态”，我们有必要对它的一些相关操作非常熟悉，这一节主要描述进程相关的概念和操作，将介绍包括程序、进程、作业等基本概念以及进程状态查询、进程通信等相关的操作。
+什么是程序，什么又是进程 程序是指令的集合，而进程则是程序执行的基本单元。为了让程序完成它的工作，必须让程序运行起来成为进程，进而利用处理器资源、内存资源，进行各种 I/O 操作，从而完成某项特定工作。
+从这个意思上说，程序是静态的，而进程则是动态的。
+进程有区别于程序的地方还有：进程除了包含程序文件中的指令数据以外，还需要在内核中有一个数据结构用以存放特定进程的相关属性，以便内核更好地管理和调度进程，从而完成多进程协作的任务。因此，从这个意义上可以说“高于”程序，超出了程序指令本身。
+如果进行过多进程程序的开发，又会发现，一个程序可能创建多个进程，通过多个进程的交互完成任务。在 Linux 下，多进程的创建通常是通过 fork 系统调用来实现。从这个意义上来说程序则”包含”了进程。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter08/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter08/</guid>
+      <description>网络操作  前言 网络原理介绍  我们的网络世界 网络体系结构和网络协议介绍   Linux 下网络“实战”  如何把我们的 Linux 主机接入网络  范例：通过dhclient获取IP地址 范例：静态配置IP地址   用 Linux 搭建网桥 用 Linux 做路由 用 Linux 搭建各种常规的网络服务 Linux 下网络问题诊断与维护   Linux 下网络编程与开发 后记 参考资料  前言 前面章节已经介绍了Shell编程范例之数值、布尔值、字符串、文件、文件系统、进程等的操作。这些内容基本覆盖了网络中某个独立机器正常工作的“方方面面”，现在需要把视角从单一的机器延伸到这些机器通过各种网络设备和协议连接起来的网络世界，分析网络拓扑结构、网络工作原理、了解各种常见网络协议、各种常见硬件工作原理、网络通信与安全相关软件以及工作原理分析等。
+不过，因为网络相关的问题确实太复杂了，这里不可能介绍具体，因此如果想了解更多细节，还是建议参考相关资料。但Linux是一个网络原理学习和实践的好平台，不仅因为它本身对网络体系结构的实现是开放源代码的，而且各种相关的分析工具和函数库数不胜数，因此，如果你是学生，千万不要错过通过它来做相关的实践工作。
+网络原理介绍 我们的网络世界 在进行所有介绍之前，来直观地感受一下那个真真实实存在的网络世界吧。当我在 Linux 下通过 Web 编辑器写这篇 Blog 时，一边用 mplayer 听着远程音乐，累了时则打开兰大的网络 TV 频道开始看看凤凰卫视……这些“现代化”的生活，我想，如果没有网络，将变得无法想象。
+下面来构想一下这样一个网络世界的优美图画：
+ 一边盯着显示器，一边敲击着键盘，一边挂着耳机。
+主机电源灯灿烂得很，发着绿光，这时很容易想象主机背后的那个网卡位置肯定有两个不同颜色的灯光在闪烁，它显示着主机正在与计算机网络世界打着交道。
+就在实验室的某个角落，有一个交换机上的一个网口的网线连到主机上，这个交换机接到了一个局域网的网关上，然后这个网关再接到了信息楼的某个路由器上，再转接到学校网络中心的另外一个路由器上……
+期间，有一个路由器连接到了这个 Blog 服务器上，而另外一个则可能连到了那个网络 TV 服务器上，还有呢，另外一些则连接到了电信网络里头的某个音乐服务器上……
+ 下面用 dia 绘制一个简单的“网络地图”：
+该图把一些最常见的网络设备和网络服务基本都呈现出来了，包括本地主机、路由、交换机、网桥，域名服务器，万维网服务，视频服务，防火墙服务，动态 IP 地址服务等。其中各种设备构成了整个物理网络，而网络服务则是构建在这些设备上的各种网络应用。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter09/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter09/</guid>
+      <description>用户管理  用户帐号  添加 删除 修改 禁用   用户口令  设置 删除 修改 禁用   用户组别  添加 删除 修改   用户和组  增加 删除   用户切换  切换帐号 免密码切到 Root    在初次撰写本书时，都只讨论到了“物”，而没有关注“人”。而在实际使用中，Linux 系统首先是面向用户的系统，所有之前介绍的内容全部是提供给不同的用户使用的。实际使用中常常碰到各类用户操作，所以这里添加一个独立的章节来介绍。
+Linux 支持多用户，也就是说允许不同的人使用同一个系统，每个人有一个属于自己的帐号。而且允许大家设置不同的认证密码，确保大家的私有信息得到保护。另外，为了确保整个系统的安全，用户权限又做了进一步划分，包括普通用户和系统管理员。普通用户只允许访问自己账户授权下的信息，而系统管理员才能访问所有资源。普通用户如果想行使管理员的职能，必须获得系统管理员的许可。
+为避免分散注意力，咱们不去介绍背后的那些数据文件： /etc/passwd，/etc/shadow，/etc/group，/etc/gshadow
+如果确实有需要，大家可通过如下命令查看帮助： man 5 passwd，man shadow, man group 和 man gshadow
+下面我们分如下几个部分来介绍：
+ 用户帐号 用户口令 用户组别 用户和组 用户切换  用户帐号 帐号操作主要是增、删、改、禁。Linux 系统提供了底层的 useradd, userdel 和 usermod 来完成相关操作，也提供了进一步的简化封装：adduser, deluser。为了避免混淆，咱们这里只介绍最底层的指令，这些指令设计上已经够简洁明了方便。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter10/</guid>
+      <description>总结  前言 Shell 编程范例回顾 常用 Shell 编程“框架” 程序优化技巧 其他注意事项  前言 到这里，整个 Shell 编程系列就要结束了，作为总结篇，主要回顾一下各个小节的主要内容，并总结出 Shell 编程的一些常用框架和相关注意事项等。
+Shell 编程范例回顾 TODO：主要回顾各小节的内容。
+常用 Shell 编程“框架” TODO：通过分析一些实例总结各种常见问题的解决办法，比如如何保证同一时刻每个程序只有一个运行实体（进程）。
+程序优化技巧 TODO：多思考，总会有更简洁和高效的方式。
+其他注意事项 TODO：比如小心 rm -rf 的用法，如何查看系统帮助等。
+正确使用 source 和 . 仅使用 source 和 . 来执行你的环境配置等功能，建议不要用于其它用途。 在Shell中使用脚本时，使用 bash your_script.sh 而不是 source your_script.sh 或 . your_script.sh。
+当使用 bash 的时候，当前的Shell会创建一个新的子进程执行你的脚本；当使用 source 和 . 时，当前的Shell会直接解释执行 your_script.sh 中的代码。如果 your_script.sh 中包含了类似 exit 0 这样的代码，使用source 和 . 执行会导致当前Shell意外地退出。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter11/</guid>
+      <description>附录  Shell 编程学习笔记  前言 执行 Shell 脚本的方式  范例：输入重定向到Bash 范例：以脚本名作为参数 范例：以 . 来执行 范例：直接执行   Shell 的执行原理 变量赋值  范例：获取当前的工作目录并存放到变量中   数组  范例：对数组元素赋值 范例：访问某个数组元素 范例：数组组合赋值 范例：列出数组中所有内容 范例：获取数组元素个数   参数传递 设置环境变量 键盘读起变量值 设置变量的只读属性 条件测试命令 test  范例：数值比较 范例：测试文件属性 范例：字符传属性以及比较 范例：串比较   整数算术或关系运算 expr 控制执行流程命令  范例：条件分支命令 if 范例：case 命令举例 范例：循环语句 while, until 范例：有限循环命令 for   函数 后记    Shell编程学习笔记 前言 这是作者早期的 Shell 编程学习笔记，主要包括 Shell 概述、 Shell 变量、位置参数、特殊符号、别名、各种控制语句、函数等 Shell 编程知识。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/example/</guid>
+      <description>简介 Shell 编程范例 以面向“对象” 的方式引入大量的实例介绍 Shell 日常操作，“对象” 涵盖数值、逻辑值、字符串、文件、进程、文件系统等。
+介绍  代码仓库：https://github.com/tinyclub/open-shell-book 在线阅读：http://tinylab.gitbooks.io/shellbook  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/readme/</guid>
+      <description>编程范例 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/guan-dao/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/guan-dao/</guid>
+      <description>管道命令 1 按列选取：cut 2 排序统计：sort, uniq, wc 3 重定向到多个目标：tee 4 字符转换命令：tr, col, join, paste, expand 5 分割命令： split 6 参数代换： xargs 7 关于减号 - 的用途  1 cut &amp;ndash; 按列选取
+$ cut -d&#39;分隔字符&#39; -f 字段	==用于有特定分隔字符 $ cut -c 字符区间 ==用于排列整齐的讯息 选项与参数： -d ：后面接分隔字符。与 -f 一起使用； -f ：依据 -d 的分隔字符将一段讯息分割成为数段，用 -f 取出第几段的意思； #: 第# 个字段 #,#[,#] ：离散的多个字段，例如1,3,6 #-# ：连续的多个字段, 例如1-6 混合使用：1-3,7 -c ：以字符 (characters) 的单位取出固定字符区间； cut -c 2-5 cut -c 12- --output-delimiter=STRING 指定输出分隔符 例：取得第 12 字符以后的所有字符串 $ export declare -x HISTCONTROL=&amp;quot;ignoredups&amp;quot; $ export | cut -c 12- HISTCONTROL=&amp;quot;ignoredups&amp;quot; cut 主要使用在分析一些数据或文字数据的时候 这是因为有时候我们会以某些字符当作分割的参数，然后来将数据加以切割，以取得我们所需要的数据。  2 sort &amp;ndash; 依据不同的数据类型排序，显示在标准输出，不改变原始文件</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/nano/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/nano/</guid>
+      <description>nano文本编辑器 #nano test.txt # test.txt存在就打开，不存在就新建
+ GNU nano 2.3.1 File: test.txt | &amp;lt;==这个是游标所在处 [ New File ] ^G Get Help ^O WriteOut ^R Read File ^Y Prev Page ^K Cut Text ^C Cur Pos ^X Exit ^J Justify ^W Where Is ^V Next Page ^U UnCut Te ^T To Spell # 上面两行是指令说明列，其中^代表的是[ctrl]的意思 如上图所示，你可以看到第一行反白的部分，那仅是在宣告nano的版本与档名(File: text.txt)而已。 之后你会看到最底下的三行，分别是档案的状态(New File)与两行指令说明列。指令说明列反白的部分就是组合键， 接的则是该组合键的功能。那个指数符号(^)代表的是键盘的[Ctrl]按键啦！底下先来说说比较重要的几个组合按键： •	[ctrl]-G：取得联机帮助(help)，很有用的！ •	[ctrl]-X：离开nano软件，若有修改过档案会提示是否需要储存喔！ •	[ctrl]-O：储存档案，若你有权限的话就能够储存档案了； •	[ctrl]-R：从其他档案读入资料，可以将某个档案的内容贴在本档案中； •	[ctrl]-W：搜寻字符串，这个也是很有帮助的指令喔！ •	[ctrl]-C：说明目前光标所在处的行数与列数等信息； •	[ctrl]-_：可以直接输入行号，让光标快速移动到该行； •	[alt]-Y：校正语法功能开启或关闭(单击开、再单击关) •	[alt]-M：可以支持鼠标来移动光标的功能 比较常见的功能是这些，如果你想要取得更完整的说明，可以在nano的画面中按下[ctrl]-G或者是[F1]按键， 就能够显示出完整的nano内指令说明了。好了，请你在上述的画面中随便输入许多字， 输入完毕之后就储存后离开，如下所示： GNU nano 2.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/readme/</guid>
+      <description>Shell 什么是shell编程呢？简单来说，shell编程就是对多个Linux命令进行逻辑处理。
+编程基础 1.什么是程序？ 程序是指：指令+数据
+程序编程风格可分为：
+过程式：以指令为中心，数据服务于指令（关注过程，小软件开发）
+对象式：以数据为中心，指令服务于数据（关注结果，适合开发大型软件）
+2.程序的执行方式 计算机：运行二进制命令
+编程语言：
+低级：汇编
+高级：
+编译：高级语言–&amp;gt;编译器–&amp;gt;目标代码 (由程序员完成编译器翻译过程，安全性相对好)
+java，C#
+解释：高级语言–&amp;gt;解释器–&amp;gt;机器代码 （由电脑完成解释器翻译过程，安全性不如编译型）
+shell，perl，python
+shell程序：提供了编程能力，解释执行
+3.编程基本概念 编程逻辑处理方式：
+顺序执行
+循环执行
+选择执行
+shell编程：过程式、解释执行
+编程语言的基本结构：
+各种系统命令的组合
+数据存储：变量、数组
+表达式：a+b
+语句：if
+脚本基本格式 格式要求： 首行shebang机制（即声明脚本使用哪种编程语言）
+如： #！/bin/bash
+#！/bin/python
+shell脚本的用途有： 自动化常用命令
+执行系统管理和故障排除
+创建简单的应用程序
+处理文本或文件
+运行脚本： 1.给予执行权限，执行
+2.直接运行解释器，将脚本作为解释器程序的参数运行
+脚本规范： 脚本代码开头约定：
+1.第一行一般为调用使用的语言
+2.程序名，避免更改文件名为无法找到正确的文件
+3.版本号
+4.更改后的时间
+5.作者相关信息
+6.该程序的作用，及注意事项
+7.最后是各版本的更新简要说明
+脚本示例： #!/bin/bash # —————————————— # Filename: hello.sh # Revision: 1.1 # Date: 2018/04/01 # Author: wangx # Email: wangx@gmail.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/vim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/vim/</guid>
+      <description>1 vi 与 vim 2 vi 的使用 2.1 打开文件 2.2 模式 2.3 vim 缓存、恢复、报警 3 vim 功能 3.1 区块选择(Visual Block) 3.2 多文件编辑 3.3 多窗口功能 3.4 vim 补全功能 3.5 vim 环境设定与记录： ~/.vimrc, ~/.viminfo 4 vim 注意 4.1 中文编码的问题 4.2 DOS 与 Linux 的断行字符： dos2unix, unix2dos 4.3 字符编码转换： iconv 5 配置vimrc 6 帮助 7 练习  1 vi 与 vim
+vi: Visual Interface，文本编辑器 vim - Vi Improved vi增强版 vim特性 •	类Unix系统都会内置 vi 文本编辑器，其他的文本编辑器则不一定会存在 •	很多软件的编辑接口都会主动调用 vi (例如未来会谈到的 crontab, edquota 等命令) •	vim 支持编程，以字体颜色辨别语法的正确性，方便程序设计 •	程序简单，编辑速度快  2 vi 的使用</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/vim-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/vim-1/</guid>
+      <description>Vim </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/vim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/vim/</guid>
+      <description>Vim </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/netstat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/netstat/</guid>
+      <description>netstat </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/readme/</guid>
+      <description>网络管理 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/route/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/route/</guid>
+      <description>route route命令用来显示并设置Linux内核中的网络路由表，route命令设置的路由主要是静态路由。要实现两个不同的子网之间的通信，需要一台连接两个网络的路由器，或者同时位于两个网络的网关来实现。
+在Linux系统中设置路由通常是为了解决以下问题：该Linux系统在一个局域网中，局域网中有一个网关，能够让机器访问Internet，那么就需要将这台机器的ip地址设置为Linux机器的默认路由。要注意的是，直接在命令行下执行route命令来添加路由，不会永久保存，当网卡重启或者机器重启之后，该路由就失效了；可以在/etc/rc.local中添加route命令来保证该路由设置永久有效。
+语法
+选项
+-A：设置地址类型； -C：打印将Linux核心的路由缓存； -v：详细信息模式； -n：不执行DNS反向查找，直接显示数字形式的IP地址； -e：netstat格式显示路由表； -net：到一个网络的路由表； -host：到一个主机的路由表。 参数
+Add：增加指定的路由记录； Del：删除指定的路由记录； Target：目的网络或目的主机； gw：设置默认网关； mss：设置TCP的最大区块长度（MSS），单位MB； window：指定通过路由表的TCP连接的TCP窗口大小； dev：路由记录所表示的网络接口。 实例
+显示当前路由
+[root@aftree ~]$ route Kernel IP routing table Destination Gateway Genmask Flags Metric Ref Use Iface default gateway 0.0.0.0 UG 0 0 0 eth0 link-local 0.0.0.0 255.255.0.0 U 1002 0 0 eth0 172.17.224.0 0.0.0.0 255.255.240.0 U 0 0 0 eth0 172.18.0.0 0.0.0.0 255.255.0.0 U 0 0 0 docker0 [root@aftree ~]$ route -n Kernel IP routing table Destination Gateway Genmask Flags Metric Ref Use Iface 0.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/ss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/ss/</guid>
+      <description>ss ss命令用来显示处于活动状态的套接字信息。ss命令可以用来获取socket统计信息，它可以显示和netstat类似的内容。但ss的优势在于它能够显示更多更详细的有关TCP和连接状态的信息，而且比netstat更快速更高效。
+当服务器的socket连接数量变得非常大时，无论是使用netstat命令还是直接cat/proc/net/tcp，执行速度都会很慢。可能你不会有切身的感受，但请相信我，当服务器维持的连接达到上万个的时候，使用netstat等于浪费 生命，而用ss才是节省时间。
+天下武功唯快不破。ss快的秘诀在于，它利用到了TCP协议栈中tcp_diag。tcp_diag是一个用于分析统计的模块，可以获得Linux 内核中第一手的信息，这就确保了ss的快捷高效。当然，如果你的系统中没有tcp_diag，ss也可以正常运行，只是效率会变得稍慢。
+选项
+-h：显示帮助信息； -V：显示指令版本信息； -n：不解析服务名称，以数字方式显示； -a：显示所有的套接字； -l：显示处于监听状态的套接字； -o：显示计时器信息； -m：显示套接字的内存使用情况； -p：显示使用套接字的进程信息； -i：显示内部的TCP信息； -4：只显示ipv4的套接字； -6：只显示ipv6的套接字； -t：只显示tcp套接字； -u：只显示udp套接字； -d：只显示DCCP套接字； -w：仅显示RAW套接字； -x：仅显示UNIX域套接字。 实例</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-bian-ji-qi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-bian-ji-qi/</guid>
+      <description>文本编辑器 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/awk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/awk/</guid>
+      <description>awk  awk其名称得自于它的创始人 Alfred Aho 、Peter Weinberger 和 Brian Kernighan 姓氏的首个字母。实际上 AWK 的确拥有自己的语言： AWK 程序设计语言 ， 三位创建者已将它正式定义为“样式扫描和处理语言”。
+它允许您创建简短的程序，这些程序读取输入文件、为数据排序、处理数据、对输入执行计算以及生成报表，还有无数其他的功能。Linux及Unix环境中现有的功能最强大的数据处理引擎之一。
+ AWK简介及使用方法 awk是一个强大的文本分析工具，相对于grep的查找，sed的编辑，awk在其对数据分析并生成报告时，显得尤为强大。简单来说awk就是把文件逐行的读入，以空格为默认分隔符将每行切片，切开的部分再进行各种分析处理。 awk有3个不同版本: awk、nawk和gawk，未作特别说明，一般指gawk，gawk 是 AWK 的 GNU 版本。
+工作流程 调用AWK的三种方法： 1.命令行方式
+awk [-F field-separator] &amp;lsquo;commands&amp;rsquo; input-file(s)
+commands 是真正awk命令，[-F域分隔符]是可选的，默认空格。 input-file(s) 是待处理的文件
+2.shell脚本方式
+将所有的awk命令插入一个文件，并使awk程序可执行，然后awk命令解释器作为脚本的首行，通过键入脚本名称来调用。
+相当于shell脚本首行的：#!/bin/sh换成：#!/bin/awk
+3.将所有的awk命令插入一个单独文件，然后调用：
+awk -f awk-script-file input-file(s) &amp;ndash;f选项加载awk-script-file中的awk脚本，input-file(s)跟上面的是一样的。
+awk [options] ‘program’ var=value file… awk [options] -f programfile var=value file… awk [options] ‘BEGIN{ action;… } pattern{ action;… } END{ action;… }’ file … options -F 指明输入时用到的字段分隔符 -v var=value: 自定义变量 -f 指定awk程序文件 BEGIN{ action;… }: 读入文本之前执行{action;…} END{ action;… }: 文本处理完之后执行{ action;… } pattern{ action;… }: pattern的返回值为True时，才执行{action;…}，pattern可以有以下几种: 如果未指定pattern: 匹配每一行 /regular expression/: 仅处理能够被模式(正则表达式匹配到的行，需要用/ /括起来 relational expression: 关系表达式， */pat1/,/pat2/: 行范围startline,endline不支持直接给出数字格式 True: 结果为非0值，非空字符串 False: 结果为空字符串或0值 AWK工作流程 第一步:执行BEGIN{action;… }语句块中的语句 第二步:从文件或标准输入(stdin)读取一行，然后执行pattern{ action;… }语句块，它逐行扫描文件，从第一行到最后一行重复这 个过程，直到文件全部被读取完毕。 第三步:当读至输入流末尾时，执行END{action;…}语句块。 .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/grep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/grep/</guid>
+      <description>grep  grep，Global search REgular expression and Print out the line. 是Linux中常用的文本搜索工具，基于正则表达式（Regular Expression）和文本字符来编写模式（Pattern），然后根据指定的模式对目标文本逐行进行匹配，打印匹配到的行。
+ 工具分类 grep工具共有三个：
+ grep – 默认支持基本正则表达式BRE； egrep – 默认支持扩展正则表达式ERE； fgrep – 默认不支持正则表达式。  虽然工具由三种，但三者都可以通过选项来达到彼此的使用效果：
+ grep (1) grep -E：相当于egrep (2) grep -F：相当于fgrep egrep (1) egrep -G：相当于grep (2) egrep -F：相当于fgrep fgrep (1) fgrep -G：相当于grep (2) fgrep -E：相当于egrep  所以一般只使用grep配合选项来达到不同的效果即可。
+另外，如果需要进行文本搜索的是很大的文件，尽量使用fgrep或-F选项来直接匹配文本，不通过正则表达式处理，性能会有较大提高，f就是fast之意。
+命令   grep [OPTIONS] PATTERN [FILE…]
+grep [OPRIONS] [-e PATTERN | -f FILE] [FILE…]
+  OPTIONS</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/nginxri-zhi-fen-xi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/nginxri-zhi-fen-xi/</guid>
+      <description>nginx访问日志分析 access.log
+58.35.39.71 - - [24/Aug/2018:14:30:51 +0800] &amp;#34;GET / HTTP/1.1&amp;#34; 304 0 &amp;#34;-&amp;#34; &amp;#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36&amp;#34; &amp;#34;-&amp;#34; 58.35.39.71 - - [24/Aug/2018:14:31:33 +0800] &amp;#34;GET / HTTP/1.1&amp;#34; 200 3700 &amp;#34;-&amp;#34; &amp;#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1.2 Safari/605.1.15&amp;#34; &amp;#34;-&amp;#34; nginx 访问量统计
+PV(访问量)：即Page View, 即页面浏览量或点击量，用户每次刷新即被计算一次。 UV(独立访客)：即Unique Visitor,访问您网站的一台电脑客户端为一个访客。00:00-24:00内相同的客户端只被计算一次。 IP(独立IP)：即Internet Protocol,指独立IP数。00:00-24:00内相同IP地址之被计算一次。 1.根据访问IP统计UV awk &amp;#39;{print $1}&amp;#39; access.log|sort | uniq -c |wc -l 2.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/readme/</guid>
+      <description>文本处理 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/sed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/sed/</guid>
+      <description>sed </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-fu-wu/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-fu-wu/readme/</guid>
+      <description>系统服务 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-fu-wu/ri-zhi-xi-tong/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-fu-wu/ri-zhi-xi-tong/</guid>
+      <description>日志系统 rsyslog：
+日志：历史事件； 历史事件：时间、地点、事件； syslog： klogd：kernel syslogd：system(application) 事件记录格式： 日期时间 主机 进程[pid]: 事件内容； C/S架构：通过TCP或UDP协议的服务完成日志记录传送； rsyslog： rsyslog的特性： 多线程； UDP/TCP/SSL/TLS/RELP； 存储日志信息于MySQL, PGSQL, Oracle等RDBMS； 强大的过滤器，实现过滤日志信息中的任何部分的内容； 自定义的输出格式； …… ELK： E: elasticsearch, L: logstash, K: kibana rsyslog日志收集器的基本术语： facility：设施，收束日志数据流为有限几个； auth, authpriv, cron, daemon, kern, lpr, mail, mark, news, security, user, uucp, syslog, local0-local7 proirity：优先级 debug, info, notice, warn(warning), err(error), crit(critical), alert, emerg(panic) 程序包：rsyslog 程序环境： 配置文件：/etc/rsyslog.conf，/etc/rsyslog.d/*.conf 主程序：/usr/sbin/rsyslogd CentOS 6：service rsyslogs {start|stop|restart|status} CentOS 7：/usr/lib/systemd/system/rsyslog.service 配置文件格式： 由三部分组成： MODULES：模块配置 GLOBAL DIRECTIVES：全局配置 RULES：日志记录相关的配置 RULES: 配置格式： facility.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/cron/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/cron/</guid>
+      <description>&lt;h1 id=&#34;cron&#34;&gt;cron&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;1 计划任务
+  1.1 Linux 工作排程的种类： at, crontab
+  1.2 CentOS Linux 系统上常见的例行性工作
+2 仅执行一次的工作排程
+  2.1 atd 的启动与 at 运作的方式： /etc/at.deny
+  2.2 实际运作单一工作排程： at, atq &amp;amp; atrm, batch
+3 循环执行的例行性工作排程
+  3.1 使用者的设定： /etc/cron.deny, crontab
+  3.2 系统的配置文件： /etc/crontab, /etc/cron.d/*
+  3.3 一些注意事项
+4 可唤醒停机期间的工作任务
+  4.1 什么是 anacron
+  4.2 anacron 与 /etc/anacrontab
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;1 计划任务&lt;/p&gt;
+&lt;p&gt;1 Linux 工作排程的种类： at, cron&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/mu-lu-wen-jian/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/mu-lu-wen-jian/</guid>
+      <description>目录 &amp;amp; 文件 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/readme/</guid>
+      <description>系统管理 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/systemed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/systemed/</guid>
+      <description>systemed 系统服务 1 什么是进程与服务 (service) 1.1 早期 SysV 的 init 管理行为中服务进程的主要分类 1.2 systemd 使用的 unit 分类 2 透过 systemctl 管理服务 2.1 透过 systemctl 管理单一服务 (service unit) 的启动/开机启动与观察状态 2.3 透过 systemctl 观察系统上所有的服务 2.2 透过 systemctl 管理不同的操作环境 (target unit) 2.3 透过 systemctl 分析各服务之间的相依性 2.4 与 systemd 的 daemon 运作过程相关的目录简介： /etc/services 2.5 关闭网络服务 3 systemctl 针对 service 类型的配置文件 3.1 systemctl 配置文件相关目录简介 3.2 systemctl 配置文件的设定项目简介 3.3 两个 vsftpd 运作的实例 3.4 多重的重复设定方式：以 getty 为例 3.5 自己的服务自己作 4 systemctl 针对 timer 的配置文件 5 CentOS 7.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/xi-tong-deng-lu-3001-tui-chu-3001-guan-ji-3001-zhong-qi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lijun.in/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/xi-tong-deng-lu-3001-tui-chu-3001-guan-ji-3001-zhong-qi/</guid>
+      <description>系统登录、退出、关机、重启 </description>
+    </item>
+    
+  </channel>
+</rss>

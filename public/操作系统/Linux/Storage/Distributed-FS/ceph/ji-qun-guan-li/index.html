@@ -1,0 +1,8175 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.60.0" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title> :: My New Hugo Site</title>
+
+    
+    <link href="/css/nucleus.css?1577955671" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1577955671" rel="stylesheet">
+    <link href="/css/hybrid.css?1577955671" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1577955671" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1577955671" rel="stylesheet">
+    <link href="/css/auto-complete.css?1577955671" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1577955671" rel="stylesheet">
+    <link href="/css/theme.css?1577955671" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1577955671" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1577955671"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ji-qun-guan-li/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://lijun.in/">
+  <svg id="grav-logo" style="width:100%; height:100%;" viewBox="0 0 504 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <path d="M235.832,71.564l-7.98,-0.001c-1.213,0.001 -2.197,0.987 -2.197,2.204l0,15.327l-0.158,0.132c-4.696,3.962 -10.634,6.14 -16.719,6.14c-14.356,0 -26.034,-11.68 -26.034,-26.037c0,-14.358 11.678,-26.035 26.034,-26.035c5.582,0 10.919,1.767 15.437,5.113c0.877,0.649 2.093,0.56 2.866,-0.211l5.69,-5.69c0.444,-0.442 0.675,-1.055 0.639,-1.681c-0.034,-0.627 -0.336,-1.206 -0.828,-1.597c-6.76,-5.363 -15.214,-8.314 -23.805,-8.314c-21.18,0 -38.414,17.233 -38.414,38.415c0,21.183 17.234,38.415 38.414,38.415c10.937,0 21.397,-4.705 28.698,-12.914c0.358,-0.403 0.556,-0.921 0.556,-1.46l0,-19.603c0,-1.217 -0.985,-2.203 -2.2,-2.203"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M502.794,34.445c-0.408,-0.616 -1.1,-0.989 -1.838,-0.989l-8.684,0c-0.879,0 -1.673,0.522 -2.022,1.329l-24.483,56.839l-24.92,-56.852c-0.352,-0.799 -1.142,-1.316 -2.012,-1.316l-8.713,0c-0.744,0 -1.44,0.373 -1.843,0.995c-0.408,0.623 -0.476,1.408 -0.174,2.09l30.186,68.858c0.352,0.799 1.143,1.317 2.017,1.317l10.992,0c0.879,0 1.673,-0.527 2.021,-1.329l29.655,-68.861c0.289,-0.68 0.222,-1.461 -0.182,-2.081"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M388.683,34.772c-0.353,-0.798 -1.142,-1.316 -2.017,-1.316l-10.988,0c-0.879,0 -1.673,0.522 -2.021,1.329l-29.655,68.861c-0.294,0.675 -0.226,1.46 0.182,2.077c0.407,0.619 1.096,0.993 1.838,0.993l8.684,0c0.879,0 1.673,-0.526 2.022,-1.329l24.478,-56.842l24.92,56.854c0.353,0.798 1.143,1.317 2.013,1.317l8.717,0c0.744,0 1.44,-0.374 1.843,-0.993c0.408,-0.624 0.471,-1.41 0.174,-2.094l-30.19,-68.857Z"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M309.196,81.525l0.476,-0.229c8.675,-4.191 14.279,-13.087 14.279,-22.667c0,-13.881 -11.295,-25.174 -25.176,-25.174l-31.863,0c-1.214,0 -2.199,0.988 -2.199,2.202l0,68.855c0,1.219 0.985,2.204 2.199,2.204l7.979,0c1.214,0 2.2,-0.985 2.2,-2.204l0,-58.679l21.684,0c7.059,0 12.799,5.739 12.799,12.796c0,5.885 -3.996,10.989 -9.728,12.408c-1.032,0.261 -2.064,0.393 -3.071,0.393l-7.977,0c-0.829,0 -1.585,0.467 -1.959,1.205c-0.378,0.74 -0.305,1.625 0.187,2.296l22.62,30.884c0.412,0.566 1.07,0.901 1.771,0.901l9.915,0c0.827,0 1.587,-0.467 1.96,-1.207c0.378,-0.742 0.302,-1.629 -0.186,-2.296l-15.91,-21.688Z"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M107.191,80.969c-7.255,-4.794 -11.4,-8.845 -15.011,-16.109c-2.47,4.977 -8.236,12.376 -17.962,18.198c-4.856,15.106 -27.954,44.015 -35.43,39.916c-2.213,-1.212 -2.633,-2.808 -2.133,-4.456c0.536,-4.129 9.078,-13.62 9.078,-13.62c0,0 0.18,1.992 2.913,6.187c-3.609,-11.205 5.965,-25.031 8.5,-29.738c3.985,-1.269 4.274,-6.387 4.274,-6.387c0.255,-7.909 -3.278,-13.635 -6.701,-17.059c2.459,3.002 3.255,7.539 3.372,11.694l0,0.023c0.012,0.469 0.012,0.93 0.011,1.39c-0.117,3.439 -1.157,8.19 -3.383,8.19l0.006,0.03c-2.289,-0.098 -5.115,0.391 -7.639,1.18l-5.582,1.334c0,0 2.977,-0.136 4.584,1.252c-1.79,2.915 -5.769,6.533 -10.206,8.588c-6.457,2.995 -8.312,-2.964 -5.034,-6.838c0.805,-0.946 1.618,-1.745 2.387,-2.399c-0.495,-0.513 -0.807,-1.198 -0.889,-2.068c-0.001,-0.005 -0.004,-0.009 -0.005,-0.013c-0.45,-1.977 -0.202,-4.543 2.596,-8.623c0.551,-0.863 1.214,-1.748 2.007,-2.647c0.025,-0.031 0.046,-0.059 0.072,-0.089c0.034,-0.042 0.072,-0.08 0.108,-0.121c0.02,-0.023 0.039,-0.045 0.059,-0.068c0.2,-0.228 0.413,-0.45 0.639,-0.663c3.334,-3.414 8.599,-6.966 16.897,-10.152c9.675,-14.223 13.219,-16.89 13.219,-16.89c1.071,-1.096 2.943,-2.458 3.632,-2.805c-5.053,-8.781 -6.074,-21.158 -4.75,-24.493c-0.107,0.18 -0.206,0.365 -0.287,0.556c0.49,-1.143 0.819,-1.509 1.328,-2.111c1.381,-1.632 6.058,-2.488 7.737,0.971c0.895,1.844 1.063,4.232 1.034,6.023c-3.704,-0.193 -7.063,4.036 -7.063,4.036c0,0 3.067,-1.448 6.879,-1.473c0,0 1.015,0.883 2.283,2.542c-1.712,3.213 -4.524,10.021 -2.488,17.168c0.338,1.408 0.849,2.619 1.483,3.648c0.024,0.045 0.044,0.089 0.069,0.135c0.051,0.066 0.096,0.122 0.144,0.183c3.368,5.072 9.542,5.665 9.542,5.665c-2.906,-1.45 -5.274,-3.76 -6.816,-6.56c-0.8,-1.498 -1.291,-2.762 -1.592,-3.761c-1.636,-6.313 0.771,-9.999 2.149,-12.471c3.17,-4.917 8.944,-7.893 15.151,-7.185c8.712,0.995 14.968,8.862 13.973,17.571c-0.608,5.321 -3.781,9.723 -8.142,12.117c1.049,2.839 -0.073,6.28 -0.073,6.28c2.642,3.323 2.758,5.238 2.667,7.017c-3.357,-0.565 -6.618,1.701 -6.618,1.701c0,0 6.476,-1.546 10.238,1.81c2.446,2.631 4.078,5.009 5.051,6.766c1.393,2.505 7.859,2.683 7.123,7.188c-0.737,4.499 -5.669,4.542 -13.401,-0.56M69.571,0c-38.424,0 -69.571,31.148 -69.571,69.567c0,38.422 31.147,69.573 69.571,69.573c38.42,0 69.568,-31.151 69.568,-69.573c0,-38.42 -31.148,-69.567 -69.568,-69.567"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M73.796,51.693c0.813,-0.814 0.813,-2.134 0,-2.947c-0.815,-0.814 -2.133,-0.814 -2.947,0c-0.815,0.813 -0.815,2.133 0,2.947c0.814,0.813 2.132,0.813 2.947,0" style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M66.445,53.149c-0.814,0.813 -0.814,2.133 0,2.947c0.813,0.814 2.133,0.814 2.947,0c0.813,-0.814 0.813,-2.134 0,-2.947c-0.814,-0.813 -2.134,-0.813 -2.947,0" style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M79.231,54.233c-1.274,-1.274 -3.339,-1.272 -4.611,0l-2.713,2.712c-1.274,1.275 -1.274,3.339 0,4.612l2.978,2.978c1.274,1.275 3.338,1.274 4.611,0l2.712,-2.712c1.274,-1.274 1.274,-3.339 0,-4.612l-2.977,-2.978Z" style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M95.759,41.445c-2.151,-2.578 1.869,-7.257 4.391,-4.463c4.645,5.148 -2.237,7.041 -4.391,4.463M105.004,44.132c3.442,-6.553 -1.427,-10.381 -4.773,-13.523c-5.36,-5.039 -10.706,-7.217 -16.811,-0.241c-6.102,6.977 -2.226,15.068 3.356,19.061c5.584,3.994 14.782,1.255 18.228,-5.297"
+      style="fill:#000;fill-rule:nonzero;"></path>
+  </svg>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1577955671"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1577955671"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/lijun.in\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1577955671"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" title="消息队列" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/">
+          消息队列
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/activemq/" title="ActiveMQ" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/activemq/">
+          ActiveMQ
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/kafka/" title="Kafka" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/kafka/">
+          Kafka
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/rabbitmq/" title="RabbitMQ" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/rabbitmq/">
+          RabbitMQ
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/rocketmq/" title="RocketMQ" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/rocketmq/">
+          RocketMQ
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/images/" title="网络" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/images/">
+          网络
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/%E7%B3%BB%E7%BB%9F%E9%9B%86%E6%88%90/" title="系统集成" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E7%B3%BB%E7%BB%9F%E9%9B%86%E6%88%90/">
+          系统集成
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E7%B3%BB%E7%BB%9F%E9%9B%86%E6%88%90/%E5%BC%B1%E7%94%B5%E7%B3%BB%E7%BB%9F/" title="弱电系统" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E7%B3%BB%E7%BB%9F%E9%9B%86%E6%88%90/%E5%BC%B1%E7%94%B5%E7%B3%BB%E7%BB%9F/">
+          弱电系统
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E7%B3%BB%E7%BB%9F%E9%9B%86%E6%88%90/%E4%BF%A1%E6%81%AF%E5%8C%96%E5%BB%BA%E8%AE%BE/" title="机房建设" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E7%B3%BB%E7%BB%9F%E9%9B%86%E6%88%90/%E4%BF%A1%E6%81%AF%E5%8C%96%E5%BB%BA%E8%AE%BE/">
+          机房建设
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E7%B3%BB%E7%BB%9F%E9%9B%86%E6%88%90/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/" title="机房建设" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E7%B3%BB%E7%BB%9F%E9%9B%86%E6%88%90/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/">
+          机房建设
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E7%B3%BB%E7%BB%9F%E9%9B%86%E6%88%90/%E6%9C%BA%E6%88%BF%E5%BB%BA%E8%AE%BE/" title="机房建设" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E7%B3%BB%E7%BB%9F%E9%9B%86%E6%88%90/%E6%9C%BA%E6%88%BF%E5%BB%BA%E8%AE%BE/">
+          机房建设
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E7%B3%BB%E7%BB%9F%E9%9B%86%E6%88%90/%E7%BD%91%E7%BB%9C%E5%BB%BA%E8%AE%BE/" title="机房建设" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E7%B3%BB%E7%BB%9F%E9%9B%86%E6%88%90/%E7%BD%91%E7%BB%9C%E5%BB%BA%E8%AE%BE/">
+          机房建设
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E7%B3%BB%E7%BB%9F%E9%9B%86%E6%88%90/%E8%99%9A%E6%8B%9F%E5%8C%96/" title="机房建设" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E7%B3%BB%E7%BB%9F%E9%9B%86%E6%88%90/%E8%99%9A%E6%8B%9F%E5%8C%96/">
+          机房建设
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/%E8%99%9A%E6%8B%9F%E5%8C%96/" title="虚拟化" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E8%99%9A%E6%8B%9F%E5%8C%96/">
+          虚拟化
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E8%99%9A%E6%8B%9F%E5%8C%96%E7%AE%80%E4%BB%8B/" title="虚拟化简介" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E8%99%9A%E6%8B%9F%E5%8C%96%E7%AE%80%E4%BB%8B/">
+          虚拟化简介
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E5%AD%98%E5%82%A8%E8%99%9A%E6%8B%9F%E5%8C%96/" title="存储虚拟化" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E5%AD%98%E5%82%A8%E8%99%9A%E6%8B%9F%E5%8C%96/">
+          存储虚拟化
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E5%BA%94%E7%94%A8%E8%99%9A%E6%8B%9F%E5%8C%96/" title="应用虚拟化" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E5%BA%94%E7%94%A8%E8%99%9A%E6%8B%9F%E5%8C%96/">
+          应用虚拟化
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%99%9A%E6%8B%9F%E5%8C%96/" title="操纵系统虚拟化" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%99%9A%E6%8B%9F%E5%8C%96/">
+          操纵系统虚拟化
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96/" title="服务器虚拟化" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96/">
+          服务器虚拟化
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96/fusioncloud/" title="FusionCloud" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96/fusioncloud/">
+          FusionCloud
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96/hyper-v/" title="Hyper-V" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96/hyper-v/">
+          Hyper-V
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96/kvm/" title="KVM" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96/kvm/">
+          KVM
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96/vmware/" title="VMware" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96/vmware/">
+          VMware
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96/h3c-cas/" title="H3C CAS" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96/h3c-cas/">
+          H3C CAS
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E6%A1%8C%E9%9D%A2%E8%99%9A%E6%8B%9F%E5%8C%96/" title="桌面虚拟化" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E6%A1%8C%E9%9D%A2%E8%99%9A%E6%8B%9F%E5%8C%96/">
+          桌面虚拟化
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E7%BD%91%E7%BB%9C%E8%99%9A%E6%8B%9F%E5%8C%96/" title="网络虚拟化" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E8%99%9A%E6%8B%9F%E5%8C%96/%E7%BD%91%E7%BB%9C%E8%99%9A%E6%8B%9F%E5%8C%96/">
+          网络虚拟化
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/%E4%BA%91%E8%AE%A1%E7%AE%97/" title="云计算" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E4%BA%91%E8%AE%A1%E7%AE%97/">
+          云计算
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E4%BA%91%E8%AE%A1%E7%AE%97/openstack/" title="OpenStack" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E4%BA%91%E8%AE%A1%E7%AE%97/openstack/">
+          OpenStack
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E4%BA%91%E8%AE%A1%E7%AE%97/%E4%BA%91%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/" title="云计算简介" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E4%BA%91%E8%AE%A1%E7%AE%97/%E4%BA%91%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/">
+          云计算简介
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="操作系统" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
+          操作系统
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/" title="Linux" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/">
+          Linux
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/" title="Linux" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/">
+          Linux
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/commandlist/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/commandlist/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/bccbpf/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/bccbpf/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/jing-tai-gong-ju/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/jing-tai-gong-ju/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/linux-sar/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/linux-sar/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/perf-tools/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/perf-tools/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-ce-shi/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-ce-shi/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-diao-you/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-diao-you/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-guan-cha/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/linux-xi-tong-xing-neng/xing-neng-guan-cha/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/man/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/man/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/nano-1/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/nano-1/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/nano/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/nano/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/rhce/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/rhce/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/security/iptables/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/security/iptables/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/security/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/security/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/bashte-xing/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/bashte-xing/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/cc/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/cc/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter01/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter01/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter02/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter02/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter03/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter03/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter04/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter04/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter05/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter05/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter06/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter06/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter07/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter07/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter08/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter08/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter09/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter09/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter10/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter10/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter11/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/chapter11/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/example/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/example/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/example/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/guan-dao/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/guan-dao/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/nano/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/nano/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/vim/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/shell/vim/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/vim-1/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/vim-1/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/vim/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/vim/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/netstat/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/netstat/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/route/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/route/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/ss/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wang-luo/ss/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-bian-ji-qi/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-bian-ji-qi/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/awk/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/awk/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/grep/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/grep/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/nginxri-zhi-fen-xi/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/nginxri-zhi-fen-xi/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/sed/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/wen-ben-chu-li/sed/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-fu-wu/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-fu-wu/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-fu-wu/ri-zhi-xi-tong/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-fu-wu/ri-zhi-xi-tong/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/cron/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/cron/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/mu-lu-wen-jian/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/mu-lu-wen-jian/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/systemed/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/systemed/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/xi-tong-deng-lu-3001-tui-chu-3001-guan-ji-3001-zhong-qi/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/linux/xi-tong-guan-li/xi-tong-deng-lu-3001-tui-chu-3001-guan-ji-3001-zhong-qi/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/" title="存储" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/">
+          存储
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/about-storage/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/about-storage/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/cloud-storage/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/cloud-storage/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang-2/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang-2/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/an-zhuang/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gai-shu/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gai-shu/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gu-zhang-pai-chu/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/gu-zhang-pai-chu/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/images/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/images/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ji-qun-guan-li/" title="" class="dd-item active">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ji-qun-guan-li/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ri-chang-cao-zuo-ming-ling/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ri-chang-cao-zuo-ming-ling/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ying-jian-xuan-ze/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/ying-jian-xuan-ze/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/yun-wei/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/yun-wei/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/diao-du/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/diao-du/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/drbd/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/drbd/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/bu-shu/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/bu-shu/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/chang-yong-ming-ling/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/chang-yong-ming-ling/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/gai-shu/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/gai-shu/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/images/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/images/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fastdfs/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fen-bu-shi/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/fen-bu-shi/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin2/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/admin2/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/geng-huan-gu-zhang-brick/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/geng-huan-gu-zhang-brick/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/administration-guide/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/gai-shu/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/gai-shu/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/images/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/images/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/install-guide/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/install-guide/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/shu-ju-de-hui-fu-ji-523628-afr-de-shuo-ming/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/glusterfs/shu-ju-de-hui-fu-ji-523628-afr-de-shuo-ming/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/mgfs/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/mgfs/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/moosefs/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/moosefs/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/shi/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/shi/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/das/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/das/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/fc-san/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/fc-san/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/ip-san/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/ip-san/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/ip-san/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/nas/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/nas/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/gai-shu/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/mgfs/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/mgfs/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/network-storage/ip-san/images/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/network-storage/ip-san/images/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/she-bei/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/she-bei/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/chapter1/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/chapter1/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/cun-chu-lei-xing/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/cun-chu-lei-xing/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/leixing/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/leixing/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/readme/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/storage/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/summary/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/summary/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/" title="集群" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/">
+          集群
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/cluster/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/cluster/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/keepalived/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/keepalived/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/lvs/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/lvs/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/nginx/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/nginx/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/tomcat/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/cluster/tomcat/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/qqq/" title="" class="dd-item ">
+        <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/qqq/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/windows/" title="Windows" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/windows/">
+          Windows
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/%E7%BD%91%E7%AB%99%E6%9E%B6%E6%9E%84/" title="网站架构" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E7%BD%91%E7%AB%99%E6%9E%B6%E6%9E%84/">
+          网站架构
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/%E7%BD%91%E7%BB%9C/" title="网络" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E7%BD%91%E7%BB%9C/">
+          网络
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%AD%98%E5%82%A8/" title="存储" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%AD%98%E5%82%A8/">
+          存储
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%AD%98%E5%82%A8/san/" title="SAN" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%AD%98%E5%82%A8/san/">
+          SAN
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%AD%98%E5%82%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8/" title="分布式存储" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%AD%98%E5%82%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8/">
+          分布式存储
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%AE%89%E5%85%A8/" title="安全" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%AE%89%E5%85%A8/">
+          安全
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="数据库" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+          数据库
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/nosql/" title="NoSQL" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/nosql/">
+          NoSQL
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/nosql/%E6%96%87%E6%A1%A3/" title="文档" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/nosql/%E6%96%87%E6%A1%A3/">
+          文档
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/nosql/%E6%96%87%E6%A1%A3/mongodb/" title="MongoDB" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/nosql/%E6%96%87%E6%A1%A3/mongodb/">
+          MongoDB
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/nosql/%E9%94%AE%E5%80%BC/" title="键值" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/nosql/%E9%94%AE%E5%80%BC/">
+          键值
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/nosql/%E9%94%AE%E5%80%BC/redis/" title="Redis" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/nosql/%E9%94%AE%E5%80%BC/redis/">
+          Redis
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/nosql/column-based/" title="机房建设" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/nosql/column-based/">
+          机房建设
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/nosql/%E5%9B%BE/" title="机房建设" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/nosql/%E5%9B%BE/">
+          机房建设
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/" title="关系型数据库" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/">
+          关系型数据库
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/mariadb/" title="MariaDB" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/mariadb/">
+          MariaDB
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/access/" title="Access" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/access/">
+          Access
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/" title="MySQL" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/">
+          MySQL
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E7%BD%91%E7%BB%9C/" title="网络" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E7%BD%91%E7%BB%9C/">
+          网络
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/oracle/" title="Oracle" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/oracle/">
+          Oracle
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/postgresql/" title="PostgreSQL" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/postgresql/">
+          PostgreSQL
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/sql-server/" title="SQL Server" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/sql-server/">
+          SQL Server
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/%E4%BA%91%E5%8E%9F%E7%94%9F/" title="云原生" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E4%BA%91%E5%8E%9F%E7%94%9F/">
+          云原生
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E4%BA%91%E5%8E%9F%E7%94%9F/%E5%AE%B9%E5%99%A8/" title="容器" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E4%BA%91%E5%8E%9F%E7%94%9F/%E5%AE%B9%E5%99%A8/">
+          容器
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E4%BA%91%E5%8E%9F%E7%94%9F/%E5%AE%B9%E5%99%A8/docker/" title="Docker" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E4%BA%91%E5%8E%9F%E7%94%9F/%E5%AE%B9%E5%99%A8/docker/">
+          Docker
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E4%BA%91%E5%8E%9F%E7%94%9F/%E5%AE%B9%E5%99%A8/kubernetes/" title="Kubernetes" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E4%BA%91%E5%8E%9F%E7%94%9F/%E5%AE%B9%E5%99%A8/kubernetes/">
+          Kubernetes
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E4%BA%91%E5%8E%9F%E7%94%9F/devops/" title="DevOps" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E4%BA%91%E5%8E%9F%E7%94%9F/devops/">
+          DevOps
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E4%BA%91%E5%8E%9F%E7%94%9F/devops/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/" title="持续集成" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E4%BA%91%E5%8E%9F%E7%94%9F/devops/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/">
+          持续集成
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E4%BA%91%E5%8E%9F%E7%94%9F/devops/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/jenkins/" title="Jenkins" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E4%BA%91%E5%8E%9F%E7%94%9F/devops/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/jenkins/">
+          Jenkins
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E4%BA%91%E5%8E%9F%E7%94%9F/devops/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/" title="版本控制" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E4%BA%91%E5%8E%9F%E7%94%9F/devops/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">
+          版本控制
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E4%BA%91%E5%8E%9F%E7%94%9F/devops/%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86/" title="配置管理" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E4%BA%91%E5%8E%9F%E7%94%9F/devops/%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86/">
+          配置管理
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="大数据" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/">
+          大数据
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop/" title="Hadoop" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop/">
+          Hadoop
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop/hadoop/" title="Hadoop" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop/hadoop/">
+          Hadoop
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop/zookeeper/" title="ZooKeeper" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop/zookeeper/">
+          ZooKeeper
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop/flume/" title="Flume" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop/flume/">
+          Flume
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop/hbase/" title="Hbase" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop/hbase/">
+          Hbase
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop/hive/" title="Hive" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop/hive/">
+          Hive
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop/pig/" title="Pig" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop/pig/">
+          Pig
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop/sqoop/" title="Sqoop" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop/sqoop/">
+          Sqoop
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%A4%A7%E6%95%B0%E6%8D%AE/spark/" title="Spark" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/spark/">
+          Spark
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E4%BA%91%E5%8E%9F%E7%94%9F/" title="云原生" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E4%BA%91%E5%8E%9F%E7%94%9F/">
+          云原生
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/%E6%B5%8B%E8%AF%95/" title="测试" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E6%B5%8B%E8%AF%95/">
+          测试
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%8C%BA%E5%9D%97%E9%93%BE/" title="区块链" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%8C%BA%E5%9D%97%E9%93%BE/">
+          区块链
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="编程语言" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/">
+          编程语言
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/go/" title="Go" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/go/">
+          Go
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="Java" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/">
+          Java
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="Python" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/">
+          Python
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%85%B3%E4%BA%8E/" title="关于" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%85%B3%E4%BA%8E/">
+          关于
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%85%B3%E4%BA%8E/%E5%BC%80%E5%8F%91/" title="开发" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%85%B3%E4%BA%8E/%E5%BC%80%E5%8F%91/">
+          开发
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/%E5%85%B3%E4%BA%8E/lfs/" title="Linux From Scratch" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/%E5%85%B3%E4%BA%8E/lfs/">
+          Linux From Scratch
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Site</a> > <a href='/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/'>操作系统</a> > <a href='/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/'>Linux</a> > <a href='/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/'>存储</a> > 
+          
+         
+          
+         
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              
+            </h1>
+          
+
+        
+
+
+
+<h1 id="heading">集群管理</h1>
+<p><a href="https://www.cnblogs.com/kevingrace/p/5569737.html">Ceph常规操作及常见问题梳理</a></p>
+<p><strong>Ceph集群管理</strong></p>
+<p>每次用命令启动、重启、停止Ceph守护进程（或整个集群）时,必须指定至少一个选项和一个命令,还可能要指定守护进程类型或具体例程。</p>
+<p><strong>命令格式如</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">{commandline} [options] [commands] [daemons]
+</code></pre></div><p><strong>常用的commandline为&quot;ceph&rdquo;,对应的options如下表:</strong></p>
+<p><img src="https://github.com/aftree/A/tree/46ba3f3482b57318efea7ebcb4b9fbdafb25a241/fen-bu-shi-wen-jian-xi-tong/ceph/images/907596-20180209155137482-1888041102.png" alt=""></p>
+<p><strong>对应的commands如下表:</strong></p>
+<p><img src="https://github.com/aftree/A/tree/46ba3f3482b57318efea7ebcb4b9fbdafb25a241/fen-bu-shi-wen-jian-xi-tong/ceph/images/907596-20180209155219545-1473481343.png" alt=""></p>
+<p>能指定的daemons(守护进程)类型包括mon,osd及mds。</p>
+<p><strong>通过SysVinit机制运行ceph:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">在 CentOS、Redhat、发行版上可以通过传统的SysVinit运行Ceph，Debian/Ubuntu的较老的版本也可以用此方法。
+</code></pre></div><p><strong>使用SysVinit管理Ceph守护进程的语法如下:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo /etc/init.d/ceph [options] [start|restart] [daemonType|daemonID]
+</code></pre></div><p><strong>1）管理Ceph集群内所有类型的守护进程：</strong> 
+通过缺省[daemonType|daemonID],并添加&rdquo;-a&rdquo; options,就可以达到同时对集群内所有类型的守护进程进行启动、关闭、重启等操作目的。</p>
+<ul>
+<li>启动默认集群(ceph)所有守护进程:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo /etc/init.d/ceph -a start
+</code></pre></div><p>停止默认集群(ceph)所有守护进程:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo /etc/init.d/ceph -a stop
+</code></pre></div><p>如果未使用&rdquo;-a&quot;选项,以上命令只会对当前节点内的守护进程生效。</p>
+<p><strong>2）管理Ceph集群内指定类型的守护进程：</strong> 
+根据命令语法,要启动当前节点上某一类的守护进程,只需指定对应类型及ID即可。</p>
+<ul>
+<li>启动进程,以OSD进程为例：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">#启动当前节点内所有OSD进程
+[root@ceph ~] sudo /etc/init.d/ceph start osd
+#启动当前节点内某一个OSD进程,以osd.0为例
+[root@ceph ~] sudo /etc/init.d/ceph start osd.0
+</code></pre></div><p>重启及关闭进程,以OSD进程为例:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">#关闭当前节点内所有OSD进程
+[root@ceph ~] sudo /etc/init.d/ceph stop osd
+#关闭当前节点内某一个OSD进程,以osd.0为例
+[root@ceph ~] sudo /etc/init.d/ceph stop osd.0
+#重启当前节点内所有OSD进程
+[root@ceph ~] sudo /etc/init.d/ceph restart osd
+#重启当前节点内某一个OSD进程,以osd.0为例
+[root@ceph ~] sudo /etc/init.d/ceph restart osd.0
+</code></pre></div><p><strong>Ceph集群状态监控</strong></p>
+<p><strong>1）检查集群健康状况</strong></p>
+<ul>
+<li>检查Ceph集群状态</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] ceph health [detail]
+</code></pre></div><p>如果集群处于健康状态,会输出HEALTH_OK,如果输出HEALTH_WARN甚至HEALTH_ERR,表明Ceph处于一个不正常状态,可以加上&quot;detail&quot;选项帮助排查问题。</p>
+<p>快速了解Ceph集群概况:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph -s
+#输出的内容大致如下:
+cluster b370a29d-xxxx-xxxx-xxxx-3d824f65e339
+health HEALTH_OK
+monmap e1: 1 mons at {ceph1=10.x.x.8:6789/0}, election epoch 2, quorum  0 ceph1
+osdmap e63: 2 osds: 2 up, 2 in
+pgmap v41338: 952 pgs, 20 pools, 17130 MB data, 2199 objects
+  115 GB used, 167 GB / 297 GB avail
+          952 active+clean
+</code></pre></div><p>通过以上命令,可以快速了解Ceph集群的clusterID,health状况,以及monitor、OSD、PG的map概况。</p>
+<p>如果需要实时观察Ceph集群状态变化，可使用如下命令：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph -w
+</code></pre></div><p><strong>2）检查集群容量使用情况</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph df
+#输出的内容大致如下
+GLOBAL:
+     SIZE      AVAIL     RAW USED     %RAW USED
+     1356G     1284G       73943M          5.32
+POOLS:
+     NAME        ID     USED       %USED     MAX AVAIL     OBJECTS
+     images      1      24983M      1.80          421G        3158
+     volumes     2      32768k         0          421G          20
+     vms         3       3251M      0.23          421G         434
+</code></pre></div><p>输出的GLOBAL段显示了数据所占用集群存储空间概况。</p>
+<ul>
+<li>SIZE: 集群的总容量</li>
+<li>AVAIL: 集群的总空闲容量</li>
+<li>RAW USED: 已用存储空间总量</li>
+<li>%RAW USED: 已用存储空间百分比</li>
+</ul>
+<p>输出的POOLS段展示了存储池列表及各存储池的大致使用率。本段没有展示副本、克隆品和快照占用情况。 例如,把1MB的数据存储为对象,理论使用量将是1MB,但考虑到副本数、克隆数、和快照数,实际使用量可能是2MB或更多。</p>
+<ul>
+<li>NAME: 存储池名</li>
+<li>ID: 存储池唯一标识符</li>
+<li>USED: 使用量,单位可为KB、MB或GB,以输出结果为准</li>
+<li>%USED: 存储池的使用率</li>
+<li>MAX AVAIL: 存储池的最大可用空间</li>
+<li>OBJECTS: 存储池内的object个数</li>
+</ul>
+<p>注：POOLS 段内的数字是理论值,它们不包含副本、快照或克隆。因此,它与USED和%USED数量之和不会达到GLOBAL段中的RAW USED和 %RAW USED数量。</p>
+<p><strong>PG管理操作</strong></p>
+<p>PG(归置组)是多个object的逻辑存储集合,每个PG会根据副本级别而被复制多份。一个POOL的PG个数可以在创建时指定,也可以在之后进行扩大。<strong>但是需要注意的是，目前Ceph尚不支持减少POOL中的PG个数。</strong></p>
+<p><strong>1）预定义PG个数</strong> 
+Ceph对于集群内PG的总个数有如下公式:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">（OSD个数\*100）/ 副本数 = PGs
+</code></pre></div><p>以上公式计算得出结果后,再取一个与之较大的2的幂的值,便可作为集群的总PG数。例如,一个配置了200个OSD且副本数为3的集群,计算过程如下:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">(200\*100)/3 = 6667. Nearest power of 2 : 8192
+</code></pre></div><p>得到8192后,可以根据集群内所需建立的POOL的个数及用途等要素,进行PG划分。具体划分细则请参考官 方计算工具 PGcalc:<a href="http://ceph.com/pgcalc/"><a href="http://ceph.com/pgcalc/">http://ceph.com/pgcalc/</a></a></p>
+<p><strong>2）设置PG数量</strong> 
+要设置某个POOL的PG数量(pg_num),必须在创建POOL时便指定,命令如下:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph osd pool create &#34;pool-name&#34; pg_num [pgp_num]
+[root@ceph ~] sudo ceph osd pool create image 256 256
+</code></pre></div><p>需要注意的是,在后续增加PG数量时,还必须增加用于归置PG的PGP数量(pgp_num),PGP的数量应该与PG的数量相等。但在新增POOL时可以不指定pgp_num,默认会与pg_num保持一致。</p>
+<p>新增PG数量:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph osd pool set &#34;pool-name&#34; pg_num [pgp_num]
+[root@ceph ~] sudo ceph osd pool set image 512 512
+</code></pre></div><p><strong>3）查看PG信息</strong></p>
+<p>若需要获取某个POOL的PG数量或PGP数量,可以使用如下命令:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph osd pool get &#34;pool-name&#34; pg_num/pgp_num
+[root@ceph ~] sudo ceph osd pool get image pg_num
+pg_num : 512
+[root@ceph ~] sudo ceph osd pool get image pgp_num
+pgp_num : 512
+</code></pre></div><p>若要获取集群里PG的统计信息,可以使用如下命令,并指定输出格式:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">#不指定输出格式的情况下,会输出纯文本内容,可指定格式为json
+[root@ceph ~] sudo ceph pg dump [--format json]
+</code></pre></div><p>若要获取状态不正常的PG的状态,可以使用如下命令:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph pg dump_stuck  inactive|unclean|stale|undersized|degraded [--format &lt;format&gt;]
+</code></pre></div><p><strong>4）PG状态概述</strong> 
+一个PG在它的生命周期的不同时刻可能会处于以下几种状态中:</p>
+<p>Creating(创建中)<br>
+在创建POOL时,需要指定PG的数量,此时PG的状态便处于creating,意思是Ceph正在创建PG。</p>
+<p>Peering(互联中)<br>
+peering的作用主要是在PG及其副本所在的OSD之间建立互联,并使得OSD之间就这些PG中的object及其元数据达成一致。</p>
+<p>Active(活跃的)<br>
+处于该状态意味着数据已经完好的保存到了主PG及副本PG中,并且Ceph已经完成了peering工作。</p>
+<p>Clean(整洁的)<br>
+当某个PG处于clean状态时,则说明对应的主OSD及副本OSD已经成功互联,并且没有偏离的PG。也意味着Ceph已经将该PG中的对象按照规定的副本数进行了复制操作。</p>
+<p>Degraded(降级的)<br>
+当某个PG的副本数未达到规定个数时,该PG便处于degraded状态,例如:</p>
+<p>在客户端向主OSD写入object的过程,object的副本是由主OSD负责向副本OSD写入的,直到副本OSD在创建object副本完成,并向主OSD发出完成信息前,该PG的状态都会一直处于degraded状态。又或者是某个OSD的状态变成了down,那么该OSD上的所有PG都会被标记为degraded。<br>
+当Ceph因为某些原因无法找到某个PG内的一个或多个object时,该PG也会被标记为degraded状态。此时客户端不能读写找不到的对象,但是仍然能访问位于该PG内的其他object。</p>
+<p>Recovering(恢复中)<br>
+当某个OSD因为某些原因down了,该OSD内PG的object会落后于它所对应的PG副本。而在该OSD重新up之后,该OSD中的内容必须更新到当前状态,处于此过程中的PG状态便是recovering。</p>
+<p>Backfilling(回填)<br>
+当有新的OSD加入集群时,CRUSH会把现有集群内的部分PG分配给它。这些被重新分配到新OSD的PG状态便处于backfilling。</p>
+<p>Remapped(重映射)<br>
+当负责维护某个PG的acting set变更时,PG需要从原来的acting set迁移至新的acting set。这个过程需要一段时间,所以在此期间,相关PG的状态便会标记为remapped。</p>
+<p>Stale(陈旧的)<br>
+默认情况下,OSD守护进程每半秒钟便会向Monitor报告其PG等相关状态,如果某个PG的主OSD所在acting set没能向Monitor发送报告,或者其他的Monitor已经报告该OSD为down时,该PG便会被标记为stale。</p>
+<p><strong>Monitor管理操作</strong></p>
+<p><strong>1）检查集群内Monitor状态</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">如果你有多个监视器(很可能),你启动集群后、读写数据前应该检查监视器法定人数状态。运行着多个监视器时必须形成法定人数,最好周期性地检查监视器状态来确定它们在运行。
+</code></pre></div><p>要查看monmap,可以执行如下命令:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph mon stat
+#输出内容大致如下:
+e3: 3 mons at {controller-21=172.x.x.21:6789/0,controller-22=172.x.x.22:6789/0,
+controller-23=172.x.x.23:6789/0}, election epoch 48710,
+quorum 0,1,2 controller-21,controller-22,controller-23
+</code></pre></div><p>通过以上信息可以了解到集群内monmap版本为3,共有3个Monitor守护进程,分别处于哪些主机( 主机名、IP地址、端口号)上,当前的Monitor选举版本为48710,Monitor集群内的法定监视器共有3个(显示的qourumID个数总和),以及它们的MonitorID。</p>
+<p>如果希望进一步了解monmap,可以通过如下命令查看:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph mon dump
+#输出内容大致如下:
+dumped monmap epoch 3
+epoch 3
+fsid 86673d4c-xxxx-xxxx-xxxx-b61e6681305d
+last_changed 2016-09-02 16:05:02.120629
+created 2016-09-02 16:03:39.311083
+0: 172.16.130.21:6789/0 mon.controller-21
+1: 172.16.130.22:6789/0 mon.controller-22
+2: 172.16.130.23:6789/0 mon.controller-23
+</code></pre></div><p>通过以上信息可以额外了解到monmap创建时间及最近一次修改时间。</p>
+<p>要获知Ceph集群内Monitor集群法定监视器的情况,可以使用如下命令查看:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph quorum_status
+#输出内容大致如下:
+{&#34;election_epoch&#34;:48710,&#34;quorum&#34;:[0,1,2],
+     &#34;quorum_names&#34;:[&#34;controller-21&#34;,&#34;controller-22&#34;,&#34;controller-23&#34;],
+     &#34;quorum_leader_name&#34;:&#34;controller-22&#34;,
+     &#34;monmap&#34;:{&#34;epoch&#34;:3,
+     &#34;fsid&#34;:&#34;86673d4c-xxx-xxxx-xxxxx-b61e6681305d&#34;,
+     &#34;modified&#34;:&#34;2016-09-02 16:05:02.120629&#34;,
+     &#34;created&#34;:&#34;2016-09-0216:03:39.311083&#34;,
+     &#34;mons&#34;:[{&#34;rank&#34;:0,&#34;name&#34;:&#34;controller-21&#34;,&#34;addr&#34;:&#34;172.16.130.21:6789\ /   0&#34;},
+     {&#34;rank&#34;:1,&#34;name&#34;:&#34;controller-22&#34;,&#34;addr&#34;:&#34;172.16.130.22:6789\/0&#34;},
+     {&#34;rank&#34;:2,&#34;name&#34;:&#34;controller-23&#34;,&#34;addr&#34;:&#34;172.16.130.23:6789\/0&#34;}]}}
+</code></pre></div><p>通过以上信息,可以了解到Monitor集群法定监视器的个数,以及监视器leader。</p>
+<p><strong>2）实际业务场景</strong></p>
+<p><strong>场景一、使用ceph-deploy新增mon节点</strong> 
+需求：产品标准部署完成时，ceph mon一般会部署在某些OSD节点上，需要将mon拆到其他节点上。</p>
+<p><strong>操作步骤：</strong> 
+-&gt; 使用ceph-deploy新建mon</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@host-name ~]#ceph-deploy mon create {host-name [host-name]...}
+[root@host-name ~]#ceph-deploy mon create newhostname
+</code></pre></div><p>注意事项：</p>
+<ul>
+<li>使用ceph-deploy命令的节点上必须有相应权限，可以使用ceph-deploy gatherkeys命令分配权限</li>
+<li>使用ceph-deploy新增的monitor默认会使用ceph public网络</li>
+</ul>
+<p>-&gt; 停止原本在计算节点上的mon进程，验证集群是否正常，如果正常则进行下一步。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@host-name ~]# /etc/init.d/ceph stop mon
+</code></pre></div><p>-&gt; 删除原本在计算节点上的monitor。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@host-name ~]# ceph-deploy mon destroy {host-name [host-name]...}
+[root@host-name ~]# ceph-deploy mon destroy oldhostname
+</code></pre></div><p>-&gt; 修改配置文件中关于mon的配置，不要使用主机名，应直接使用IP（public网络），之后同步到所有ceph节点上并重启所有mon进程。</p>
+<p>注意事项：<br>
+由于默认情况下，主机名和IP的对应关系是使用的管理网络，而使用ceph-deploy新增的monitor默认会使用ceph public网络所以需要修改配置文件中&quot;mon_intial_members&quot;及&quot;mon_host&quot;中的主机名为ip地址。</p>
+<p><strong>场景二、从一个monitor状态异常的Ceph集群中获取monmap</strong> 
+需求：当一个Ceph集群的monitor集群状态出现异常时，集群的基本命令都无法使用，这个时候可以尝试提取出monmap，帮助排查问题。</p>
+<p><strong>操作步骤：</strong> 
+-&gt; 导出集群monmap</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@host-name ~]# ceph-mon -i mon-host-name --extract-monmap /tmp/monmap-file
+</code></pre></div><p>注意：以上命令在mon状态正常的节点上无法使用。会报如下错误：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">IO error: lock /var/lib/ceph/mon/ceph-cont01/store.db/LOCK: Resource temporarily unavailable
+</code></pre></div><p>-&gt; 使用monmaptool查看</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@host-name ~]# monmaptool --print /tmp/monmap-file
+monmaptool: monmap file /tmp/monmap
+epoch 3
+fsid 86673d4c-xxxx-xxxx-xxxx-b61e6681305d
+last_changed 2016-10-13 16:17:33.590245
+created 2016-10-13 16:16:33.801453
+0: 172.16.50.136:6789/0 mon.cont01
+1: 172.16.50.137:6789/0 mon.cont02
+2: 172.16.50.138:6789/0 mon.cont03
+</code></pre></div><p><strong>OSD管理操作</strong></p>
+<p><strong>1）OSD状态</strong> 
+单个OSD有两组状态需要关注,其中一组使用in/out标记该OSD是否在集群内,另一组使用up/down标记该OSD是否处于运行中状态。两组状态之间并不互斥,换句话说,当一个OSD处于“in”状态时,它仍然可以处于up或down的状态。</p>
+<p>OSD状态为in且up<br>
+这是一个OSD正常的状态,说明该OSD处于集群内,并且运行正常。</p>
+<p>OSD状态为in且down<br>
+此时该OSD尚处于集群中,但是守护进程状态已经不正常,默认在300秒后会被踢出集群,状态进而变为out且down,之后处于该OSD上的PG会迁移至其它OSD。</p>
+<p>OSD状态为out且up<br>
+这种状态一般会出现在新增OSD时,意味着该OSD守护进程正常,但是尚未加入集群。</p>
+<p>OSD状态为out且down<br>
+在该状态下的OSD不在集群内,并且守护进程运行不正常,CRUSH不会再分配PG到该OSD上。</p>
+<p><strong>2）检查OSD状态</strong> 
+在执行ceph health、ceph -s或ceph -w等命令时,也许会发现集群并未处于HEALTH状态,就OSD而言,应该关注它是否处于集群内,以及是否处于运行中状态。我们可以通过以下命令查看集群内所有OSD的状态:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph osd stat
+#输出内容大致如下：
+osdmap e3921: 5 osds: 5 up, 5 in;
+</code></pre></div><p>命令的结果显示,当前osdmap的版本号为e3921,集群内共有5个OSD,其中处于“up”状态的OSD为5个,处于“in”状态的OSD也为5个。这说明集群中OSD的状态处于正常情况。</p>
+<p>如果要启动一个OSD守护进程,请参考前文&quot;集群管理操作&quot;内容</p>
+<p><strong>3）查看集群OSD配置</strong> 
+要了解集群OSD的配置情况,可以使用下列命令进行查看。</p>
+<p>查看OSD容量的使用情况</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph osd df
+#输出内容大致如下：
+ID WEIGHT  REWEIGHT SIZE  USE    AVAIL %USE VAR
+0 0.25999  1.00000  269G 21378M  248G 7.75 1.38
+3 0.25999  1.00000  269G 19027M  250G 6.90 1.23
+4 0.25999  1.00000  269G 14207M  255G 5.15 0.92
+1 0.53999  1.00000  548G 23328M  525G 4.15 0.74
+     TOTAL 1356G 77942M 1280G 5.61
+MIN/MAX VAR: 0/1.38  STDDEV: 1.47
+</code></pre></div><p>从输出结果可以看到每个OSD的总容量、当前使用量以及可用容量等信息。</p>
+<p>查看OSD在集群布局中的设计分布</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph osd tree
+#输出内容大致如下：
+ID WEIGHT  TYPE NAME       UP/DOWN REWEIGHT PRIMARY-AFFINITY
+-1 0.08995 root default
+-2 0.02998     host ceph01
+ 0 0.00999         osd.0        up  1.00000          1.00000
+ 1 0.00999         osd.1        up  1.00000          1.00000
+ 2 0.00999         osd.2        up  1.00000          1.00000
+-3 0.02998     host ceph02
+ 3 0.00999         osd.3        up  1.00000          1.00000
+ 4 0.00999         osd.4        up  1.00000          1.00000
+ 5 0.00999         osd.5        up  1.00000          1.00000
+-4 0.02998     host ceph03
+ 6 0.00999         osd.6        up  1.00000          1.00000
+ 7 0.00999         osd.7        up  1.00000          1.00000
+ 8 0.00999         osd.8        up  1.00000          1.00000
+</code></pre></div><p>从输出结果可以看到每个OSD的位置分布情况,默认的CRUSHMAP中,OSD按照所在的主机节点分布,可以通过修改CRUSHMAP进行定制化分布设计。同时可以看到每个OSD的WEIGHT值,WEIGHT值与OSD的容量相关,1TB容量换算WEIGHT值为1.0。</p>
+<p>查看OSD的dump概况</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph osd dump
+</code></pre></div><p>OSD dump输出的条目较多,基本可以分为三个部分：<br>
+输出OSDmap信息,包括版本号、集群ID以及map相关的时间;<br>
+POOL的相关信息,包括POOL ID、POOL名称、副本数、最小副本数、ruleset ID等信息;<br>
+列出所有OSD的状态等信息,包括OSD ID、状态、状态版本记录以及被监听的IP地址及端口等信息。</p>
+<p><strong>4）实际业务场景</strong></p>
+<p><strong>场景一、使用ceph-deploy新增OSD节点</strong> 
+需求：由于某些原因无法使用salt进行扩容Ceph集群时，可以考虑使用ceph-deploy工具扩容Ceph集群。</p>
+<p><strong>操作步骤：</strong> 
+-&gt; 任选一个monitor节点，安装ceph-deploy。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@host-name ~]# yum install ceph-deploy
+</code></pre></div><p>-&gt; 切换至Ceph集群配置文件所在目录,如使用默认名称ceph,则切换至如下目录。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@host-name ~]# cd /etc/ceph
+</code></pre></div><p>-&gt; 编辑/etc/hosts目录，将新增节点的主机名及IP加入该文件中。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@host-name ~]# vim /etc/hosts
+</code></pre></div><p>-&gt; 在新增节点上安装ceph软件，并解决依赖关系，也许需要安装redhat-lsb。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@new-node ~]# yum install ceph
+[root@new-node ~]# yum install redhat-lsb
+</code></pre></div><p>-&gt; 推送相关密钥及配置文件至新增节点。</p>
+<p>[root@host-name ceph]# ceph-deploy admin new-node</p>
+<p>-&gt; 创建集群关系key。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@host-name ceph]# ceph-deploy gatherkeys 当前节点
+[root@host-name ceph]# ceph-deploy gatherkeys new-node
+</code></pre></div><p>-&gt; 检查新增OSD节点的磁盘。</p>
+<p>[root@host-name ceph]# ceph-deploy disk list new-node</p>
+<p>-&gt; 创建所要新增OSD节点上的osd。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">root@host-name ceph]# ceph-deploy osd create new-node:new-disk
+</code></pre></div><p>-&gt; 少数情况下，需要手动激活新增的osd后，集群才能正常识别新增的osd。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@new-node ~]# ceph-disk activate-all
+</code></pre></div><p><strong>场景二、完全删除osd</strong> 
+需求：需要删除Ceph集群中一个或多个osd时，可以参考以下做法实现。</p>
+<p><strong>操作步骤：</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">-&gt; 停止需要删除的osd进程。
+[root@host-name ~]# /etc/init.d/ceph stop osd.x
+-&gt;  将该osd的集群标记为out。
+[root@host-name ~]# ceph osd out osd.x
+-&gt;  将该osd从Ceph crush中移除。
+[root@host-name ~]# ceph osd crush remove osd.x
+-&gt;  从集群中完全删除该osd的记录。
+[root@host-name ~]# ceph osd rm osd.x
+-&gt;  删除该osd的认证信息，否则该osd的编号不会释放。
+[root@host-name ~]# ceph auth del osd.x
+</code></pre></div><p><strong>POOL管理操作</strong></p>
+<p><strong>1）获取POOL概况</strong> 
+在部署一个Ceph集群时,会创建一个默认名为rbd的POOL,使用以下命令,可以获取集群内所有POOL的概况信息。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph osd pool ls detail
+</code></pre></div><p>使用该命令你可以了解到集群内POOL的个数、对应的POOL id、POOL名称、副本数、最小副本数，ruleset及POOL snap等信息。</p>
+<p><strong>2）创建POOL</strong> 
+在创建一个新的POOL前,可先查看配置文件中是否有关于POOL的默认参数,同时了解集群内CRUSHMAP的设计，之后再新建POOL。</p>
+<p>例如,配置文件中有关于pg_num,pgp_num等默认参数,那么在使用ceph-deploy自动化部署工具,便会以此参数创建指定POOL。</p>
+<p>要手动创建一个POOL的命令语法如下:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">#创建一个副本类型的POOL
+[root@ceph ~] sudo ceph osd pool create {pool-name} {pg-num} [{pgp-num}] [replicated] \
+              [ruleset]
+#创建一个纠删码类型的POOL
+[root@ceph ~] sudo ceph osd pool create {pool-name} {pg-num} {pgp-num} erasure \
+              [erasure-code-profile] [ruleset]
+</code></pre></div><p>在{}内的参数为必选项,[]内的参数均设有默认值,如果没有更改设计,可以不添加。<br>
+参数的含义如下:</p>
+<ul>
+<li>pool-name: POOL的名字；必须添加。</li>
+<li>pg-num: POOL拥有的PG总数；必须添加。具体内容可参考前文:PG管理操作</li>
+<li>pgp-num: POOL拥有的PGP总数；非必须添加。默认与pg-num相同。</li>
+<li>replicated|erasure: POOL类型；非必须添加。如不指定为erasure,则默认为replicated类型。</li>
+<li>ruleset: POOL所用的CRUSH规则ID。非必须添加。默认为0,若需指定其他ruleset,需确保ruleset必须存在。</li>
+<li>erasure-code-profile: 仅用于纠删码类型的POOL。指定纠删码配置框架,此配置必须已由osd erasure-code-profile set 定义</li>
+</ul>
+<p><strong>3）重命名POOL</strong> 
+如果需要重命名存储池,可以使用以下命令:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph osd pool rename {current-pool-name}    {new-pool-name}
+</code></pre></div><p>需要注意的是,在POOL被重命名后,需要用新的POOL名更新对应的认证用户权限。此部分内容请参考:用户管理操作</p>
+<p><strong>4）删除POOL</strong> 
+删除存储池,可以使用以下命令:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph osd pool delete {pool-name} [{pool-name} --yes-i-really-really-mean-it]
+</code></pre></div><p>如果有某个认证用户拥有该池的某些权限,那么你应该确认该认证用户是否还有其他作用,确认完毕后,或更 新,或将该用户删除。<br>
+此部分内容请参考:用户管理操作</p>
+<p><strong>5）设置POOL的配置</strong> 
+可以为每个POOL进行配额,可以设置最大字节数及最大object数,命令如下:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph osd pool set-quota {pool-name} [max_objects {obj-count}] [max_bytes {bytes}]
+
+例如:
+[root@ceph ~] sudo ceph osd pool set-quota data max_objects 10000
+[root@ceph ~] sudo ceph osd pool set-quota data max_bytes 10240
+</code></pre></div><p>如果要取消配额,只需要将值设置为0即可。</p>
+<p><strong>6）查看POOL的统计信息</strong> 
+查看集群内POOL的使用情况,可以使用以下命令:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo rados df
+</code></pre></div><p><strong>7）POOL快照操作</strong></p>
+<p>要拍下某个POOL的快照,可以使用以下命令:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph osd pool mksnap {pool-name} {snap-name}
+
+例如：
+[root@ceph ~] sudo ceph osd pool mksnap snappool snap1
+</code></pre></div><p>要删除某个POOL的快照,可以使用以下命令:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">root@ceph ~] sudo ceph osd pool rmsnap {pool-name} {snap-name}
+
+例如:
+[root@ceph ~] sudo ceph osd pool rmsnap snappool snap1
+</code></pre></div><p>要查看集群中POOL的快照信息,暂时未提供ls-snap相关的命令,但可以借助前文提到的命令查看:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph osd pool ls detail
+</code></pre></div><p><strong>8）置object副本数量</strong></p>
+<p>要设置副本类型POOL的对象副本数,可以使用以下命令:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph osd pool set {pool-name} size {num-replicas}
+
+例如:
+[root@ceph ~] sudo ceph osd pool set replpool size 3
+</code></pre></div><p>当一个object的副本数小于规定值时,仍然可以接受I/O请求。为了保证I/O正常,可以为POOL设置最低副本数,如:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[root@ceph ~] sudo ceph osd pool set replpool min_size 3
+</code></pre></div><p>这确保了该POOL内任何副本数小于min_size的对象都不会再进行I/O</p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/images/readme/" title=""> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/storage/distributed-fs/ceph/readme/" title="" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1577955671"></script>
+    <script src="/js/perfect-scrollbar.min.js?1577955671"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1577955671"></script>
+    <script src="/js/jquery.sticky.js?1577955671"></script>
+    <script src="/js/featherlight.min.js?1577955671"></script>
+    <script src="/js/highlight.pack.js?1577955671"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1577955671"></script>
+    <script src="/js/learn.js?1577955671"></script>
+    <script src="/js/hugo-learn.js?1577955671"></script>
+
+    <link href="/mermaid/mermaid.css?1577955671" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1577955671"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
