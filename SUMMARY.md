@@ -23,6 +23,7 @@
 ## 关于
 
 * [Hugo](guan-yu/untitled.md)
+* [企业组织架构](guan-yu/qi-ye-zu-zhi-jia-gou.md)
 
 ## 安全
 
