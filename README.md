@@ -4,14 +4,6 @@ description: 人生得意须尽欢，莫使金樽空对月。
 
 # Site
 
-```text
-title: "Site"
-date: 2019-12-15T20:50:40+08:00
-draft: true
-# pre: "<b>1. </b>"
-weight: 5
-```
-
 [Baidu](http://www.baidu.com) [Google](http://www.google.com) [Site](https://github.com/aftree/Site)
 
 
