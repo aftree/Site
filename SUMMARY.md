@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Site](README.md)
 
 ## 操作系统 <a id="operating-system"></a>
 
