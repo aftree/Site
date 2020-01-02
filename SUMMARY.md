@@ -4,5 +4,6 @@
 
 ## 操作系统
 
-* [Untitled](cao-zuo-xi-tong/untitled.md)
+* [Winodws](cao-zuo-xi-tong/windows.md)
+* [Linux](cao-zuo-xi-tong/linux.md)
 
