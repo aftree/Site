@@ -2,13 +2,13 @@
 
 * [Initial page](README.md)
 
-## 操作系统
+## 操作系统 <a id="operating-system"></a>
 
-* [Winodws](cao-zuo-xi-tong/windows/README.md)
-  * [Windows](cao-zuo-xi-tong/windows/windows.md)
-* [Untitled](cao-zuo-xi-tong/untitled-3.md)
-* [Untitled](cao-zuo-xi-tong/untitled-2.md)
-* [Untitled](cao-zuo-xi-tong/untitled-1.md)
-* [Untitled](cao-zuo-xi-tong/untitled.md)
-* [Linux](cao-zuo-xi-tong/linux.md)
+* [Winodws](operating-system/windows/README.md)
+  * [Windows](operating-system/windows/windows.md)
+* [Untitled](operating-system/untitled-3.md)
+* [Untitled](operating-system/untitled-2.md)
+* [Untitled](operating-system/untitled-1.md)
+* [Untitled](operating-system/untitled.md)
+* [Linux](operating-system/linux.md)
 
