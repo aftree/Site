@@ -22,7 +22,7 @@
 
 ## 关于
 
-* [Untitled](guan-yu/untitled.md)
+* [Hugo](guan-yu/untitled.md)
 
 ## 安全
 
@@ -80,4 +80,18 @@
 ## BlockChain
 
 * [Untitled](blockchain/untitled.md)
+
+## 编程语言
+
+* [Python](bian-cheng-yu-yan/python.md)
+* [Go](bian-cheng-yu-yan/go.md)
+* [Java](bian-cheng-yu-yan/java.md)
+
+## Test
+
+* [Untitled](test/untitled.md)
+
+## 开发
+
+* [Untitled](kai-fa/untitled.md)
 
