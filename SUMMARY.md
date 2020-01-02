@@ -11,13 +11,13 @@
 ## 消息队列 <a id="message-queue"></a>
 
 * [Untitled](message-queue/untitled.md)
-* [ActiveMQ](message-queue/activemq.md)
+* [ActiveMQ](message-queue/activemq/README.md)
   * [Untitled](message-queue/activemq/untitled.md)
-* [RabbitMQ](message-queue/rabbitmq.md)
+* [RabbitMQ](message-queue/rabbitmq/README.md)
   * [Untitled](message-queue/rabbitmq/untitled.md)
-* [RocketMQ](message-queue/rocketmq.md)
+* [RocketMQ](message-queue/rocketmq/README.md)
   * [Untitled](message-queue/rocketmq/untitled.md)
-* [Kafka](message-queue/kafka.md)
+* [Kafka](message-queue/kafka/README.md)
   * [Untitled](message-queue/kafka/untitled.md)
 
 ## 关于
@@ -69,9 +69,11 @@
   * [Oracle](database/rddb/oracle.md)
   * [PostgreSQL](database/rddb/postgresql.md)
   * [SQL Server](database/rddb/sqlserver.md)
-* [NoSQL](database/nosql.md)
-* [kv](database/kv.md)
-* [wendang](database/wendang.md)
-* [lie](database/lie.md)
-* [tu](database/tu.md)
+* [NoSQL](database/nosql/README.md)
+  * [tu](database/nosql/tu.md)
+  * [lie](database/nosql/lie.md)
+  * [wendang](database/nosql/wendang/README.md)
+    * [MongoDB](database/nosql/wendang/mongodb.md)
+  * [kv](database/nosql/kv/README.md)
+    * [Redis](database/nosql/kv/redis.md)
 
