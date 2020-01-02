@@ -43,6 +43,8 @@ zookeeper部署方式
 
 原始配置
 
+{% tabs %}
+{% tab title="Bash" %}
 ```bash
 vim zoo.cfg   
 # The number of milliseconds of each tick
@@ -75,6 +77,20 @@ clientPort=2181
 #autopurge.purgeInterval=1
 ​
 ```
+{% endtab %}
+
+{% tab title="" %}
+```
+dddddd
+```
+{% endtab %}
+
+{% tab title="" %}
+```
+ffff
+```
+{% endtab %}
+{% endtabs %}
 
 ### 单机
 
