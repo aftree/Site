@@ -1,15 +1,5 @@
 # Untitled
 
-
-
-```text
-title: "安装配置"
-date: 2019-12-15T20:50:40+08:00
-draft: true
-#pre: "<b>1. </b>"
-weight: 5
-```
-
 ```bash
 [root@hadoop ~]# tree -L 2 apache-zookeeper-3.5.6-bin
 apache-zookeeper-3.5.6-bin
@@ -35,7 +25,7 @@ apache-zookeeper-3.5.6-bin
 
 cd zookeeper/conf/ 有三个文件,zookeeper的配置文件叫做zoo.cfg,这里边没有,我们把 zoo\_sample.cfg 拷贝一份出来
 
-zookeeper部署方式
+## zookeeper部署方式
 
 * 单机模式
 * 伪分布式集群
@@ -76,18 +66,6 @@ clientPort=2181
 # Set to "0" to disable auto purge feature
 #autopurge.purgeInterval=1
 ​
-```
-{% endtab %}
-
-{% tab title="" %}
-```
-dddddd
-```
-{% endtab %}
-
-{% tab title="" %}
-```
-ffff
 ```
 {% endtab %}
 {% endtabs %}
