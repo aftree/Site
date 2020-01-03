@@ -100,7 +100,8 @@
 ## 编程语言
 
 * [Python](bian-cheng-yu-yan/python/README.md)
-  * [Django](bian-cheng-yu-yan/python/django.md)
+  * [Django](bian-cheng-yu-yan/python/django/README.md)
+    * [manage.py](bian-cheng-yu-yan/python/django/manage.py.md)
 * [Go](bian-cheng-yu-yan/go.md)
 * [Java](bian-cheng-yu-yan/java.md)
 
