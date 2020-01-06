@@ -71,9 +71,16 @@ MySQL Oracle SqlServer PQ
 * 包管理：
 
 |  |  |
-| :--- | :--- |
+| :---: | :--- |
 | 版本控制 | GitHub、GitLab、BitBucket、SubVersion、Gogs |
 | 构建工具 | Ant、Gradle、maven |
+| 自动部署 | Capistrano、CodeDeploy |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
 |  |  |
 
 #### Microservices
