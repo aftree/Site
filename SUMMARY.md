@@ -92,6 +92,7 @@
 ## 网站架构
 
 * [Nginx](wang-zhan-jia-gou/nginx.md)
+* [负载均衡](wang-zhan-jia-gou/fu-zai-jun-heng.md)
 
 ## BlockChain
 
