@@ -93,6 +93,8 @@
 
 * [Nginx](wang-zhan-jia-gou/nginx.md)
 * [负载均衡](wang-zhan-jia-gou/fu-zai-jun-heng.md)
+* [全文搜索引擎](wang-zhan-jia-gou/quan-wen-sou-suo-yin-qing.md)
+* [HTTP Cache](wang-zhan-jia-gou/http-cache.md)
 
 ## BlockChain
 
