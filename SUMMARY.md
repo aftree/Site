@@ -92,6 +92,7 @@
 ## 网站架构
 
 * [关于](wang-zhan-jia-gou/guan-yu.md)
+* [一次完整的HTTP请求过程](wang-zhan-jia-gou/yi-ci-wan-zheng-de-http-qing-qiu-guo-cheng.md)
 * [Nginx](wang-zhan-jia-gou/nginx.md)
 * [负载均衡](wang-zhan-jia-gou/fu-zai-jun-heng.md)
 * [全文搜索引擎](wang-zhan-jia-gou/quan-wen-sou-suo-yin-qing/README.md)
@@ -105,10 +106,10 @@
     * [Apache](untitled/web-fu-wu-qi/apache.md)
     * [nginx](untitled/web-fu-wu-qi/nginx.md)
     * [IIS](untitled/web-fu-wu-qi/iis.md)
-  * [应用服务器](wang-zhan-jia-gou/untitled/ying-yong-fu-wu-qi/README.md)
-    * [Weblogic](wang-zhan-jia-gou/untitled/ying-yong-fu-wu-qi/weblogic.md)
-    * [Tomcat](wang-zhan-jia-gou/untitled/ying-yong-fu-wu-qi/tomcat.md)
-    * [Jboss](wang-zhan-jia-gou/untitled/ying-yong-fu-wu-qi/jboss.md)
+  * [应用服务器](untitled/ying-yong-fu-wu-qi/README.md)
+    * [Weblogic](untitled/ying-yong-fu-wu-qi/weblogic.md)
+    * [Tomcat](untitled/ying-yong-fu-wu-qi/tomcat.md)
+    * [Jboss](untitled/ying-yong-fu-wu-qi/jboss.md)
 
 ## BlockChain
 
