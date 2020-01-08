@@ -2,7 +2,7 @@
 
 [java发展史](https://mp.weixin.qq.com/s?__biz=MzAxOTc0NzExNg==&mid=2665513103&idx=1&sn=56d832072a92e3f41f5e6796676993e0&scene=21#wechat_redirect)
 
- apache是一个开源的组织名。后来制定了一个以apache命名的开源协议。jakarta是apache组织下的一套Java解决方案的开源软件的名称，它包括了很多子项目。Tomcat,ant,struts等等也是apache下的开源项目。同时也是jakarta的关联项目。官网：[www.apache.org](http://www.apache.org/)
+2018-03-05日，据国外媒体报道，开源组织Eclipse基金会宣布将JavaEE\(Enterprise Edition\)被更名为JakartaEE\(雅加达\)。这是Oracle将Java移交给开源组织Eclipse后实现对Java品牌控制的最新举措。尽管开源组织曾经争取过，但这无法撼动甲骨文的意志。 提及JavaEE，很多人都知道它是社区驱动的企业软件标准。JavaEE是利用Java Community Process开发的，每个版本都集成了符合业界需求的新特性，提供了一个丰富的企业软件平台，提高了应用可移植性，提高了开发人员的工作效率。为什么Oracle会放弃JavaEE呢?Java程序员的出路又在何方? 据Oracle 的 JavaEE 布道师 David Delabassee 透露，Oracle之所以要开源 Java EE，主要是想让它变得更敏捷，以适应快速发展的行业和技术需求。而实际上，尽管 JCP\(Java Community Process\)也在这方面做出了一些努力，但其随后推出的新兴技术，如NoSQL、容器、微服务和无服务器架构等都未包含在JavaEE中。 在2017年9月宣布将JavaEE所有权转交给Eclipse Foundation时，就意味着JavaEE将不再是Oracle的首要关注点。不过，对于大多数企业来说，JavaEE仍然是一个非常有价值的平台，它具备完善而灵活的编程模型，单一的依赖管理和很多轻量级的应用服务器。 Oracle 加快 Java 迭代速度，功能性版本只维护六个月。JDK10的近期发布，加速了知识的更迭速度，中间件分布式的崛起，知识的更迭更快。 对于Java程序员来说，想在Java领域获得更好的发展，就需要不断地更新知识体系。 ———————————————— 版权声明：本文为CSDN博主「DoubleVIPDouble」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。 原文链接：[https://blog.csdn.net/lcj94163/article/details/79468967](https://blog.csdn.net/lcj94163/article/details/79468967)apache是一个开源的组织名。后来制定了一个以apache命名的开源协议。jakarta是apache组织下的一套Java解决方案的开源软件的名称，它包括了很多子项目。Tomcat,ant,struts等等也是apache下的开源项目。同时也是jakarta的关联项目。官网：[www.apache.org](http://www.apache.org/)
 
 2：最开始，所有关于Java的项目，都集中在Apache的Jakarta项目之下，作为子项目存在，这时的Tomcat称为Jakarta Tomcat。后来，Jakarta下面项目太多，就开始分家了，如Ant、tomcat等等，所以现在称Apache Tomcat。实际是一回事儿去官方网站下载,一个可能是安装包,一个是以安装好的文件包3：Jakarta Tomcat 的由来
 
