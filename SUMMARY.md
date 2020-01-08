@@ -93,7 +93,10 @@
 
 * [Nginx](wang-zhan-jia-gou/nginx.md)
 * [负载均衡](wang-zhan-jia-gou/fu-zai-jun-heng.md)
-* [全文搜索引擎](wang-zhan-jia-gou/quan-wen-sou-suo-yin-qing.md)
+* [全文搜索引擎](wang-zhan-jia-gou/quan-wen-sou-suo-yin-qing/README.md)
+  * [Lucene](wang-zhan-jia-gou/quan-wen-sou-suo-yin-qing/lucene.md)
+  * [Solr](wang-zhan-jia-gou/quan-wen-sou-suo-yin-qing/solr.md)
+  * [ElasticSearch](wang-zhan-jia-gou/quan-wen-sou-suo-yin-qing/elasticsearch.md)
 * [HTTP Cache](wang-zhan-jia-gou/http-cache.md)
 * [大型网站架构](wang-zhan-jia-gou/da-xing-wang-zhan-jia-gou.md)
 
