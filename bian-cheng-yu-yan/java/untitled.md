@@ -2,6 +2,17 @@
 
 [java发展史](https://mp.weixin.qq.com/s?__biz=MzAxOTc0NzExNg==&mid=2665513103&idx=1&sn=56d832072a92e3f41f5e6796676993e0&scene=21#wechat_redirect)
 
+ apache是一个开源的组织名。后来制定了一个以apache命名的开源协议。jakarta是apache组织下的一套Java解决方案的开源软件的名称，它包括了很多子项目。Tomcat,ant,struts等等也是apache下的开源项目。同时也是jakarta的关联项目。官网：[www.apache.org](http://www.apache.org/)
+
+2：最开始，所有关于Java的项目，都集中在Apache的Jakarta项目之下，作为子项目存在，这时的Tomcat称为Jakarta Tomcat。后来，Jakarta下面项目太多，就开始分家了，如Ant、tomcat等等，所以现在称Apache Tomcat。实际是一回事儿去官方网站下载,一个可能是安装包,一个是以安装好的文件包3：Jakarta Tomcat 的由来
+
+2007-09-28 21:17
+
+Tomcat是由Apache软件基金会下属的Jakarta项目开发的一个Servlet容器，按照Sun Microsystems提供的技术规范，实现了对Servlet和JavaServer Page\(JSP\)的支持。由于Tomcat本身也内含了一个HTTP服务器，它也可以被视作一个单独的Web服务器。  
+名称由来  
+Tomcat最初是由Sun的软件构架师詹姆斯·邓肯·戴维森开发的。后来他帮助将其变为开源项目，并由Sun贡献给Apache软件基金会。由于大部分开源项目O'Reilly都会出一本相关的书，并且将其封面设计成某个动物的素描，因此他希望将此项目以一个动物的名字命名。因为他希望这种动物能够自己照顾自己，最终，他将其命名为Tomcat（英语公猫或其他雄性猫科动物）。而O'Reilly出版的介绍Tomcat的书籍（ISBN 0-596-00318-8）\[1\]的封面也被设计成了一个公豹的形象。而Tomcat的Logo兼吉祥物也被设计成了一只公猫。  
+
+
 概念 Java EE，Java 平台企业版（Java Platform Enterprise Edition），之前称为Java 2 Platform, Enterprise Edition \(J2EE\)，2018年3月更名为 Jakarta EE\(这个名称应该还没有得到群众认可\)。狭义的 Java EE 是 Sun 公司为企业级应用推出的标准平台，用来开发B/S架构软件，可以说是一个框架，也可以说是一种规范。
 
 广义的 Java EE 包含各种框架，其中最重要的就是 Spring 全家桶。Spring 诞生之初是为了改进 Java EE 开发的体验，后来逐渐成为了 Java Web 开发的实际标准。后面的文章里，会对 Spring 进行进一步的说明。
