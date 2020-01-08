@@ -4,6 +4,7 @@
 
 ## 操作系统 <a id="operating-system"></a>
 
+* [Linux From Scratch](operating-system/linux-from-scratch.md)
 * [Linux](operating-system/linux/README.md)
   * [Untitled](operating-system/linux/untitled.md)
   * [Untitled](operating-system/linux/untitled-1.md)
