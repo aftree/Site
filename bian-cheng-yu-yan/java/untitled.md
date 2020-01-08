@@ -1,6 +1,64 @@
-# Untitled
+# 关于Java
 
+[java发展史](https://mp.weixin.qq.com/s?__biz=MzAxOTc0NzExNg==&mid=2665513103&idx=1&sn=56d832072a92e3f41f5e6796676993e0&scene=21#wechat_redirect)
 
+概念 Java EE，Java 平台企业版（Java Platform Enterprise Edition），之前称为Java 2 Platform, Enterprise Edition \(J2EE\)，2018年3月更名为 Jakarta EE\(这个名称应该还没有得到群众认可\)。狭义的 Java EE 是 Sun 公司为企业级应用推出的标准平台，用来开发B/S架构软件，可以说是一个框架，也可以说是一种规范。
+
+广义的 Java EE 包含各种框架，其中最重要的就是 Spring 全家桶。Spring 诞生之初是为了改进 Java EE 开发的体验，后来逐渐成为了 Java Web 开发的实际标准。后面的文章里，会对 Spring 进行进一步的说明。
+
+JavaEE 与 JavaSE 的区别与联系 JavaEE 是在 JavaSE 的基础上构建的，是对 JavaSE 的扩展，增加了一些更加便捷的应用框架。
+
+除了 EE 和 SE，还有为移动端而生的 JavaME，但目前应用不算广泛。三者的关系可以用下图概括：
+
+JavaEE主要技术 JavaEE 号称有十三种核心技术。它们分别是：JDBC、JNDI、EJB、RMI、Servlet、JSP、XML、JMS、Java IDL、JTS、JTA、JavaMail和JAF。
+
+简单介绍下需要重点关注的技术。
+
+JDBC Java 数据库连接，（Java Database Connectivity，JDBC）是 Java 语言中用来规范客户端程序如何来访问数据库的应用程序接口，提供了诸如查询和更新数据库中数据的方法。
+
+JNDI Java 命名和目录接口（Java Naming and Directory Interface，JNDI），是 Java 的一个目录服务应用程序界面（API），它提供一个目录系统，并将服务名称与对象关联起来，从而使得开发人员在开发过程中可以使用名称来访问对象。
+
+EJB 企业级 JavaBean（Enterprise JavaBean, EJB）是一个用来构筑企业级应用的服务器端可被管理组件。不过这个东西在 Spring 问世后基本凉凉了，知道是什么就行。
+
+Servlet Servlet（Server Applet），是用 Java 编写的服务器端程序。其主要功能在于交互式地浏览和修改数据，生成动态 Web 内容。
+
+狭义的 Servlet 是指 Java 语言实现的一个接口，广义的 Servlet 是指任何实现了这个 Servlet 接口的类，一般情况下，人们将 Servlet 理解为后者。
+
+JSP JSP（全称JavaServer Pages）是由 Sun 公司主导创建的一种动态网页技术标准。JSP 部署于网络服务器上，可以响应客户端发送的请求，并根据请求内容动态地生成 HTML、XML 或其他格式文档的 Web 网页，然后返回给请求者。
+
+JavaEE框架 JavaEE 拥有广泛市场的原因之一就是可以使用多种框架来使开发变得简单。对于框架的选择多种多样，目前比较常见的框架组合有 SSH和SSM。在后面的章节中会作详细介绍。另外Spring本身也提供了多种层次的框架供选择，可以到Spring官网了解详情。
+
+Spring： [https://spring.io/](https://spring.io/)
+
+SSH Structs + Spring + Hibernate
+
+SSM Spring +SpringMVC + MyBatis
+
+JavaEE 学习路径 一般来讲，初学者应该遵循以下路径
+
+Servlet -&gt; JSP -&gt; Spring -&gt; 组合框架
+
+Servlet 和 JSP 在日后的开发中虽然很少直接应用，但却是各种框架的基础，应该放在开始去了解。这两部分也并不难，相信经过了 JavaSE 的洗礼，只需要进行短期的学习，知道它们都是什么，就可以投入实践中了。
+
+至于上面提到的其它内容，在实践中遇到了再去了解也不妨，现在也只能在一些老旧的应用中看到这些东西了。JDBC 可以稍微重点关注一下，其它的知道有这么个词就差不多啦。
+
+推荐一个学习 Java 的良心网站，里面有 Java 全栈知识，在每个阶段都设置了练习内容，谁用谁知道——
+
+「How2J 的 Java 教程」
+
+这个系列的文章我会逐步更新，主要是希望帮助大家对 Java Web 开发建立一个大概的认识，感兴趣的小伙伴可以戳下面的连接——
+
+JavaEE 从入门到放弃（二）：一文读懂 Servlet JavaEE 从入门到放弃（三）：为什么要用 JSP？ JavaEE 从入门到放弃（四）：MVC 模式 JavaEE 从入门到放弃（五）：如何理解 Spring JavaEE 从入门到放弃（六）：框架的选择 （持续更新中）
+
+另外我用 Vue + Spring Boot 做了一个前后端分离的小项目，并做了一下实践教程，有兴趣的小伙伴可以戳以下链接——
+
+Vue + Spring Boot 项目实战
+
+在学习中遇到问题，或者想与我交流学习经验，可以给我发送邮件，地址是：evan\_nightly@163.com
+
+有兴趣听我吹牛扯皮的同学可以关注我的公号，只讲故事，不谈技术。
+
+———————————————— 版权声明：本文为CSDN博主「neuf\_soleil」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。 原文链接：[https://blog.csdn.net/Neuf\_Soleil/article/details/80962686](https://blog.csdn.net/Neuf_Soleil/article/details/80962686)
 
 1. 引言
 
@@ -81,4 +139,20 @@ TCK 是一组验证特定 EE JSR 的测试。简而言之，为了遵循 Java EE
 前方之路充满坎坷，希望 Java 的转变能够平滑些。
 
 ———————————————— 版权声明：本文为CSDN博主「码农翻身」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。 原文链接：[https://blog.csdn.net/coderising/article/details/100021723](https://blog.csdn.net/coderising/article/details/100021723)
+
+1、Java分类
+
+Java分为JavaSE（Java标准版）、J2EE（Java企业版）和JavaME（Java微型版）；
+
+JavaSE（Java Standard Edition），一般用来开发桌面应用程序，但是在开发桌面应用程序上相对VB，Delphi，VC++并没有什么优势。
+
+JavaEE（Java Enterprise Edition），一般用于开发JavaWeb应用程序，初级的一般是用JSP（Java Server Pages）+servlet+JavaBean来开发的，对大型的网站一般是使用框架来开发的，例如struts，hibernate，spring。
+
+JavaME（Java Micro Edition），诺基亚手机上运行的Java程序就是用这个版本开发的程序。
+
+2、JavaWeb与J2EE的区别
+
+J2EE是Java的企业应用开发，涵盖了B/S和C（Client客户端）/S（Server服务器），注重的是结构和框架，我们所熟知的struts2、hibernate和spring即ssh就是j2ee的一些基本框架。
+
+JavaWeb是指Java在B（Browser浏览器）/S（Server服务器）方面的开发，做的是网络应用；
 
