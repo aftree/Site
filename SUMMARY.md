@@ -163,5 +163,8 @@
   * [Hugo](guan-yu/zhi-shi-guan-li/untitled.md)
   * [Gitbook](guan-yu/zhi-shi-guan-li/gitbook.md)
 * [企业组织架构](guan-yu/qi-ye-zu-zhi-jia-gou.md)
-* [文本格式](guan-yu/wen-ben-ge-shi.md)
+* [文本格式](guan-yu/wen-ben-ge-shi/README.md)
+  * [JSON](guan-yu/wen-ben-ge-shi/json.md)
+  * [YAML](guan-yu/wen-ben-ge-shi/yaml.md)
+  * [XML](guan-yu/wen-ben-ge-shi/xml.md)
 
