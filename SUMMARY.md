@@ -126,8 +126,10 @@
 ## 编程语言
 
 * [Python](bian-cheng-yu-yan/python/README.md)
-  * [Tornado,](bian-cheng-yu-yan/python/tornado.md)
+  * [Tornado](bian-cheng-yu-yan/python/tornado.md)
   * [Django](bian-cheng-yu-yan/python/django/README.md)
+    * [最佳实践](bian-cheng-yu-yan/python/django/zui-jia-shi-jian.md)
+    * [Untitled](bian-cheng-yu-yan/python/django/untitled.md)
     * [manage.py](bian-cheng-yu-yan/python/django/manage.py.md)
 * [Go](bian-cheng-yu-yan/go.md)
 * [Java](bian-cheng-yu-yan/java.md)
