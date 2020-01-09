@@ -98,7 +98,7 @@
 ## 网站架构
 
 * [集群](wang-zhan-jia-gou/ji-qun/README.md)
-  * [负载均衡](wang-zhan-jia-gou/fu-zai-jun-heng.md)
+  * [负载均衡](wang-zhan-jia-gou/ji-qun/fu-zai-jun-heng.md)
   * [HA](wang-zhan-jia-gou/ji-qun/ha.md)
 * [关于](wang-zhan-jia-gou/guan-yu.md)
 * [一次完整的HTTP请求过程](wang-zhan-jia-gou/yi-ci-wan-zheng-de-http-qing-qiu-guo-cheng.md)
@@ -108,16 +108,16 @@
   * [ElasticSearch](wang-zhan-jia-gou/quan-wen-sou-suo-yin-qing/elasticsearch.md)
 * [HTTP Cache](wang-zhan-jia-gou/http-cache.md)
 * [大型网站架构](wang-zhan-jia-gou/da-xing-wang-zhan-jia-gou.md)
-* [网站服务器](untitled/README.md)
-  * [WEB服务器](untitled/web-fu-wu-qi/README.md)
-    * [Nginx](wang-zhan-jia-gou/nginx.md)
-    * [Apache](untitled/web-fu-wu-qi/apache.md)
-    * [nginx](untitled/web-fu-wu-qi/nginx.md)
-    * [IIS](untitled/web-fu-wu-qi/iis.md)
-  * [应用服务器](untitled/ying-yong-fu-wu-qi/README.md)
-    * [Weblogic](untitled/ying-yong-fu-wu-qi/weblogic.md)
-    * [Tomcat](untitled/ying-yong-fu-wu-qi/tomcat.md)
-    * [Jboss](untitled/ying-yong-fu-wu-qi/jboss.md)
+* [网站服务器](wang-zhan-jia-gou/untitled/README.md)
+  * [WEB服务器](wang-zhan-jia-gou/untitled/web-fu-wu-qi/README.md)
+    * [Nginx](wang-zhan-jia-gou/untitled/web-fu-wu-qi/nginx-1.md)
+    * [Apache](wang-zhan-jia-gou/untitled/web-fu-wu-qi/apache.md)
+    * [nginx](wang-zhan-jia-gou/untitled/web-fu-wu-qi/nginx.md)
+    * [IIS](wang-zhan-jia-gou/untitled/web-fu-wu-qi/iis.md)
+  * [应用服务器](wang-zhan-jia-gou/untitled/ying-yong-fu-wu-qi/README.md)
+    * [Weblogic](wang-zhan-jia-gou/untitled/ying-yong-fu-wu-qi/weblogic.md)
+    * [Tomcat](wang-zhan-jia-gou/untitled/ying-yong-fu-wu-qi/tomcat.md)
+    * [Jboss](wang-zhan-jia-gou/untitled/ying-yong-fu-wu-qi/jboss.md)
 
 ## BlockChain
 
@@ -132,7 +132,7 @@
     * [Untitled](bian-cheng-yu-yan/python/django/untitled.md)
     * [manage.py](bian-cheng-yu-yan/python/django/manage.py.md)
 * [Go](bian-cheng-yu-yan/go.md)
-* [Java](bian-cheng-yu-yan/java.md)
+* [Java](bian-cheng-yu-yan/java/README.md)
   * [关于Java](bian-cheng-yu-yan/java/untitled.md)
 
 ## Test
@@ -162,10 +162,10 @@
 ## 关于
 
 * [知识管理](guan-yu/zhi-shi-guan-li/README.md)
-  * [Hugo](guan-yu/untitled.md)
+  * [Hugo](guan-yu/zhi-shi-guan-li/untitled.md)
   * [Gitbook](guan-yu/zhi-shi-guan-li/gitbook.md)
 * [企业组织架构](guan-yu/qi-ye-zu-zhi-jia-gou.md)
-* [文本格式](guan-yu/wen-ben-ge-shi.md)
+* [文本格式](guan-yu/wen-ben-ge-shi/README.md)
   * [JSON](guan-yu/wen-ben-ge-shi/json.md)
   * [YAML](guan-yu/wen-ben-ge-shi/yaml.md)
   * [XML](guan-yu/wen-ben-ge-shi/xml.md)
