@@ -1,8 +1,18 @@
 # 测试分类
 
+{% embed url="https://blog.csdn.net/cherrydreamsover/article/details/81385643" %}
+
+
+
+
+
+
+
 ## 测试的分类
 
 ![](../.gitbook/assets/image%20%289%29.png)
+
+### 
 
 ### 按开发阶段分
 
