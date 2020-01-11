@@ -10,7 +10,7 @@
 
 ## 测试的分类
 
-![](../.gitbook/assets/image%20%289%29.png)
+![](../../.gitbook/assets/image%20%289%29.png)
 
 ### 
 
@@ -20,7 +20,7 @@
 
 **测试金字塔与业务测试分析：**
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](../../.gitbook/assets/image%20%282%29.png)
 
 **单元测试**：对软件组成单元进行测试，又称为模块测试
 
