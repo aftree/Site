@@ -80,7 +80,7 @@ VIEW
 
 2、示例：APP注册登录
 
-{% api-method method="post" host="" path="/s/login/applogin" %}
+{% api-method method="post" host="https://i.lijun.in" path="/s/login/applogin" %}
 {% api-method-summary %}
 APP\_User\_Login
 {% endapi-method-summary %}
