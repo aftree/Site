@@ -6,7 +6,7 @@
 
 * [Linux From Scratch](operating-system/linux-from-scratch.md)
 * [Linux](operating-system/linux/README.md)
-  * [Untitled](operating-system/linux/untitled-2.md)
+  * [Linux内核](operating-system/linux/untitled-2.md)
   * [Untitled](operating-system/linux/untitled.md)
   * [Untitled](operating-system/linux/untitled-1.md)
 * [Winodws](operating-system/windows/README.md)
