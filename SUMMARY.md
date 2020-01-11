@@ -187,6 +187,7 @@
 * [测试分类](test/ce-shi-fen-lei.md)
 * [性能测试](test/untitled-1.md)
 * [接口测试](test/untitled.md)
+* [最佳实践](test/zui-jia-shi-jian.md)
 
 ## 开发与运维 <a id="devops"></a>
 
