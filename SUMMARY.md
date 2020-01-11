@@ -47,7 +47,7 @@
     * [MongoDB](database/nosql/wendang/mongodb.md)
   * [kv](database/nosql/kv/README.md)
     * [Redis](database/nosql/kv/redis.md)
-* [云数据库](yun-shu-ju-ku.md)
+* [云数据库](database/yun-shu-ju-ku.md)
 
 ## 安全
 
@@ -194,7 +194,7 @@
   * [LoadRunner](test/test-tools/loadrunner.md)
   * [JMeter](test/test-tools/jmeter.md)
 * [5. 最佳实践](test/zui-jia-shi-jian.md)
-* [图片](test/images.md)
+* [图片](test/assets.md)
 
 ## 开发与运维 <a id="devops"></a>
 
