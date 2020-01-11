@@ -177,6 +177,7 @@
 * [0. 测试](test/ji-chu-gai-nian/README.md)
   * [软件测试](test/ji-chu-gai-nian/ruan-jian-ce-shi.md)
   * [测试分类](test/ji-chu-gai-nian/ce-shi-fen-lei.md)
+  * [测试模型](test/ji-chu-gai-nian/ce-shi-mo-xing.md)
 * [1. 性能测试](test/untitled-1/README.md)
   * [基础](test/untitled-1/ji-chu.md)
 * [2. 接口测试](test/untitled/README.md)
@@ -185,7 +186,9 @@
   * [Postman](test/untitled/postman.md)
 * [3. 自动化测试](test/zi-dong-hua-ce-shi/README.md)
   * [Python测试驱动开发](test/zi-dong-hua-ce-shi/untitled.md)
-  * [Ｐｙｔｈｏｎ测试框架](test/zi-dong-hua-ce-shi/ce-shi-kuang-jia.md)
+  * [Python测试框架](test/zi-dong-hua-ce-shi/ce-shi-kuang-jia/README.md)
+    * [Unitest](test/zi-dong-hua-ce-shi/ce-shi-kuang-jia/unitest/README.md)
+      * [最佳实践](test/zi-dong-hua-ce-shi/ce-shi-kuang-jia/unitest/zui-jia-shi-jian.md)
 * [4. 测试工具](test/test-tools/README.md)
   * [Selenium](test/test-tools/selenium.md)
   * [LoadRunner](test/test-tools/loadrunner.md)
@@ -200,6 +203,10 @@
 ## 存储 <a id="storage"></a>
 
 * [Untitled](storage/untitled.md)
+* [分布式存储](storage/fen-bu-shi-cun-chu/README.md)
+  * [Ceph](storage/fen-bu-shi-cun-chu/ceph.md)
+  * [MinIO](storage/fen-bu-shi-cun-chu/minio.md)
+  * [Untitled](storage/fen-bu-shi-cun-chu/untitled.md)
 
 ## 关于
 

@@ -124,7 +124,7 @@ APP用户注册登录接口
 {% endapi-method-spec %}
 {% endapi-method %}
 
-![](../../.gitbook/assets/image%20%2813%29.png)
+![](../../.gitbook/assets/image%20%2815%29.png)
 
 ![](../../.gitbook/assets/image%20%281%29.png)
 
