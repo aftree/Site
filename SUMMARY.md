@@ -174,19 +174,18 @@
 
 ## Test
 
-* [Untitled](test/untitled-3.md)
 * [0. 测试](test/ji-chu-gai-nian/README.md)
   * [软件测试](test/ji-chu-gai-nian/ruan-jian-ce-shi.md)
   * [测试分类](test/ji-chu-gai-nian/ce-shi-fen-lei.md)
-* [性能测试](test/untitled-1.md)
-* [接口测试](test/untitled.md)
-* [自动化测试](test/zi-dong-hua-ce-shi.md)
-* [测试工具](test/test-tools/README.md)
+* [1. 性能测试](test/untitled-1.md)
+* [2. 接口测试](test/untitled.md)
+* [3. 自动化测试](test/zi-dong-hua-ce-shi.md)
+* [4. 测试工具](test/test-tools/README.md)
   * [Selenium](test/test-tools/selenium.md)
   * [LoadRunner](test/test-tools/loadrunner.md)
   * [Postman](test/test-tools/postman.md)
   * [JMeter](test/test-tools/jmeter.md)
-* [最佳实践](test/zui-jia-shi-jian.md)
+* [5. 最佳实践](test/zui-jia-shi-jian.md)
 
 ## 开发与运维 <a id="devops"></a>
 
