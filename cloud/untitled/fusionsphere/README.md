@@ -21,7 +21,7 @@
 
 ### FusionSpherer构成部件
 
-![&#x56FE;&#xFF1A;FusionSpherer&#x6784;&#x6210;&#x90E8;&#x4EF6;](../../../.gitbook/assets/image%20%283%29.png)
+![&#x56FE;&#xFF1A;FusionSpherer&#x6784;&#x6210;&#x90E8;&#x4EF6;](../../../.gitbook/assets/image%20%284%29.png)
 
 ### FusionComputer计算设备虚拟化：
 
@@ -29,7 +29,7 @@ FusionComputer是建立虚拟化环境用到的必选功能模块。
 
 FusionComputer包含模块及模块间的示意图：
 
-![&#x56FE;&#xFF1A;FusionComputer&#x6A21;&#x5757;&#x5173;&#x7CFB;](../../../.gitbook/assets/image%20%287%29.png)
+![&#x56FE;&#xFF1A;FusionComputer&#x6A21;&#x5757;&#x5173;&#x7CFB;](../../../.gitbook/assets/image%20%288%29.png)
 
 ### FusionStorage
 
@@ -37,7 +37,7 @@ FusionComputer包含模块及模块间的示意图：
 * FusionStorage可以为FusionSphere,VMware和物理数据库环境提供高扩展，高性能，高可靠的块存储服务。可以独立购买和使用，对于构建FusionSphere环境，其是可选功能模块 。 
 * FusionStorage包含模块及模块间关系示意 
 
-![&#x56FE;&#xFF1A;FusionStorage&#x6A21;&#x5757;&#x5173;&#x7CFB;](../../../.gitbook/assets/image%20%289%29.png)
+![&#x56FE;&#xFF1A;FusionStorage&#x6A21;&#x5757;&#x5173;&#x7CFB;](../../../.gitbook/assets/image%20%2811%29.png)
 
 ### FusionNetwork
 
@@ -45,7 +45,7 @@ FusionComputer包含模块及模块间的示意图：
 2. FusionNetwork是建立/使用高级网络功能， 灵活配置管理网络功能的组件。对于构建FusionSphere环境， 其是可选功能模块
 3. Fusion Network包含模块及模块间关系示意:
 
-![&#x56FE;&#xFF1A;FusionNetwork&#x6A21;&#x5757;&#x5173;&#x7CFB;](../../../.gitbook/assets/image.png)
+![&#x56FE;&#xFF1A;FusionNetwork&#x6A21;&#x5757;&#x5173;&#x7CFB;](../../../.gitbook/assets/image%20%281%29.png)
 
 ### OpenStack模型： <a id="OpenStack&#x6A21;&#x578B;&#xFF1A;"></a>
 

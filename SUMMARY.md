@@ -174,10 +174,15 @@
 
 ## Test
 
+* [基础概念](test/ji-chu-gai-nian.md)
+* [测试工具](test/test-tools/README.md)
+  * [Selenium](test/test-tools/selenium.md)
+  * [Untitled](test/test-tools/untitled.md)
+* [自动化测试](test/zi-dong-hua-ce-shi.md)
 * [软件测试](test/ruan-jian-ce-shi.md)
 * [Untitled](test/untitled-2.md)
 * [测试分类](test/ce-shi-fen-lei.md)
-* [Untitled](test/untitled-1.md)
+* [性能测试](test/untitled-1.md)
 * [接口测试](test/untitled.md)
 
 ## 开发与运维 <a id="devops"></a>
