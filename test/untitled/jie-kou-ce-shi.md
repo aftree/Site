@@ -1,5 +1,5 @@
 ---
-description: 特指API接口的测试
+description: 通常特指API接口的测试
 ---
 
 # 接口测试
