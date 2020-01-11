@@ -12,8 +12,6 @@ TIOBE 编程语言排行榜：[https://www.tiobe.com/tiobe-index/](https://www.t
 
 {% embed url="https://cshihong.github.io/" %}
 
-{% embed url="https://i.lijun.in" %}
-
 [https://wangchujiang.com/linux-command/](https://wangchujiang.com/linux-command/)
 
 
