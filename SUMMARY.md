@@ -1,6 +1,7 @@
 # Table of contents
 
-* [依忆伊意壹懿](summary.md)
+* [依忆伊意壹懿](README.md)
+* [Contents](contents.md)
 
 ## 操作系统 <a id="operating-system"></a>
 
@@ -196,10 +197,10 @@
   * [LoadRunner](test/test-tools/loadrunner.md)
   * [JMeter](test/test-tools/jmeter.md)
 * [5. 最佳实践](test/zui-jia-shi-jian.md)
-* [图片](test/images.md)
-  * [Untitled](test/assets/untitled/README.md)
-    * [Untitled](test/assets/untitled/untitled.md)
-  * [Untitled](test/assets/untitled-1.md)
+* [图片](test/images/README.md)
+  * [Untitled](test/images/untitled/README.md)
+    * [Untitled](test/images/untitled/untitled.md)
+  * [Untitled](test/images/untitled-1.md)
 
 ## 开发与运维 <a id="devops"></a>
 
