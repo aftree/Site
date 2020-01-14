@@ -23,23 +23,6 @@ TIOBE 编程语言排行榜：[https://www.tiobe.com/tiobe-index/](https://www.t
 * Linux
 * Windows
 
-## [System Integration](https://si.lijun.in)
-
-* 机房建设 
-* 弱电系统 
-* 信息化建设 
-* 网络建设 
-* 安全咨询
-* 数据中心 
-* 虚拟化
-
-## [Cloud Computing](https://cloud.lijun.in)
-
-* 虚拟化 
-* Storages
-* NetWork
-* NetWork
-
 ## [DataBase](https://db.lijun.in)
 
 ### 关系型数据库
@@ -96,26 +79,4 @@ Dubbo Spring Cloud
 ### Containers
 
 Docker Kubernetes Rancher
-
-## [BigData](http://localhost:1313/%E5%A4%A7%E6%95%B0%E6%8D%AE/)
-
-* Hadoop  生态系统
-* Spark 
-* BI
-
-## [BlockChain](https://bc.lijun.in)
-
-* 比特币
-* 以太坊
-* EOS
-
-## Programming
-
-* Java
-* Python
-* Go
-
-## About
-
-* Hugo
 
