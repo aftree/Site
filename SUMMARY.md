@@ -169,7 +169,9 @@
     * [Untitled](bian-cheng-yu-yan/python/django/untitled.md)
     * [manage.py](bian-cheng-yu-yan/python/django/manage.py.md)
 * [Go](bian-cheng-yu-yan/go.md)
+* [前端](bian-cheng-yu-yan/qian-duan.md)
 * [Java](bian-cheng-yu-yan/java/README.md)
+  * [Untitled](bian-cheng-yu-yan/java/untitled-1.md)
   * [关于Java](bian-cheng-yu-yan/java/untitled.md)
 
 ## Test
@@ -194,7 +196,7 @@
   * [LoadRunner](test/test-tools/loadrunner.md)
   * [JMeter](test/test-tools/jmeter.md)
 * [5. 最佳实践](test/zui-jia-shi-jian.md)
-* [图片](test/assets/README.md)
+* [图片](test/images.md)
   * [Untitled](test/assets/untitled/README.md)
     * [Untitled](test/assets/untitled/untitled.md)
   * [Untitled](test/assets/untitled-1.md)
