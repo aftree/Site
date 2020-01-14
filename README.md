@@ -17,26 +17,7 @@ TIOBE 编程语言排行榜：[https://www.tiobe.com/tiobe-index/](https://www.t
 [技能图谱](https://github.com/TeamStuQ/skill-map) [Song](https://jimmysong.io) [图](https://www.processon.com)  
 [散尽浮华](https://www.cnblogs.com/kevingrace/) [惨绿](https://www.cnblogs.com/clsn/) [王-虚拟化](http://blog.51cto.com/wangchunhai) [知行合一](https://blog.csdn.net/liumiaocn)
 
-## Operating System
-
-* Unix
-* Linux
-* Windows
-
-## [DataBase](https://db.lijun.in)
-
-### 关系型数据库
-
-MySQL Oracle SqlServer PQ
-
-### NoSQL
-
-* 键值：Redis
-* 文档：MongoDB
-
-## [Cloud Native](https://cncf.lijun.in)
-
-### DevOps
+## DevOps
 
 * 版本控制：GitHub、GitLab、BitBucket、SubVersion、Gogs
 * 构建工具：Ant、Gradle、maven                                 
@@ -72,11 +53,5 @@ MySQL Oracle SqlServer PQ
 |  |  |
 |  |  |
 
-### Microservices
-
-Dubbo Spring Cloud
-
-### Containers
-
-Docker Kubernetes Rancher
+### 
 

@@ -196,10 +196,10 @@
   * [LoadRunner](test/test-tools/loadrunner.md)
   * [JMeter](test/test-tools/jmeter.md)
 * [5. 最佳实践](test/zui-jia-shi-jian.md)
-* [图片](test/images/README.md)
-  * [Untitled](test/images/untitled/README.md)
-    * [Untitled](test/images/untitled/untitled.md)
-  * [Untitled](test/images/untitled-1.md)
+* [图片](test/tu-pian/README.md)
+  * [Untitled](test/tu-pian/untitled/README.md)
+    * [Untitled](test/tu-pian/untitled/untitled.md)
+  * [Untitled](test/tu-pian/untitled-1.md)
 
 ## 开发与运维 <a id="devops"></a>
 
