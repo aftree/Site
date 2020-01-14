@@ -1,7 +1,7 @@
 # Table of contents
 
-* [Introduction](README.md)
-* [依忆伊意壹懿](master.md)
+* [依忆伊意壹懿](README.md)
+* [Site](SUMMARY.md)
 
 ## 操作系统 <a id="operating-system"></a>
 
