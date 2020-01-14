@@ -2,41 +2,62 @@
 description: 人生得意须尽欢，莫使金樽空对月。
 ---
 
-# 依忆伊意壹懿
+# Introduction
 
 [Baidu](http://www.baidu.com) [Google](http://www.google.com) [Site](https://github.com/aftree/Site)
 
-## [Practice](http://www.cnblogs.com/aftree/)
+### [Practice](http://www.cnblogs.com/aftree/)
 
 TIOBE 编程语言排行榜：[https://www.tiobe.com/tiobe-index/](https://www.tiobe.com/tiobe-index/)
 
-{% embed url="https://cshihong.github.io/" caption="" %}
+{% embed url="https://cshihong.github.io/" %}
 
 [https://wangchujiang.com/linux-command/](https://wangchujiang.com/linux-command/)
+
+
+
+
 
 [技能图谱](https://github.com/TeamStuQ/skill-map) [Song](https://jimmysong.io) [图](https://www.processon.com)  
 [散尽浮华](https://www.cnblogs.com/kevingrace/) [惨绿](https://www.cnblogs.com/clsn/) [王-虚拟化](http://blog.51cto.com/wangchunhai) [知行合一](https://blog.csdn.net/liumiaocn)
 
-## Operating System
+### Operating System
 
 * Unix
 * Linux
 * Windows
 
-## [DataBase](https://db.lijun.in)
+### [System Integration](https://si.lijun.in)
 
-### 关系型数据库
+* 机房建设 
+* 弱电系统 
+* 信息化建设 
+* 网络建设 
+* 安全咨询
+* 数据中心 
+* 虚拟化
+
+### [Cloud Computing](https://cloud.lijun.in)
+
+* 虚拟化 
+* Storages
+* NetWork
+* NetWork
+
+### [DataBase](https://db.lijun.in)
+
+#### 关系型数据库
 
 MySQL Oracle SqlServer PQ
 
-### NoSQL
+#### NoSQL
 
 * 键值：Redis
 * 文档：MongoDB
 
-## [Cloud Native](https://cncf.lijun.in)
+### [Cloud Native](https://cncf.lijun.in)
 
-### DevOps
+#### DevOps
 
 * 版本控制：GitHub、GitLab、BitBucket、SubVersion、Gogs
 * 构建工具：Ant、Gradle、maven                                 
@@ -72,11 +93,33 @@ MySQL Oracle SqlServer PQ
 |  |  |
 |  |  |
 
-### Microservices
+#### Microservices
 
 Dubbo Spring Cloud
 
-### Containers
+#### Containers
 
 Docker Kubernetes Rancher
+
+### [BigData](http://localhost:1313/%E5%A4%A7%E6%95%B0%E6%8D%AE/)
+
+* Hadoop  生态系统
+* Spark 
+* BI
+
+### [BlockChain](https://bc.lijun.in)
+
+* 比特币
+* 以太坊
+* EOS
+
+### Programming
+
+* Java
+* Python
+* Go
+
+### About
+
+* Hugo
 
