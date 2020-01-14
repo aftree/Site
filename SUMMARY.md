@@ -225,11 +225,3 @@
   * [YAML](guan-yu/wen-ben-ge-shi/yaml.md)
   * [XML](guan-yu/wen-ben-ge-shi/xml.md)
 * [API](guan-yu/api.md)
-
-## ddd
-
-* [Untitled](ddd/untitled/README.md)
-  * [Untitled](ddd/untitled/untitled.md)
-* [Untitled](ddd/untitled-2.md)
-* [Untitled](ddd/untitled-1.md)
-
