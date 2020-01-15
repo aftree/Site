@@ -17,8 +17,12 @@
 * [系统集成](system-integration/system-integration.md)
 * [机房建设](system-integration/ji-fang-jian-she/README.md)
   * [服务器](system-integration/ji-fang-jian-she/fu-wu-qi.md)
+  * [Untitled](system-integration/ji-fang-jian-she/untitled.md)
 * [弱电系统](system-integration/ruo-dian-xi-tong.md)
-* [网络建设](system-integration/wang-luo-jian-she.md)
+* [网络](system-integration/network/README.md)
+  * [路由器](system-integration/network/router.md)
+  * [交换机](system-integration/network/switch.md)
+  * [网络安全](system-integration/network/security.md)
 * [数据中心](system-integration/untitled.md)
 * [信息安全](system-integration/xin-xi-an-quan.md)
 
