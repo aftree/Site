@@ -51,6 +51,8 @@
   * [Access](database/rddb/access.md)
   * [MariaDB](database/rddb/mariadb.md)
   * [MySQL](database/rddb/mysql/README.md)
+    * [MySQL Replication](database/rddb/mysql/mysql-replication.md)
+    * [高可用架构](database/rddb/mysql/ha.md)
     * [数据库中间件](database/rddb/mysql/shu-ju-ku-zhong-jian-jian/README.md)
       * [MyCAT](database/rddb/mysql/shu-ju-ku-zhong-jian-jian/mycat.md)
   * [Oracle](database/rddb/oracle.md)
