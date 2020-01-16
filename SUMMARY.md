@@ -121,6 +121,7 @@
 ## 云计算与虚拟化 <a id="cloud"></a>
 
 * [云计算](cloud/microservices/README.md)
+  * [技术栈](cloud/microservices/ji-shu-zhan.md)
   * [OpenStack](cloud/microservices/openstack.md)
 * [虚拟化](cloud/untitled/README.md)
   * [FusionCloud](cloud/untitled/fusioncloud.md)
@@ -130,6 +131,7 @@
   * [Hyper-V](cloud/untitled/hyper-v.md)
   * [KVM](cloud/untitled/kvm.md)
   * [VMware](cloud/untitled/vmware.md)
+  * [Proxmox VE](cloud/untitled/proxmox-ve.md)
 
 ## Cloud Native
 
