@@ -1,9 +1,5 @@
 # 大型网站架构
 
-{% embed url="https://www.cnblogs.com/edisonchou/category/585873.html" %}
-
-
-
 {% hint style="success" %}
 **网站架构包括**：**前端架构**+**应用层架构**+**服务层架构**+**存储层架构**+**后台架构**+**数据中心机房架构**+**安全架构**+**数据采集与监控**。
 {% endhint %}

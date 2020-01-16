@@ -16,10 +16,6 @@ description: 支持读写分离，支持MySQL主从，支持前端作为mysq通�
 * 单表存量：平均650万（350万~900万）
 {% endhint %}
 
-{% embed url="https://blog.csdn.net/why15732625998/article/details/80463041" %}
-
-{% embed url="https://blog.csdn.net/actionzh/article/details/80903554" %}
-
 
 
 

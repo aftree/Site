@@ -2,6 +2,12 @@
 
 ## 软件测试五大模型
 
+{% embed url="https://blog.csdn.net/u014745194/article/details/79917853" %}
+
+{% embed url="https://blog.csdn.net/liufuguansheng/article/details/15028563" %}
+
+
+
 ### W模型
 
 ![](../../.gitbook/assets/test-w%20%282%29.png)
