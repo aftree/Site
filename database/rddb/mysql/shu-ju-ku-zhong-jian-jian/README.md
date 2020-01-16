@@ -1,5 +1,9 @@
 # 数据库中间件
 
+{% embed url="https://blog.csdn.net/lichangzhen2008/article/details/44708227" %}
+
+
+
 mysql中间件研究（ Atlas，cobar，TDDL，mycat，heisenberg,Oceanus,vitess,OneProxy ）
 
 ### Atlas
