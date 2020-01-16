@@ -31,10 +31,6 @@ API接口定义：对协议进行定义的引用类型。
 * RESTful接口
 {% endhint %}
 
-{% embed url="https://www.cnblogs.com/Leo\_wl/archive/2010/05/20/1740205.html" %}
-
-
-
 WebService接口是走soap协议，请求报文和返回报文都是xml格式，通过SoapUI工具进行测试； 
 
 HTTP API接口走HTTP协议，通过路径来区分调用的方法，请求报文入参有多种形式，返回报文一般为json串，最常见的是get和post方法；
