@@ -251,3 +251,8 @@
   * [XML](guan-yu/wen-ben-ge-shi/xml.md)
 * [API](guan-yu/api.md)
 
+## 华为
+
+* [认证](hua-wei/ren-zheng/README.md)
+  * [路由交换术语](hua-wei/ren-zheng/lu-you-jiao-huan-shu-yu.md)
+
