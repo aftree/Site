@@ -10,7 +10,7 @@
   * [Untitled](operating-system/linux/untitled.md)
   * [Untitled](operating-system/linux/untitled-1.md)
 * [Winodws](operating-system/windows/README.md)
-  * [Windows](operating-system/windows/windows.md)
+  * [全家桶](operating-system/windows/windows.md)
 
 ## 系统集成 <a id="system-integration"></a>
 
@@ -32,7 +32,6 @@
     * [5. 会话层](system-integration/network/tcp-ip/5.-hui-hua-ceng.md)
     * [6. 表示层](system-integration/network/tcp-ip/6.-biao-shi-ceng.md)
     * [7. 应用层](system-integration/network/tcp-ip/7.-ying-yong-ceng.md)
-* [Untitled](system-integration/untitled-1.md)
 * [数据中心](system-integration/untitled.md)
 * [信息安全](system-integration/xin-xi-an-quan.md)
 
@@ -119,7 +118,7 @@
 * [Flink](bigdata/flink.md)
 * [BI](bigdata/bi.md)
 
-## 云计算与虚拟化 <a id="cloud"></a>
+## 云计算 <a id="cloud"></a>
 
 * [云计算](cloud/microservices/README.md)
   * [技术栈](cloud/microservices/ji-shu-zhan.md)
@@ -156,7 +155,7 @@
   * [Docker](cloud-native/untitled-2/docker/README.md)
     * [Docker](cloud-native/untitled-2/docker/untitled-1.md)
     * [Untitled](cloud-native/untitled-2/docker/untitled.md)
-  * [Kubernetes](cloud-native/untitled-2/kubernetes.md)
+* [Kubernetes](cloud-native/kubernetes.md)
 
 ## 网站架构
 
@@ -241,6 +240,7 @@
 
 ## 关于
 
+* [认证](guan-yu/ren-zheng.md)
 * [知识管理](guan-yu/zhi-shi-guan-li/README.md)
   * [Hugo](guan-yu/zhi-shi-guan-li/untitled.md)
   * [Gitbook](guan-yu/zhi-shi-guan-li/gitbook.md)
@@ -250,10 +250,4 @@
   * [YAML](guan-yu/wen-ben-ge-shi/yaml.md)
   * [XML](guan-yu/wen-ben-ge-shi/xml.md)
 * [API](guan-yu/api.md)
-
-## 华为
-
-* [认证](hua-wei/ren-zheng.md)
-* [路由交换术语](hua-wei/lu-you-jiao-huan-shu-yu.md)
-* [云计算](hua-wei/yun-ji-suan.md)
 
