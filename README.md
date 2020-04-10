@@ -26,7 +26,7 @@ TIOBE 编程语言排行榜：[https://www.tiobe.com/tiobe-index/](https://www.t
 | 自动部署 | Capistrano、CodeDeploy |
 | 持续集成 | Bamboo、Hudson、Jenkins |
 | 配置管理 | Ansible、Chef、Puppet、SaltStack、ScriptRock GuardRail |
-| 服务注册与发 | Zookeeper、etcd、Consul |
+| 服务注册与发现 | Zookeeper、etcd、Consul |
 | 日志管理 | ELK、Logentries |
 | 系统监控 | Datadog、Graphite、Icinga、Nagios、Cacti、zabbix |
 | 性能监控 | AppDynamics、New Relic、Splunk |
