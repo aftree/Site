@@ -33,6 +33,8 @@ TIOBE 编程语言排行榜：[https://www.tiobe.com/tiobe-index/](https://www.t
 | 压力测试 | JMeter、Blaze Meter、loader.io |
 | 在线实验 |  |
 | 内网穿透 | frp、ngork、 |
+| 视频会议 |  |
+| 项目管理 | Conf、Jira |
 
 [https://www.katacoda.com/&gt;](https://www.katacoda.com/>) [https://www.ctl.io/developers/blog/post/60-best-open-source-tools-to-do-devops/](https://www.ctl.io/developers/blog/post/60-best-open-source-tools-to-do-devops/) [https://xebialabs.com](https://xebialabs.com/) [https://about.gitlab.com/devops-tools/](https://about.gitlab.com/devops-tools/)
 
