@@ -4,6 +4,10 @@
 
 {% embed url="https://github.com/jaywcjlove/mysql-tutorial/blob/master/21-minutes-MySQL-basic-entry.md" %}
 
+{% embed url="https://github.com/jaywcjlove/mysql-tutorial/blob/master/awesome-mysql.md\#%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7" %}
+
+
+
 
 
 ## 
