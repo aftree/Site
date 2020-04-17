@@ -15,10 +15,6 @@ TIOBE 编程语言排行榜：[https://www.tiobe.com/tiobe-index/](https://www.t
 [技能图谱](https://github.com/TeamStuQ/skill-map) [Song](https://jimmysong.io) [图](https://www.processon.com)  
 [散尽浮华](https://www.cnblogs.com/kevingrace/) [惨绿](https://www.cnblogs.com/clsn/) [王-虚拟化](http://blog.51cto.com/wangchunhai) [知行合一](https://blog.csdn.net/liumiaocn)
 
-{% embed url="https://aftree.gitbook.io/cloudnative/" %}
-
-{% embed url="https://aftree.gitbook.io/command/" %}
-
 {% embed url="https://kuboard.cn/learning/" %}
 
 {% embed url="https://blog.csdn.net/shangyuanlang/article/details/80893153" %}
