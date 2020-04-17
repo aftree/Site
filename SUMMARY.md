@@ -240,7 +240,7 @@
 * [分布式存储](storage/fen-bu-shi-cun-chu/README.md)
   * [Ceph](storage/fen-bu-shi-cun-chu/ceph.md)
   * [MinIO](storage/fen-bu-shi-cun-chu/minio.md)
-  * [Untitled](storage/fen-bu-shi-cun-chu/untitled.md)
+  * [FusionStorage](storage/fen-bu-shi-cun-chu/untitled.md)
 
 ## 关于
 
