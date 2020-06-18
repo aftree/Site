@@ -40,3 +40,18 @@ TIOBE 编程语言排行榜：[https://www.tiobe.com/tiobe-index/](https://www.t
 | 在线实验 | [katacoda](https://www.katacoda.com/)、 |
 | DevOps工具链 | [Gitlab-devops-tools](https://about.gitlab.com/devops-tools)、[https://xebialabs.com](https://xebialabs.com/)、[60-tools](https://www.ctl.io/developers/blog/post/60-best-open-source-tools-to-do-devops/) |
 
+修改hosts（HOSTS文件路径：C:\Windows\System32\drivers\etc\hosts）
+
+1.打开Dns检测|Dns查询 - 站长工具
+
+2.在检测输入栏中输入http://github.com官网
+
+3.把检测列表里的TTL值最小的IP输入到hosts里，并对应写上github官网域名。
+
+例如：
+
+192.30.255.112 github.com
+
+192.30.255.113 www.github.com
+
+192.30.255.120 nodeload.github.com
